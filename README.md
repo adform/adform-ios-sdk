@@ -6,7 +6,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 Adform SDK is built as a static iOS library with an included resources bundle. Before adding ad banners to your application you will first need to import this static library to your project and configure it. To do this follow these steps:
 
-1. Download latest build version of Adform SDK. (Currently v.1.0)
+1. Download latest build version of Adform SDK. (Currently v.0.1.1)
 2. Open your existing xCode project, o create a new one.
 3. Drag AdformSDK folder to your project, when asked select **Copy items into destination group's folder**.
 4. Go to your application target’s configuration > Build settings > Linking > Other Linker Flags, and set **-ObjC** flag.
@@ -18,11 +18,11 @@ Adform SDK is built as a static iOS library with an included resources bundle. B
 
 Adform SDK is Automatic Reference Counting (ARC) compliant. 
 
-The use of Adform SDK (v.0.1) requires the following:
+The use of Adform SDK (v.0.1.1) requires the following:
 
 * Xcode 5.0 or later.
 * iOS SDK 7.0 or later.
-* Requires deployment target 7.0 or later
+* Requires deployment target 6.0 or later
 
 ##How to add ad banners to your application?
 
