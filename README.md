@@ -21,7 +21,12 @@ The use of Adform SDK requires the following:
 
 ![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_03.png)
 
-* Go to your application target’s configuration > General > Linked Frameworks and Libraries section and add **AdSupport.framework** to your project.
+* Go to your application target’s configuration > General > Linked Frameworks and Libraries section and add these frameworks to your project:
+   * **AdSupport.framework**
+   * **EventKit.framework**
+   * **EventKitUI.framework**
+   * **MediaPlayer.framework**
+   * **CoreTelephony.framework**
 
 ![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_05.png)
 
@@ -195,6 +200,46 @@ An example below shows you how to set the banner refresh interval to 60 sec.
         
 	    [bannerView loadAd];
 	}
+## Using interstitial ads
+It is very easy to display interstitial ads with AdformSDK. You just need to intitialize `AFInterstitialAdView` and display it.  To display interstitial ad you have two options:
+
+1. You can just call `show` method on `AFInterstitialAdView` object and it will handle everything, first it will load the ad and then display it to the user;
+2. If you want more control over ad display (show on precise time) you can preload the ad first and then show it manually using method `preloadAd`.
+
+The example code provided below shows you how to display interstitial ad using the second display method.
+
+	...
+	
+	//First, you must create property or ivar to retain the AFInterstitialAdView object (so that arc won't release it before we display it):
+	@property (nonatomic, strong) AFInterstitialAdView *interstitialAdView;
+	
+	...
+	
+	- (void)viewDidLoad {
+	
+		[super viewDidLoad];
+		
+		//Second, initialize interstitialAdView and set its delegate:
+		self.interstitialAdView = [[AFInterstitialAdView alloc] initWithMasterTagID:MasterTagID];
+   		self.interstitialAdView.delegate = self;
+
+		//Third, start ad loading:
+		[self.interstitialAdView preloadAd];
+	}
+		
+	//Finaly, wait until the ad is loaded and then you can call show to display the interstitial ad:
+	- (void)interstitialAdViewDidLoadAd:(AFInterstitialAdView *)interstitialAdView {
+    	
+    	[self showInterstitial];
+	}
+	
+ 	- (void)showInterstitial {
+ 	
+ 		//You can check if AFInterstitialAdView is loaded by checking its isLoaded property
+ 		if (self.interstitialAdView.isLoaded) {
+ 			[self.interstitialAdView show];
+ 		}
+ 	}
 	
 ## AFBannerViewDelegate and AFInterstitialViewDelegate protocols
 
@@ -262,14 +307,30 @@ And the result will be image fallback:
 
 # Release Notes
 
-This part lists release notes from all versions of Adform Mobile Advertising Android SDK.
+This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
+
+## 0.2
+
+### New Features
+
+* Added interstitial ads support;
+
+### Additional dependencies
+
+Don't forget to add new dependancies to your project if you are updating our SDK from 0.1.x version.
+
+* EventKit.framework
+* EventKitUI.framework
+* MediaPlayer.framework
+* CoreTelephony.framework
+
 
 ## 0.1.2
 
 ### New Features
 
 * Refresh Rate override option added;
-* onAdLoadFail listener added;
+* AFBannerViewDelegate and AFInterstitialViewDelegate protocols added;
 
 ## 0.1.1
 
@@ -281,4 +342,4 @@ This part lists release notes from all versions of Adform Mobile Advertising And
 
 ### New Features
 
-* first release;
+* First release;
