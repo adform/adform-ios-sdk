@@ -203,8 +203,8 @@ An example below shows you how to set the banner refresh interval to 60 sec.
 ## Using interstitial ads
 It is very easy to display interstitial ads with AdformSDK. You just need to intitialize `AFInterstitialAdView` and display it.  To display interstitial ad you have two options:
 
-1. You can just call `show` method on `AFInterstitialAdView` object and it will handle everything, first it will load the ad and then display it to the user;
-2. If you want more control over ad display (show on precise time) you can preload the ad first using method `preloadAd` and then show it manually with method `show`.
+1. You can just call `showAnimated:` method on `AFInterstitialAdView` object and it will handle everything, first it will load the ad and then display it to the user. If you pass TRUE (animated parameter) to this method the interstitial ad view will be presented/hidden with fade in/out animation, if you pass FALSE - ad view presentation and dismissal won't be animated;
+2. If you want more control over ad display (show on precise time) you can preload the ad first using method `preloadAd` and then show it manually with method `showAnimated:`.
 
 The example code provided below shows you how to display interstitial ad using the second display method.
 
@@ -237,7 +237,7 @@ The example code provided below shows you how to display interstitial ad using t
  	
  		//You can check if AFInterstitialAdView is loaded by checking its isLoaded property
  		if (self.interstitialAdView.isLoaded) {
- 			[self.interstitialAdView show];
+ 			[self.interstitialAdView showAnimated:TRUE];
  		}
  	}
 	
@@ -308,6 +308,12 @@ And the result will be image fallback:
 # Release Notes
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
+
+## 0.2.1
+
+### New Features
+
+* Added interstitial ads support;
 
 ## 0.2
 
