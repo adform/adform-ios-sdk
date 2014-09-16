@@ -313,7 +313,7 @@ This part lists release notes from all versions of Adform Mobile Advertising iOS
 
 ### New Features
 
-* Added interstitial ads support;
+* Added interstitial ads animation controll;
 
 ## 0.2
 
