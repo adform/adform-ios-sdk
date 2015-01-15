@@ -1,3 +1,6 @@
+Adform Advertising iOS SDK
+==============
+
 # Getting Started
 
 Adform brings brand advertising to the programmatic era at scale, making display advertising simple, relevant and rewarding!
@@ -10,16 +13,56 @@ The use of Adform SDK requires the following:
 * iOS SDK 7.0 or later.
 * Requires deployment target 6.0 or later
 
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_01.png)
+SDK is Automatic Reference Counting (ARC) compliant. 
 
-## 2. Drag Adform SDK folder to your project.
 
-* Download latest build version of Adform SDK.
-* Drag AdformSDK folder to your project, when asked select **Copy items into destination group's folder**.
+![alt tag](Screenshots/general_info.png)
 
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_02.png)
+## 2. How to import Adform Advertising SDK to your iOS project?
+### 2.1. Using CocoaPods
 
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_03.png)
+Adform Advertising SDK is now available via CocoaPods. CocoaPods is a very popular Objective-C dependency management tool. 
+
+* To use CocoaPods, you should first install the CocoaPods Ruby Gem (CocoaPods is built with Ruby):
+
+````
+$ sudo gem install cocoapods
+````
+
+* Next, you need to create a `Podfile`, which describes what dependencies you project has. This file should be placed in your project directory. 
+
+````
+$ pod init
+````
+
+* Next, edit `Podfile` and add the platform identifier and the list of libraries you want to use in the project.
+
+````
+platform: ios
+
+pod 'AdformAdvertising'
+````
+
+* Finally, you have to install the selected libraries.
+
+````
+pod install
+````
+Thats it!
+
+For more information about CocoaPods visit [CocoaPods site](http://cocoapods.org/about).
+
+
+### 2.2. Manually
+
+* Download the latest build version of Adform Advertising SDK.
+* Drag **AdformAdvertising.framework** to your project.
+
+![alt tag](Screenshots/drag_and_drop.png)
+
+* When asked select **Copy items into destination group's folder**.
+
+![alt tag](Screenshots/copy.png)
 
 * Go to your application target’s configuration > General > Linked Frameworks and Libraries section and add these frameworks to your project:
    * **AdSupport.framework**
@@ -27,31 +70,25 @@ The use of Adform SDK requires the following:
    * **EventKitUI.framework**
    * **MediaPlayer.framework**
    * **CoreTelephony.framework**
-
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_05.png)
+   * **SystemConfiguration.framework**
+   
+![alt tag](Screenshots/framework.png)
 
 * Go to your application target’s configuration > Build settings > Linking > Other Linker Flags, and set **-ObjC** flag.
 
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_04.png)
+![alt tag](Screenshots/flag.png)
 
-* (Optional) You should import NewRelic SDK to the project. It is used by Adform SDK for error tracking. You can find instructions how to import it here: [ios-installation-and-configuration](https://docs.newrelic.com/docs/mobile-monitoring-installation/ios-installation-and-configuration).
+* Finaly import **AdformAdvertising.h** and you are ready to use Adform banners:
+    
+		#import <AdformAdvertising/AdformAdvertising.h>
+		
+![alt tag](Screenshots/import.png)
 
-* Finaly import **AdformSDK.h** and you are ready to use Adform banners:
-
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_06.png)
-
-	#import "AdformSDK.h"
-	
-> Adform SDK is Automatic Reference Counting (ARC) compliant. 
-
-## 3. Basic Adform Mobile Advertising SDK Banner View implementation
-
-It is very easy to use Adform SDK to place ad banners in your application. The example code provided below shows you how to add a banner to your view controller. You just need a Master Tag Id.
-
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_07.png)
+## 3. Basic AFAdView implementation
+It is very easy to use Adform Advertising SDK to place ad banners in your application. The example code provided below shows you how to add an ad view to your view controller. You just need a Master Tag Id and you can display ads in your application.
 
 	#import "ViewController.h"
-	#import "AdformSDK.h"
+	#import <AdformAdvertising/AdformAdvertising.h>
 
 	@implementation ViewController
 
@@ -59,32 +96,36 @@ It is very easy to use Adform SDK to place ad banners in your application. The e
 	{
 		[super viewDidLoad];
     
-   		//Create new banner view with Master tag id and position
-    	AFBannerView *bannerView = [[AFBannerView alloc] initWithMasterTagId:MasterTagId position:AFBannerPositionBottom];
+   		//Create a new ad view with Master tag id and position
+    	AFAdView *adView = [[AFAdView alloc] initWithMasterTagId:mtag position:AFAdViewPositionBottom];
     	
-    	//Add the newly created banner view as a subview to view controllers view
-    	[self.view addSubview:bannerView];
+    	//Set presenting viewController
+    	adView.presentingViewController = self;
+    	
+    	//Add the newly created ad view as a subview to view controllers view
+    	[self.view addSubview:adView];
     
     	//Iniate ad loading
-    	[bannerView loadAd];
+    	[adView loadAd];
 	}
 
 	@end
+	
+![alt tag](Screenshots/basic.png)
 
 Thats it! You are ready to go.
 
 # Sample Integrations
 
-## How to respond to banner size changes?
+## 1. Responding to ad view size changes
+Adform ad view is shown only when advertisemnt is loaded. If no ad is loaded it is hidden. Transitions between these states are automatically animated, so you should reposition your applications content accordingly. To do so you must implement `AFAdViewDelegate` protocol methods: `adViewWillShow:` and `adViewWillHide`. The example code provided below shows you how to reposition UITextView to prevent its content from being hidden by the ad view. You should not rely on the ad view `frame` property to determen its size and instead use `adSize` property.
 
-Adform banner view is shown only when advertisemnt is loaded, if no ad is loaded it is hidden. Transitions between these states are animated, so you should reposition your applications content accordingly. To do so you must implement `AFBannerViewDelegate` protocol methods: `bannerViewWillShow:` and `bannerViewWillHide`. The example code provided below shows you how to reposition UITextView so that when the banner shows its content wont be hidden by it. You should not rely on banner view `frame` property to determen its size and instead use `bannerSize` property.
-
-	- (void)bannerViewWillShow:(AFBannerView *)bannerView {
+	- (void)adViewWillShow:(AFAdView *)adView {
 
     	UIEdgeInsets insets = _textView.contentInset;
-   		insets.bottom += bannerView.bannerSize.height;
+   		insets.bottom += adView.adSize.height;
     	UIEdgeInsets scrollInsets = _textView.contentInset;
-    	scrollInsets.bottom += bannerView.bannerSize.height;
+    	scrollInsets.bottom += adView.adSize.height;
     	[UIView animateWithDuration:kBannerAnimationDuration
                      	animations:^{
                          	_textView.contentInset = insets;
@@ -92,119 +133,84 @@ Adform banner view is shown only when advertisemnt is loaded, if no ad is loaded
                      	}];
 	}
 
-	- (void)bannerViewWillHide:(AFBannerView *)bannerView {
+	- (void)adViewWillHide:(AFAdView *)adView {
     
         UIEdgeInsets insets = _textView.contentInset;
-       	insets.bottom -= bannerView.bannerSize.height;
+       	insets.bottom -= adView.adSize.height;
        	UIEdgeInsets scrollInsets = _textView.contentInset;
-       	scrollInsets.bottom -= bannerView.bannerSize.height;
+       	scrollInsets.bottom -= adView.adSize.height;
        	[UIView animateWithDuration:kBannerAnimationDuration
                        	animations:^{
                            	_textView.contentInset = insets;
                            	_textView.scrollIndicatorInsets = scrollInsets;
                        	}];
 	}
+	
+![alt tag](Screenshots/resize.png)
+	
+## 2. What does ad view position mean?
+When creating an ad view you can provide three ad view positions:
 
-## What does banner position mean?
+1. **`AFAdViewPositionTop`** - ad view is automatically positioned at the top of its container view, horizontaly centered in it. You should not set its frame manualy because it may result in unexpected ad view behavior.
+2. **`AFAdViewPositionBottom`** - ad view is automatically positioned at the bottom of its container view, horizontaly centered in it. You should not set its frame manualy because it may result in unexpected ad view behavior.
+3. **`AFAdViewPositionCustom`** - when using this position, you must manually position the ad view in its container view by setting frame.origin property. The example code provided below shows you how to position an ad view manually. You should use this position type only if you want to add an ad view inside your applications content, eg. place it inside scroll view together with other application content.
 
-When creating banner view you can provide three banner positions:
+		//Create new ad view with position AFAdViewPositionCustom
+		AFAdView *adView = [[AFAdView alloc] initWithMasterTagId:mtag position:AFAdViewPositionCustom];
+		
+		//Set presenting viewController
+    	adView.presentingViewController = self;
 
-**`AFBannerPositionTop`** - banner view is automatically positioned at the top of its container view, horizontaly centered in it. You should not set its frame manualy because it may result in unexpected banner view behavior.
+		//Get ad view frame property
+    	CGRect frame = adView.frame;
 
-**`AFBannerPositionBottom`** - banner view is automatically positioned at the bottom of its container view, horizontaly centered in it. You should not set its frame manualy because it may result in unexpected banner view behavior.
+		//Calculate ad view origin to place banner bellow label, horizontally centered in scrollView
+    	frame.origin = CGPointMake((self.scrollView.frame.size.width - adView.frame.size.width) / 2, self.label.frame.origin.y + self.label.frame.size.height);
 
-**`AFBannerPositionCustom`** - when using this position, you must manually set banner position in its container view by setting frame.origin property. The example code provided below shows you how to position banner view manually. You should use this position type only if you want to add banner inside your content, eg. place it inside scroll view together with your content.
+		//Set new, calculated ad view frame
+    	adView.frame = frame;
 
-		//Create new banner view with position AFBannerPositionCustom
-		AFBannerView *bannerView = [[AFBannerView alloc] initWithMasterTagId:MasterTagId position:AFBannerPositionCustom];
-
-		//Get banner frame property
-    	CGRect frame = bannerView.frame;
-
-		//Calculate banner view origin to place banner bellow label, horizontally centered in scrollView
-    	frame.origin = CGPointMake((self.scrollView.frame.size.width - 		bannerView.frame.size.width) / 2, self.label.frame.origin.y + self.label.frame.size.height);
-
-		//Set new, calculated banner frame
-    	bannerView.frame = frame;
-
-		//Add banner to scrollView
-    	[self.scrollView addSubview:bannerView];
+		//Add ad view to scrollView
+    	[self.scrollView addSubview:adView];
 
 		//Initiate ad loading
-    	[bannerView loadAd];
+    	[adView loadAd];
 
+![alt tag](Screenshots/custom_size.png)
 
-## How to add banner to UITableView?
+## 3. Adding ad views to UITableView
 
-Adform banner view can be added to table view contaners. It can be added as a section or table view header or footer and inside table view cells also. When adding banner view to table view you should ensure that you are properly reusing views to avoid performance issues if you are adding multiple banners. The example code provided below shows you how to add banner views to tablew view as section footers.
+Adform ad view can be added to a table view contaners. It can be added as a table view section's header or footer and inside table view cells also. When adding ad view to table view you should ensure that you are properly reusing views to avoid performance issues. The example code provided below shows you how to add ad views to tablew view as section footers.
 
 	- (CGFloat )tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	
-		return [AFBannerView expectedBannerSize].height;
+		return [AFAdView defaultAdSize].height; //Returns default ad view size 320x50 for iPhone and 728x90 for iPad, you should use some kind of constant defining the size of your ad placement
 	}
 
 	- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     
-    	UITableViewHeaderFooterView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"BannerFooterIdentifier"];
+    	UITableViewHeaderFooterView *footerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"AdViewFooterIdentifier"];
     
-    	AFBannerView *banner;
-    
-        if (!headerView) {
-            headerView = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"BannerFooterIdentifier"];
+        if (!footerView) {
+            footerView = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"AdViewFooterIdentifier"];
             
-            banner = [[AFBannerView alloc] initWithMasterTagId:MasterTagId position:AFBannerPositionBottom];
-            [headerView.contentView addSubview:banner];
-            [banner loadAd];
+			AFAdView *adView = [[AFAdView alloc] initWithMasterTagId:mtag position:AFAdViewPositionBottom];
+            adView.presentingViewController = self;
+            [footerView.contentView addSubview:adView];
+            [adView loadAd];
     	}     
     
-    	return headerView;
+    	return footerView;
 	}
 
-## Adding custom values to Adform SDK
+![alt tag](Screenshots/table_view.png)
 
-Publisher id is set globally using main `AdformSDK` class and `setPublisherId:andCustomData:` method. Custom data is an optional parameter and you can pass nil to this method. However, if you want to target your users more accurately you should use "custom data" parameter. It is a `NSDictionary` object containig key-value pairs (e.g. {"gender":"male"}) and is set globally to all ad requests. This parameter should be set bofore loading any ads, because after a successful request to the server (with this parameter) "custom data" cannot be modified (you can still set it if you haven't done it before loading the ads). The best place to set "custom data" parameter is `application:didFinishLaunchingWithOptions:` application delegate method. The example code bellow shows you how to set "custom data" parameter:
+## 4. Displaying interstitial ads
 
-	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-	{
-		//Create custom data parameter dictionary, we are using literal definition for this, but you can use any other definition as well
-		NSDictionary *customData = @{@"gender": @"male", @"age": @"20"};
-		
-    	//Set AdformSDK custom data parameter
-    	[AdformSDK setPublisherId:PublisherID andCustomData:customData];
-    	
-    	return YES;
-	}
+It is very easy to display interstitial ads with Adform Advertising SDK. You just need to intitialize `AFInterstitialAdView` and display it.  To display interstitial ad you have two options:
 
-## Adding custom refresh rate
-
-Every banner has a property `refreshInterval`. By setting this property you can override the dfault refresh time interval received with the ad. Refresh interval is mesured in seconds. This property has a couple of rules:
-
-* Setting it to 0 means that the banner will show only one ad and wont refresh it at all.
-
-* The values assigned to this property must be greater than 30 sec. (except 0), if you try to set it less than that it is automatically corrected to 30 sec.
-
-An example below shows you how to set the banner refresh interval to 60 sec.
-
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_08.png)
-
-	- (void)viewDidLoad
-	{
-	    [super viewDidLoad];
-		// Do any additional setup after loading the view, typically from a nib.
-    
-	    AFBannerView *bannerView = [[AFBannerView alloc] initWithMasterTagId:MasterTagID position:AFBannerPositionBottom];
-
-	    bannerView.refreshInterval = 60;
-
-	    [self.view addSubview:bannerView];
-        
-	    [bannerView loadAd];
-	}
-## Using interstitial ads
-It is very easy to display interstitial ads with AdformSDK. You just need to intitialize `AFInterstitialAdView` and display it.  To display interstitial ad you have two options:
-
-1. You can just call `showAnimated:` method on `AFInterstitialAdView` object and it will handle everything, first it will load the ad and then display it to the user. If you pass TRUE (animated parameter) to this method the interstitial ad view will be presented/hidden with fade in/out animation, if you pass FALSE - ad view presentation and dismissal won't be animated;
-2. If you want more control over ad display (show on precise time) you can preload the ad first using method `preloadAd` and then show it manually with method `showAnimated:`.
+1. You can just call `showFromViewController:animated:` method on `AFInterstitialAdView` object and it will handle everything, first it will load the ad and then display it to the user. If you pass `animated` parameter as `TRUE` to this method the interstitial ad view will be presented/hidden with fade in/out animations, if you pass `FALSE` - ad view presentation and dismissal won't be animated;
+2. If you want more control over ad display (show on precise time) you can preload the ad first and then show it manually.
 
 The example code provided below shows you how to display interstitial ad using the second display method.
 
@@ -237,17 +243,36 @@ The example code provided below shows you how to display interstitial ad using t
  	
  		//You can check if AFInterstitialAdView is loaded by checking its isLoaded property
  		if (self.interstitialAdView.isLoaded) {
- 			[self.interstitialAdView showAnimated:TRUE];
+ 			[self.interstitialAdView showFromViewController:self animated:TRUE];
  		}
  	}
-	
-## AFBannerViewDelegate and AFInterstitialViewDelegate protocols
+ 		
+![alt tag](Screenshots/interstitial.png)
 
-You can use `AFBannerViewDelegate` and `AFInterstitialViewDelegate` protocols to get callbacks when banner view states change or events occure. By using these protocols you can track banner load state, get callbacks about their visibility changes ant be informed about various events such as when banner opens an internal web browser or a modal view. An example below shows you how to track banner loading state, analogous code can be used with interstitial ad views.
+
+## 5. Adding custom values to Adform Advertising SDK
+
+Publisher id is set globally using main `AdformSDK` class and `setPublisherId:andCustomData:` method. Custom data is an optional parameter and you can pass nil to this method. However, if you want to target your users more accurately you should use "custom data" parameter. It is a `NSDictionary` object containig key-value pairs (e.g. {"gender":"male"}) and is set globally to all ad requests. This parameter should be set before loading any ads, because after a successful request to the server (with this parameter) "custom data" cannot be modified (you can still set it if you haven't done it before loading the ads). The best place to set "custom data" parameter is `application:didFinishLaunchingWithOptions:` application delegate method. The example code bellow shows you how to set "custom data" parameter:
+
+	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+	{
+		//Create custom data parameter dictionary, we are using literal definition for this, but you can use any other definition as well
+		NSDictionary *customData = @{@"gender": @"male", @"age": @"20"};
+		
+    	//Set AdformSDK custom data parameter
+    	[AdformSDK setPublisherId:PublisherID andCustomData:customData];
+    	
+    	return YES;
+	}
+
+![alt tag](Screenshots/custom_values.png)
+
+## 6. AFAdViewDelegate and AFInterstitialViewDelegate protocols
+You can use `AFAdViewDelegate` and `AFInterstitialViewDelegate` protocols to get callbacks when ad view states change or events occure. By using these protocols you can track ad view load state, get callbacks about their visibility changes ant be informed about various events such as when ad view opens an internal web browser or a modal view. An example below shows you how to track ad view loading state, analogous code can be used with interstitial ad views.
 
 	...
-	//We must define that our view conntroller conforms to AFBannerViewDelegate protocol
-	@interface ViewController () <AFBannerViewDelegate>
+	//We must define that our view conntroller conforms to AFAdViewDelegate protocol
+	@interface ViewController () <AFAdViewDelegate>
 
 	...
 	
@@ -256,37 +281,35 @@ You can use `AFBannerViewDelegate` and `AFInterstitialViewDelegate` protocols to
    		[super viewDidLoad];
 		// Do any additional setup after loading the view, typically from a nib.
     
-    	//Create an AFBannerView object
-    	AFBannerView *bannerView = [[AFBannerView alloc] initWithMasterTagId:444444 position:AFBannerPositionBottom];
+    	//Create an AFAdView object
+    	AFAdView *adView = [[AFAdView alloc] initWithMasterTagId:444444 position:AFBannerPositionBottom];
 
-		//Set a delegate to the newly created AFBannerView object
-    	bannerView.delegate = self;
+		//Set a delegate to the newly created AFAdView object
+    	adView.delegate = self;
 
 		//Add it to view hieararchy and start loading
-    	[self.view addSubview:bannerView];        
-    	[bannerView loadAd];
+    	[self.view addSubview:adView];        
+    	[adView loadAd];
 	} 
 
 	...
 	
-	//Finaly we must define two methods which will get called when our banner either finishes loading or fails to load
+	//Finaly we must define two methods which will get called when our ad view either finishes loading or fails to load
 	
-	- (void)bannerViewDidLoadAd:(AFBannerView *)bannerView {
+	- (void)adViewDidLoadAd:(AFAdView *)adView {
     	
-    	//This method gets called when a banner view finishes loading a new ad
+    	//This method gets called when an ad view finishes loading a new ad
 	}
 
-	- (void)bannerViewDidFailToLoadAd:(AFBannerView *)bannerView withError:(NSError *)error {
+	- (void)adViewDidFailToLoadAd:(AFAdView *)adView withError:(NSError *)error {
     
-    	//This method gets called when a banner view fails to load an ad
+    	//This method gets called when an ad view fails to load an ad
     	//An error object describes what went wrong
 	}
 
-If our banner fails to load, you can use `bannerViewDidFailToLoadAd:withError:` method to add any backup logic, such as loading a banner from another SDK, but dont forget that AFBannerView autorefreshes. The default refresh interval for a banner is 30 seconds if it is not set differently by the developer, so it may load a new banner after some time even if it failed to load the last one. If ad request was successfull but no ad was received from the server an error with code -997 will be passed to this method.
+If our ad view fails to load, you can use `adViewDidFailToLoadAd:withError:` method to add any backup logic, such as loading an ad view from another SDK, but dont forget that AFAdView autorefreshes. The default refresh interval for a banner is 30 seconds if it is not set differently by the ad publisher. If ad request was successfull but no ad was received from the server an error with code -997 will be passed to this method.
 
 The most common case to replace SDK with fallback image in case of failure:
-
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_09.png)
 
 	- (void)bannerViewDidFailToLoadAd:(AFBannerView *)bannerView withError:(NSError *)error {
 	    
@@ -300,10 +323,12 @@ The most common case to replace SDK with fallback image in case of failure:
 	    [self.view addSubview:imageView];
 	    
 	}
+	
+![alt tag](Screenshots/fallback.png)
 
 And the result will be image fallback:
 
-![alt tag](http://37.157.0.44/mobilesdk/help/images/iphone/page_10.png)
+![alt tag](Screenshots/fallback_2.png)
 
 # Release Notes
 
@@ -335,8 +360,8 @@ Don't forget to add new dependancies to your project if you are updating our SDK
 
 ### New Features
 
-* Refresh Rate override option added;
-* AFBannerViewDelegate and AFInterstitialViewDelegate protocols added;
+* Added refresh Rate override option;
+* Added AFBannerViewDelegate protocol;
 
 ## 0.1.1
 
