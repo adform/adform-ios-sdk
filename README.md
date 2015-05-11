@@ -28,11 +28,25 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+## 2.0
+
+### New Features
+
+* New formats introduced: Adhesion, Overlay and Interstitial;
+* Open RTB protocol support;
+* Performance improvements;
+
+### Additional dependencies
+
+Don't forget to add new dependencies to your project if you are updating our SDK from older version or start using cocoapods.
+
+* CoreLocation.framework
+
 ## 0.2.1
 
 ### New Features
 
-* Added interstitial ads animation controll;
+* Added interstitial ads animation control;
 
 ## 0.2
 
@@ -42,7 +56,7 @@ This part lists release notes from all versions of Adform Mobile Advertising iOS
 
 ### Additional dependencies
 
-Don't forget to add new dependancies to your project if you are updating our SDK from 0.1.x version.
+Don't forget to add new dependencies to your project if you are updating our SDK from 0.1.x version.
 
 * EventKit.framework
 * EventKitUI.framework
