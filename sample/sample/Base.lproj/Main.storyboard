@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TE9-et-XSF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Inline ads-->
+        <scene sceneID="s0i-le-ykQ">
+            <objects>
+                <viewController title="Inline ads" id="AS2-e3-f8d" customClass="AdInlineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xRo-7f-qIw"/>
+                        <viewControllerLayoutGuide type="bottom" id="sve-IA-pW8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LyK-5L-2ox">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clv-CC-9zb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="iLU-pX-T00"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Clv-CC-9zb" firstAttribute="top" secondItem="LyK-5L-2ox" secondAttribute="top" id="5Za-mn-MAZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Clv-CC-9zb" secondAttribute="trailing" id="Irc-p6-lsJ"/>
+                            <constraint firstItem="Clv-CC-9zb" firstAttribute="leading" secondItem="LyK-5L-2ox" secondAttribute="leading" id="bkT-JP-Kea"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Clv-CC-9zb" id="anv-nv-2en"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbZ-yW-Eaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-595"/>
+        </scene>
+        <!--Overlay ads-->
+        <scene sceneID="IU2-jV-LEn">
+            <objects>
+                <viewController title="Overlay ads" id="qFb-Bd-iRq" customClass="AdOverlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pyn-lo-NAf"/>
+                        <viewControllerLayoutGuide type="bottom" id="06j-8k-Y2z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hjv-da-8Rt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wkg-O2-dWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="-595"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="e6u-18-8gu">
+            <objects>
+                <tableViewController id="kGE-c3-RZy" customClass="PlacementsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7zC-tH-Ylc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Basic implementation" id="BgC-tL-Mjt">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="pgF-NF-2BE" style="IBUITableViewCellStyleDefault" id="6Qe-sV-Qzz">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Qe-sV-Qzz" id="sBm-r1-Ecl">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Inline ads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pgF-NF-2BE">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AS2-e3-f8d" kind="show" id="LwV-t2-fu4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="7bM-7W-wLj" style="IBUITableViewCellStyleDefault" id="9zs-jH-Auh">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9zs-jH-Auh" id="qgz-3b-Pny">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Overlay ads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7bM-7W-wLj">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qFb-Bd-iRq" kind="show" id="71R-al-Lbp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Advanced implementation" id="fGU-N0-VB0">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="gsN-uz-Ep3" style="IBUITableViewCellStyleDefault" id="xeW-RC-Sm9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xeW-RC-Sm9" id="VLD-AD-HvE">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Inline ads in UITableView" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gsN-uz-Ep3">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vsy-dB-YCe" kind="show" id="rBU-R0-SuO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="gI0-8q-7iw" style="IBUITableViewCellStyleDefault" id="JwM-xq-fKw">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JwM-xq-fKw" id="lJm-vS-Gil">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Inline ads with responsive app content" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gI0-8q-7iw">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Suq-u3-iSS" kind="show" id="O25-tW-0IW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="HDl-kp-Dlj" style="IBUITableViewCellStyleDefault" id="Nmq-mg-XJM">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nmq-mg-XJM" id="hJq-dH-Psb">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Preloading Overlay ads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HDl-kp-Dlj">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ios-MM-1aA" kind="show" id="Nia-bR-oiV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Xu9-oB-8HA" style="IBUITableViewCellStyleDefault" id="W0u-eA-Aj1">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W0u-eA-Aj1" id="opr-VJ-CNl">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Adhesion ads (top position)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xu9-oB-8HA">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ahW-oL-Qgm" kind="show" identifier="AdhesionTop" id="sHs-fI-mp3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="xRF-FI-Nzq" style="IBUITableViewCellStyleDefault" id="1zw-ks-6dX">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1zw-ks-6dX" id="hIg-xe-OkJ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Adhesion ads (bottom position)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xRF-FI-Nzq">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ahW-oL-Qgm" kind="show" identifier="AdhesionBottom" id="Fdw-Qw-Imp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="sXc-bU-pck" style="IBUITableViewCellStyleDefault" id="Bih-ab-2lW">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bih-ab-2lW" id="EzT-fP-lDA">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Interstitial ads in UIPageViewController" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sXc-bU-pck">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="toU-aC-cB8" kind="show" id="Jjq-WR-65O"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="KtN-F7-Azr" style="IBUITableViewCellStyleDefault" id="9gg-Wy-0JE">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9gg-Wy-0JE" id="yKM-iT-98p">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Interstitial ads in UICollectionView" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KtN-F7-Azr">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="XVG-V7-yXX" kind="show" id="g4C-Lb-8nd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="kGE-c3-RZy" id="BWh-Df-ePb"/>
+                            <outlet property="delegate" destination="kGE-c3-RZy" id="HtU-RL-7z5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="XhF-LQ-9tl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qA6-g3-xr5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="119"/>
+        </scene>
+        <!--Preloading Overlay ads-->
+        <scene sceneID="qAy-bX-Q6g">
+            <objects>
+                <viewController title="Preloading Overlay ads" id="ios-MM-1aA" customClass="AdOverlayPreloadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ws1-gi-yp3"/>
+                        <viewControllerLayoutGuide type="bottom" id="n5l-v6-7nZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zFH-NM-pQt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-GB-Lzc">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43x-kT-GJp">
+                                <rect key="frame" x="243" y="285" width="114" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Show overlay ad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAd:" destination="ios-MM-1aA" eventType="touchUpInside" id="uFa-H5-F6p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="43x-kT-GJp" secondAttribute="centerX" id="EcX-na-uA0"/>
+                            <constraint firstItem="8e1-GB-Lzc" firstAttribute="centerX" secondItem="zFH-NM-pQt" secondAttribute="centerX" id="RJa-gL-toU"/>
+                            <constraint firstAttribute="centerY" secondItem="8e1-GB-Lzc" secondAttribute="centerY" constant="0.5" id="Zqh-oc-xj7"/>
+                            <constraint firstAttribute="centerY" secondItem="43x-kT-GJp" secondAttribute="centerY" id="yda-YC-Boj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="8e1-GB-Lzc" id="Mac-Ac-Kly"/>
+                        <outlet property="showButton" destination="43x-kT-GJp" id="xYi-G0-gPz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDb-u4-t7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="815"/>
+        </scene>
+        <!--Interstitial ads in UICollectionView pager-->
+        <scene sceneID="soa-Zt-cId">
+            <objects>
+                <collectionViewController title="Interstitial ads in UICollectionView pager" id="XVG-V7-yXX" customClass="CollectionPagerViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="FOb-Ss-Rue">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="GAr-Gl-CPq">
+                            <size key="itemSize" width="600" height="600"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="O8y-Cz-zZ6">
+                                <rect key="frame" x="20" y="40" width="280" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsj-9m-8u6">
+                                            <rect key="frame" x="8" y="8" width="584" height="584"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Jsj-9m-8u6" firstAttribute="top" secondItem="O8y-Cz-zZ6" secondAttribute="topMargin" id="EuI-cQ-prW"/>
+                                    <constraint firstItem="Jsj-9m-8u6" firstAttribute="trailing" secondItem="O8y-Cz-zZ6" secondAttribute="trailingMargin" id="chm-fi-bM5"/>
+                                    <constraint firstItem="Jsj-9m-8u6" firstAttribute="bottom" secondItem="O8y-Cz-zZ6" secondAttribute="bottomMargin" id="hwe-hM-c5r"/>
+                                    <constraint firstItem="Jsj-9m-8u6" firstAttribute="leading" secondItem="O8y-Cz-zZ6" secondAttribute="leadingMargin" id="zAd-89-urj"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="XVG-V7-yXX" id="bBp-2p-yPa"/>
+                            <outlet property="delegate" destination="XVG-V7-yXX" id="F5Z-Xe-FBk"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1R-ae-2cZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="1525"/>
+        </scene>
+        <!--Inline ads in UITableView-->
+        <scene sceneID="BVu-tg-5I5">
+            <objects>
+                <tableViewController title="Inline ads in UITableView" id="vsy-dB-YCe" customClass="AdInlineTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="XTa-JR-9cL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="cc4-bz-IG2">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc4-bz-IG2" id="VQg-8E-9cQ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vsy-dB-YCe" id="wmd-kC-9eH"/>
+                            <outlet property="delegate" destination="vsy-dB-YCe" id="iVd-4i-F8P"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYI-VO-7Tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="119"/>
+        </scene>
+        <!--Inline ads with responsive app content-->
+        <scene sceneID="dIi-Q8-KI3">
+            <objects>
+                <viewController title="Inline ads with responsive app content" id="Suq-u3-iSS" customClass="AdInlineResponsiveViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xuA-vf-8AF"/>
+                        <viewControllerLayoutGuide type="bottom" id="n3d-N1-wKa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4rd-ej-bEe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u17-YG-VRl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzF-G6-FIp">
+                                        <rect key="frame" x="8" y="8" width="584" height="400"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="Hry-9F-ukN"/>
+                                        </constraints>
+                                        <string key="text">Etiam neque varius ut mus malesuada. Risus augue montes primis curae. Curae justo rutrum ve luctus senectus. Justo massa maecenas tristique diam urna senectus orci pretium netus vestibulum sagittis lorem ve. Class curae. Neque porta mauris ut hymenaeos elit leo sed feugiat cras. Proin massa arcu lorem imperdiet rutrum ut tellus enim ullamcorper euismod condimentum pede dignissim sociis velit in a ante lacus. Porta justo. Lorem metus sem taciti lacinia tempor. Porta nulla lectus accumsan curabitur nisi hac etiam. Dolor augue faucibus cras elementum vitae penatibus est nam per et senectus iaculis convallis ad. Porta vitae netus lacinia dignissim pede vivamus urna malesuada luctus velit vestibulum. Velit lorem tristique placerat risus ultricies natoque augue eros auctor ve duis. Fames fusce nisl morbi ve. Velit dolor cum congue lorem posuere sapien metus vestibulum iaculis ante. Velit netus. Netus metus quam sem ligula ac mollis metus vestibulum pharetra ante faucibus nunc. Magna porta fames penatibus ipsum porttitor duis sed enim. Velit risus donec sed arcu sociosqu per donec dui class lacinia sapien duis. Etiam purus. Lorem risus cum phasellus ligula eros urna lacinia libero. Etiam neque varius ut mus malesuada. Risus augue montes primis curae. Curae justo rutrum ve luctus senectus. Justo massa maecenas tristique diam urna senectus orci pretium netus vestibulum sagittis lorem ve. Class curae. Neque porta mauris ut hymenaeos elit leo sed feugiat cras. Proin massa arcu lorem imperdiet rutrum ut tellus enim ullamcorper euismod condimentum pede dignissim sociis velit in a ante lacus. Porta justo. Lorem metus sem taciti lacinia tempor. Porta nulla lectus accumsan curabitur nisi hac etiam. Dolor augue faucibus cras elementum vitae penatibus est nam per et senectus iaculis convallis ad. Porta vitae netus lacinia dignissim pede vivamus urna malesuada luctus velit vestibulum. Velit lorem tristique placerat risus ultricies natoque augue eros auctor ve duis. Fames fusce nisl morbi ve. Velit dolor cum congue lorem posuere sapien metus vestibulum iaculis ante. Velit netus. Netus metus quam sem ligula ac mollis metus vestibulum pharetra ante faucibus nunc. Magna porta fames penatibus ipsum porttitor duis sed enim. Velit risus donec sed arcu sociosqu per donec dui class lacinia sapien duis. Etiam purus. Lorem risus cum phasellus ligula eros urna lacinia libero.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-Ac-MNA">
+                                        <rect key="frame" x="8" y="393" width="584" height="400"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="phV-7D-uML"/>
+                                        </constraints>
+                                        <string key="text">Etiam neque varius ut mus malesuada. Risus augue montes primis curae. Curae justo rutrum ve luctus senectus. Justo massa maecenas tristique diam urna senectus orci pretium netus vestibulum sagittis lorem ve. Class curae. Neque porta mauris ut hymenaeos elit leo sed feugiat cras. Proin massa arcu lorem imperdiet rutrum ut tellus enim ullamcorper euismod condimentum pede dignissim sociis velit in a ante lacus. Porta justo. Lorem metus sem taciti lacinia tempor. Porta nulla lectus accumsan curabitur nisi hac etiam. Dolor augue faucibus cras elementum vitae penatibus est nam per et senectus iaculis convallis ad. Porta vitae netus lacinia dignissim pede vivamus urna malesuada luctus velit vestibulum. Velit lorem tristique placerat risus ultricies natoque augue eros auctor ve duis. Fames fusce nisl morbi ve. Velit dolor cum congue lorem posuere sapien metus vestibulum iaculis ante. Velit netus. Netus metus quam sem ligula ac mollis metus vestibulum pharetra ante faucibus nunc. Magna porta fames penatibus ipsum porttitor duis sed enim. Velit risus donec sed arcu sociosqu per donec dui class lacinia sapien duis. Etiam purus. Lorem risus cum phasellus ligula eros urna lacinia libero. Etiam neque varius ut mus malesuada. Risus augue montes primis curae. Curae justo rutrum ve luctus senectus. Justo massa maecenas tristique diam urna senectus orci pretium netus vestibulum sagittis lorem ve. Class curae. Neque porta mauris ut hymenaeos elit leo sed feugiat cras. Proin massa arcu lorem imperdiet rutrum ut tellus enim ullamcorper euismod condimentum pede dignissim sociis velit in a ante lacus. Porta justo. Lorem metus sem taciti lacinia tempor. Porta nulla lectus accumsan curabitur nisi hac etiam. Dolor augue faucibus cras elementum vitae penatibus est nam per et senectus iaculis convallis ad. Porta vitae netus lacinia dignissim pede vivamus urna malesuada luctus velit vestibulum. Velit lorem tristique placerat risus ultricies natoque augue eros auctor ve duis. Fames fusce nisl morbi ve. Velit dolor cum congue lorem posuere sapien metus vestibulum iaculis ante. Velit netus. Netus metus quam sem ligula ac mollis metus vestibulum pharetra ante faucibus nunc. Magna porta fames penatibus ipsum porttitor duis sed enim. Velit risus donec sed arcu sociosqu per donec dui class lacinia sapien duis. Etiam purus. Lorem risus cum phasellus ligula eros urna lacinia libero.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SzF-G6-FIp" firstAttribute="leading" secondItem="u17-YG-VRl" secondAttribute="leading" constant="8" id="3LV-IA-1US"/>
+                                    <constraint firstItem="HfC-Ac-MNA" firstAttribute="top" secondItem="SzF-G6-FIp" secondAttribute="bottom" constant="-15" id="BnE-Cg-geJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="HfC-Ac-MNA" secondAttribute="bottom" id="Cpn-o8-AEs"/>
+                                    <constraint firstItem="HfC-Ac-MNA" firstAttribute="leading" secondItem="u17-YG-VRl" secondAttribute="leading" constant="8" id="Unh-wu-p57"/>
+                                    <constraint firstItem="SzF-G6-FIp" firstAttribute="top" secondItem="u17-YG-VRl" secondAttribute="topMargin" id="arG-ok-jm7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u17-YG-VRl" firstAttribute="bottom" secondItem="n3d-N1-wKa" secondAttribute="top" id="DT8-Pb-bgh"/>
+                            <constraint firstAttribute="trailing" secondItem="u17-YG-VRl" secondAttribute="trailing" id="nOf-W3-QGZ"/>
+                            <constraint firstItem="u17-YG-VRl" firstAttribute="top" secondItem="4rd-ej-bEe" secondAttribute="top" id="uRm-em-FYh"/>
+                            <constraint firstItem="u17-YG-VRl" firstAttribute="leading" secondItem="4rd-ej-bEe" secondAttribute="leading" id="vQy-Ow-3po"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="HfC-Ac-MNA" id="hkS-bD-xJ5"/>
+                        <outlet property="scrollView" destination="u17-YG-VRl" id="UhX-IO-1KM"/>
+                        <outlet property="topLabel" destination="SzF-G6-FIp" id="B13-8C-H2P"/>
+                        <outlet property="verticalSpacing" destination="BnE-Cg-geJ" id="j6v-89-jue"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aT1-iL-myS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="119"/>
+        </scene>
+        <!--Adhesion ads-->
+        <scene sceneID="vWN-6e-ZC4">
+            <objects>
+                <viewController title="Adhesion ads" id="ahW-oL-Qgm" customClass="AdhesionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVj-NY-TiB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jw2-ma-bkf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zVC-69-JL4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNf-uo-Xv0">
+                                <rect key="frame" x="0.0" y="-920" width="600" height="1520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Justo donec augue eros in felis tellus arcu tempor nullam eget. Risus augue. Vitae risus. Etiam netus. Neque nulla eleifend morbi egestas aliquet arcu ut fames nibh. Nulla netus ipsum sem sapien torquent per donec litora ullamcorper vitae phasellus quam convallis. Class risus a nisi id consectetuer integer. Lacus porta mollis velit duis. Massa risus nunc et. Augue morbi sagittis nec litora feugiat et cras sapien ac sagittis. Velit fames sociis lorem nonummy magnis orci magna turpis sollicitudin. Augue morbi est morbi vestibulum dapibus urna ac venenatis dignissim erat ante quam. Fusce class tempus ut quis malesuada cursus augue. Netus proin. Risus magna. Ipsum porta rutrum turpis interdum lectus vivamus arcu. Ipsum justo taciti sociis faucibus nascetur ligula. Netus felis risus ipsum molestie et auctor accumsan. Lorem nulla a laoreet at. Porta risus mus arcu pellentesque et dolor. Curae velit eget est. Justo risus lacus lorem feugiat quis neque maecenas quis sagittis a pulvinar est nulla etiam.
+
+Neque velit. Ipsum massa. Vitae felis vel quam dictumst vestibulum mauris nisi tortor. Felis morbi cras habitant porta eu mattis eleifend. Justo ipsum egestas sit congue ac. Curae neque. Justo netus justo neque scelerisque pharetra lorem urna. Massa augue fusce nec vestibulum parturient ad tincidunt metus purus. Metus proin semper pulvinar amet hac platea. Fames lorem elementum senectus et fusce mauris. Purus neque amet sed vel pellentesque. Lacus neque hac pede enim porttitor curae nisi eleifend vitae nisi. Lacus lorem.
+
+Porta velit sit volutpat pretium curae eu erat mi purus lectus. Vitae metus primis nostra. Magna donec erat condimentum ve dictum curabitur lobortis sociis mattis. Lorem risus. Fames dolor per tristique egestas per vestibulum ve habitant potenti conubia. Justo lacus. Class augue eros potenti eu molestie viverra ut nam imperdiet libero. Metus neque amet aptent penatibus ultrices dictum sagittis. Fusce morbi dictum morbi felis lobortis malesuada a sit. Proin velit. Velit morbi mauris adipiscing maecenas nulla non cras elit hac mollis mattis.
+
+Donec neque ligula sit eros arcu purus viverra duis iaculis blandit tempus per viverra in. Netus felis est quam dolor auctor nulla vestibulum nisl tortor platea. Vitae lorem. Porta etiam vitae gravida odio pellentesque et velit nam. Velit donec cum senectus fermentum dictumst at sit. Lacus felis euismod. Lorem donec purus blandit sociosqu rutrum netus adipiscing suspendisse ligula et imperdiet a fusce egestas. Vitae fames amet nibh sit neque. Magna proin integer cum. Class lacus vivamus aenean duis consectetuer ac. Felis curae ligula nec.
+
+Etiam class nisi mattis. Lorem metus velit aliquet turpis leo congue quis suspendisse iaculis magna vel porta nulla blandit. Vitae etiam. Morbi fusce proin enim id hymenaeos urna vitae aliquet. Metus fusce nullam ligula tincidunt feugiat ipsum ad varius. Fusce donec facilisis nulla sed ligula nostra eros facilisis et. Felis lacus. Massa class mus eros non curae venenatis adipiscing quis neque lorem. Netus dolor cum feugiat. Lorem fusce. Velit justo vivamus rhoncus taciti magna. Risus porta. Etiam justo non mus nonummy mi. Fames velit cum phasellus turpis a potenti primis eu.
+
+Velit felis ultrices fusce cubilia sociis est commodo tempus magna morbi. Fames vitae convallis suspendisse purus varius ultricies sociosqu ligula. Curae neque etiam fames interdum orci nullam at placerat posuere laoreet amet eu sociosqu quis sem lacinia molestie. Risus morbi taciti interdum dictum mattis. Justo neque tempus nostra sed duis suscipit leo amet. Dolor donec mus orci ultrices sollicitudin tortor ad. Proin netus urna inceptos scelerisque sed ornare phasellus justo ante malesuada odio arcu. Porta massa eni eget volutpat non id eleifend laoreet gravida cras. Justo magna montes feugiat eu dis ultricies sem aliquam a suspendisse. Proin magna donec curae nullam ve maecenas. Felis porta. Curae lacus nam pede nunc erat aliquam donec odio. Ipsum class suspendisse ut ornare pharetra ve condimentum at. Metus nulla gravida nec. Risus curae aptent quis eros pede. Felis morbi congue proin adipiscing dictumst euismod porta id. Lacus morbi viverra. Dolor massa. Proin augue.
+
+Vitae porta per. Massa augue arcu. Etiam proin dictum ligula augue etiam litora malesuada commodo non. Velit risus tellus class aliquam mus eu sollicitudin arcu euismod eu sem. Curae fusce. Justo ipsum sem quam eros odio nibh dolor. Etiam fames aliquet risus in lacus in magna. Porta neque. Vitae donec nisi potenti. Etiam dolor auctor porttitor ac ad. Class lorem erat semper.
+
+Justo nulla quam posuere pede eu pulvinar commodo pellentesque ligula turpis conubia. Porta lorem duis non nisi. Vitae purus massa sodales nam bibendum a sollicitudin nisl. Justo neque ullamcorper nam. Fusce class pede gravida porttitor mattis arcu integer ve senectus. Metus morbi rutrum id tempor nonummy integer rhoncus. Fames massa arcu justo. Proin nulla. Felis donec ornare sociis facilisis id mi. Justo donec sociis platea nec lectus egestas sem conubia mi maecenas eget. Magna dolor a primis vitae vestibulum viverra eget. Felis massa. Donec ipsum mus vivamus torquent magnis parturient lacus odio hendrerit eni senectus. Fames ipsum aptent nullam risus inceptos enim lacinia dis ut orci porta massa. Etiam netus enim non risus adipiscing placerat porta lobortis ve nunc tellus.
+
+Nulla class. Fames ipsum dui ante pulvinar nostra primis fames scelerisque torquent lacus feugiat fusce donec. Massa felis. Velit magna primis. Fusce neque cras nec pellentesque mi natoque nisl porttitor dictum. Felis class. Vitae fames varius sapien vitae pretium. Lorem proin etiam eleifend elementum. Class fusce nibh dis feugiat inceptos netus. Augue risus pulvinar est. Massa donec odio cursus malesuada metus ante cum quam primis hendrerit molestie cras. Metus dolor montes adipiscing pharetra metus. Fames porta augue tellus duis sollicitudin. Neque nulla bibendum velit nisl.
+
+Augue lorem aptent aenean dui elit. Class netus hac tempor a parturient dui parturient varius inceptos. Neque magna nonummy ligula ad duis. Proin porta felis ullamcorper sit nisl magnis tincidunt. Class massa odio. Etiam felis sagittis magna justo a vivamus tortor vel. Vitae lacus primis parturient consectetuer potenti placerat ut cum. Ipsum lorem diam nibh nisl duis non dis nam hac non. Velit massa risus lacus scelerisque pulvinar fringilla. Purus fusce ullamcorper inceptos penatibus nulla nascetur in scelerisque nibh elit duis natoque ad justo cursus mauris. Fusce magna sed placerat ridiculus eu. Magna etiam non odio metus ultricies.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MNf-uo-Xv0" firstAttribute="bottom" secondItem="Jw2-ma-bkf" secondAttribute="top" id="4D0-zW-Jgq"/>
+                            <constraint firstItem="MNf-uo-Xv0" firstAttribute="leading" secondItem="zVC-69-JL4" secondAttribute="leading" id="KdZ-xf-Tfw"/>
+                            <constraint firstItem="MNf-uo-Xv0" firstAttribute="top" secondItem="zVC-69-JL4" secondAttribute="top" id="Mcr-h8-0O5"/>
+                            <constraint firstAttribute="trailing" secondItem="MNf-uo-Xv0" secondAttribute="trailing" id="R4n-wj-Sup"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTA-Sq-RnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="815"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VaA-sL-9lB">
+            <objects>
+                <navigationController id="TE9-et-XSF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5qG-sv-IC6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kGE-c3-RZy" kind="relationship" relationship="rootViewController" id="Kj8-2Y-qOP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJe-N0-g1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1120" y="119"/>
+        </scene>
+        <!--Interstitial ads in UIPageViewController-->
+        <scene sceneID="srL-EX-vKD">
+            <objects>
+                <viewController title="Interstitial ads in UIPageViewController" id="toU-aC-cB8" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QEW-4b-K1c"/>
+                        <viewControllerLayoutGuide type="bottom" id="anp-RU-kGa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YuD-di-P50">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75N-S5-JMJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="1525"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="lDg-v0-OoW">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" id="E4T-Oc-waD" customClass="DataViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DYB-FT-o30"/>
+                        <viewControllerLayoutGuide type="bottom" id="8fs-oY-PuR"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="I6e-Jl-TCI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-id-bty">
+                                <rect key="frame" x="20" y="20" width="560" height="17"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlo-vr-D9S">
+                                <rect key="frame" x="20" y="44" width="560" height="536"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUc-Oo-fzK">
+                                        <rect key="frame" x="8" y="8" width="544" height="536"/>
+                                        <string key="text">Class nulla accumsan. Donec risus vel maecenas vulputate dolor integer euismod massa nam massa hendrerit elementum adipiscing nonummy. Metus netus quis mus est penatibus odio eget. Curae velit massa non nibh est potenti. Metus lorem sem arcu in convallis a elementum fames nisl. Class nulla donec ante nisl fermentum litora accumsan faucibus ac. Ipsum morbi a quis risus velit sapien hendrerit nec urna parturient dignissim. Vitae netus nullam id habitant natoque enim hymenaeos ad mattis sodales. Massa donec dis quam a.
+
+Curae morbi vitae curae tempor. Felis proin hac. Ipsum vitae metus. Dolor justo sem. Fusce fames cursus proin tincidunt mauris. Fusce dolor nec lorem sed duis vestibulum nibh curae velit tincidunt quam. Vitae class pulvinar. Dolor etiam velit massa felis. Purus etiam litora ut netus ultricies mi varius dictumst sem diam nostra semper. Class donec mus nisl accumsan elit interdum. Ipsum velit a quis class dignissim lobortis. Purus nulla fames urna dignissim ve massa consequat auctor amet. Justo magna ullamcorper sagittis arcu non eros eni ornare ipsum dui facilisis. Etiam purus fringilla eu fringilla a eni.
+
+Etiam curae fusce ligula rutrum facilisi tempus nullam cubilia conubia cras odio. Velit curae sociosqu duis ligula ridiculus et proin. Neque dolor eni dolor ante. Neque dolor dictumst. Risus fames tempus odio id pulvinar nec ut. Class felis. Netus proin nec. Purus lorem sed nisi. Metus morbi senectus vestibulum nullam suscipit. Purus justo interdum. Augue lacus habitant quis dis vulputate dui. Class fames a feugiat at. Vitae justo suscipit velit. Vitae augue ornare nunc scelerisque integer ullamcorper. Justo lorem erat platea nec. Lorem justo. Morbi risus.
+
+Fames lorem tempor primis hac. Metus massa. Donec morbi. Felis lacus condimentum est ornare velit et magnis tristique mi fames sociis. Proin class mattis vel nunc ante urna nec morbi luctus ullamcorper donec malesuada sed sociosqu a faucibus eget. Augue metus ridiculus class pharetra id fames scelerisque eni. Fames velit nullam condimentum felis hymenaeos sit pellentesque ac viverra erat. Purus felis a varius porttitor placerat luctus. Fames risus cursus eget tempus dignissim. Ipsum vitae pede ullamcorper. Fames class libero cursus quisque ligula metus laoreet accumsan. Augue fames lacinia rhoncus sodales phasellus sed sollicitudin id vivamus. Purus proin enim praesent magna. Vitae justo. Metus ipsum dolor orci elit diam non nisi duis ve sollicitudin aenean fusce rutrum parturient. Vitae class diam in ipsum id neque auctor taciti inceptos cras. Lorem magna dolor non vestibulum adipiscing.
+
+Morbi lorem. Lorem nulla. Curae etiam ornare condimentum neque tortor lobortis nisl. Curae velit litora curabitur eni egestas donec ut sit odio.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XUc-Oo-fzK" firstAttribute="top" secondItem="nlo-vr-D9S" secondAttribute="top" constant="8" id="29q-fn-i6B"/>
+                                    <constraint firstAttribute="bottom" secondItem="XUc-Oo-fzK" secondAttribute="bottom" constant="8" id="2XW-Cj-ASz"/>
+                                    <constraint firstItem="XUc-Oo-fzK" firstAttribute="leading" secondItem="nlo-vr-D9S" secondAttribute="leading" constant="8" id="4gi-EX-Cj2"/>
+                                    <constraint firstAttribute="trailing" secondItem="XUc-Oo-fzK" secondAttribute="trailing" constant="8" id="WYB-cu-eZF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tb7-id-bty" secondAttribute="trailing" constant="20" symbolic="YES" id="Kba-vr-Gg8"/>
+                            <constraint firstItem="nlo-vr-D9S" firstAttribute="top" secondItem="Tb7-id-bty" secondAttribute="bottom" constant="8" symbolic="YES" id="NmA-yI-NIK"/>
+                            <constraint firstItem="nlo-vr-D9S" firstAttribute="leading" secondItem="I6e-Jl-TCI" secondAttribute="leading" constant="20" symbolic="YES" id="PQy-NO-jrp"/>
+                            <constraint firstAttribute="trailing" secondItem="nlo-vr-D9S" secondAttribute="trailing" constant="20" symbolic="YES" id="UFB-ML-Wqu"/>
+                            <constraint firstItem="Tb7-id-bty" firstAttribute="top" secondItem="I6e-Jl-TCI" secondAttribute="top" constant="20" symbolic="YES" id="Yjf-uk-hxO"/>
+                            <constraint firstItem="Tb7-id-bty" firstAttribute="leading" secondItem="I6e-Jl-TCI" secondAttribute="leading" constant="20" symbolic="YES" id="mrE-Jz-Md1"/>
+                            <constraint firstAttribute="bottom" secondItem="nlo-vr-D9S" secondAttribute="bottom" constant="20" symbolic="YES" id="yhW-qC-D85"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="Tb7-id-bty" id="ekw-eK-rwk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KmO-Ha-vMS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="1525"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fdw-Qw-Imp"/>
+    </inferredMetricsTieBreakers>
+</document>
