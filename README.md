@@ -23,7 +23,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 * [Adding Custom Values](https://github.com/adform/adform-ios-sdk/wiki/Adding-custom-values)
 * [Location Tracking](https://github.com/adform/adform-ios-sdk/wiki/Location-Tracking)
-* 
+
 # Release Notes
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
