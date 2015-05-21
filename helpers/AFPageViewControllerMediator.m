@@ -216,7 +216,7 @@
     // Create new ad view controller.
     _adViewController = [AFAdViewController new];
     
-    [_adViewController setAdView:[self createAdView:_adViewController]];
+    [_adViewController setAdView:[self createAdView:self.pageViewController]];
     
     // Initiate ad loading.
     [_adViewController.adView loadAd];
