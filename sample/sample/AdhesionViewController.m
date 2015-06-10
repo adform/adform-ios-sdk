@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     
     // Create and setu the ad view.
-    self.adHesion = [[AFAdHesion alloc] initWithMasterTagId:[self masterTag] presentingViewController:self position:self.adPosition];
+    self.adHesion = [[AFAdHesion alloc] initWithMasterTagId:[self masterTag] position:self.adPosition presentingViewController:self];
     self.adHesion.debugMode = YES;
     
     // Add it to view hierarchy and initiate ad loading.
