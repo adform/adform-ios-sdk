@@ -30,17 +30,17 @@ This part lists release notes from all versions of Adform Mobile Advertising iOS
 
 ## 2.1
 
-### Video Ads Support (VAST compatible)
-### Targeting by Keywords and Key Values added
+* Video Ads Support (VAST compatible)
+* Targeting by Keywords and Key Values added
 
 ## 2.0.2
 
-### Bug Fixes
-### 3rd Party Ads Support
+* Bug Fixes
+* 3rd Party Ads Support
 
 ## 2.0.1
 
-### Bug Fixes
+* Bug Fixes
 
 ## 2.0
 
