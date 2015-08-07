@@ -201,6 +201,7 @@
     AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:presentingViewController.view.bounds masterTagId:_mid presentingViewController:presentingViewController];
     adView.adTransitionStyle = AFAdTransitionStyleNone;
     adView.debugMode = self.debugMode;
+    adView.adContentType = AFVideoBanners;
     adView.autoresizingMask = (UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
     adView.translatesAutoresizingMaskIntoConstraints = YES;
     adView.delegate = self;

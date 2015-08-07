@@ -61,6 +61,9 @@ typedef NS_ENUM (NSInteger, AFAdTransitionStyle) {
     /// New ads slide up.
     AFAdTransitionStyleSlide,
     
+    /// New ads fade in.
+    AFAdTransitionStyleFade,
+    
     /// Ad transition is not animated.
     AFAdTransitionStyleNone
 };
@@ -77,6 +80,16 @@ typedef NS_ENUM (NSInteger, AFModalPresentationStyle) {
     
     /// Presentation is not animated.
     AFModalPresentationStyleNone
+};
+
+/**
+ Ad view content type values.
+ */
+typedef NS_ENUM(NSInteger, AFAdContentType) {
+    /// Ad placement will display HTML banners.
+    AFHTMLBanners,
+    // Ad placement will display video banners.
+    AFVideoBanners
 };
 
 /// Adform Advertising SDK error domain.

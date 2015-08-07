@@ -25,6 +25,8 @@
 		D1DD724C1AF7BC5C00FF2B86 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72471AF7BC5C00FF2B86 /* RootViewController.m */; };
 		D1DD724D1AF7BC5C00FF2B86 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72491AF7BC5C00FF2B86 /* DataViewController.m */; };
 		D1DD724E1AF7BC5C00FF2B86 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD724B1AF7BC5C00FF2B86 /* ModelController.m */; };
+		D1E6C4541B56333C004C5289 /* VideoAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */; };
+		D1E6C4561B56357D004C5289 /* vast_adform.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1E6C4551B56357D004C5289 /* vast_adform.xml */; };
 		D1EE58EC1AFB4BCA00C6A71B /* AFCollectionViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */; };
 		D1EE58ED1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */; };
 /* End PBXBuildFile section */
@@ -74,10 +76,13 @@
 		D1DD72491AF7BC5C00FF2B86 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		D1DD724A1AF7BC5C00FF2B86 /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
 		D1DD724B1AF7BC5C00FF2B86 /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
-		D1EE58E81AFB4BCA00C6A71B /* AFCollectionViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFCollectionViewMediator.h; path = ../../helpers/AFCollectionViewMediator.h; sourceTree = "<group>"; };
-		D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFCollectionViewMediator.m; path = ../../helpers/AFCollectionViewMediator.m; sourceTree = "<group>"; };
-		D1EE58EA1AFB4BCA00C6A71B /* AFPageViewControllerMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPageViewControllerMediator.h; path = ../../helpers/AFPageViewControllerMediator.h; sourceTree = "<group>"; };
-		D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPageViewControllerMediator.m; path = ../../helpers/AFPageViewControllerMediator.m; sourceTree = "<group>"; };
+		D1E6C4521B56333C004C5289 /* VideoAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAdsViewController.h; sourceTree = "<group>"; };
+		D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAdsViewController.m; sourceTree = "<group>"; };
+		D1E6C4551B56357D004C5289 /* vast_adform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vast_adform.xml; sourceTree = "<group>"; };
+		D1EE58E81AFB4BCA00C6A71B /* AFCollectionViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFCollectionViewMediator.h; path = ../../../Helpers/AFCollectionViewMediator.h; sourceTree = "<group>"; };
+		D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFCollectionViewMediator.m; path = ../../../Helpers/AFCollectionViewMediator.m; sourceTree = "<group>"; };
+		D1EE58EA1AFB4BCA00C6A71B /* AFPageViewControllerMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPageViewControllerMediator.h; path = ../../../Helpers/AFPageViewControllerMediator.h; sourceTree = "<group>"; };
+		D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPageViewControllerMediator.m; path = ../../../Helpers/AFPageViewControllerMediator.m; sourceTree = "<group>"; };
 		F57D2B34277334F34AFB61FC /* libPods-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE275EE1D6D43BE66A58ABDD /* Pods-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample/Pods-sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +163,7 @@
 		D1DD71DF1AF767E100FF2B86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1E6C4551B56357D004C5289 /* vast_adform.xml */,
 				D1DD71E01AF767E100FF2B86 /* Info.plist */,
 				D1DD71E11AF767E100FF2B86 /* main.m */,
 			);
@@ -199,6 +205,8 @@
 				D1DD72311AF7B25A00FF2B86 /* CollectionPagerViewController.h */,
 				D1DD72321AF7B25A00FF2B86 /* CollectionPagerViewController.m */,
 				D1DD72451AF7BC0400FF2B86 /* Page view controller */,
+				D1E6C4521B56333C004C5289 /* VideoAdsViewController.h */,
+				D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */,
 			);
 			name = Placements;
 			sourceTree = "<group>";
@@ -309,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E6C4561B56357D004C5289 /* vast_adform.xml in Resources */,
 				D1DD71EB1AF767E100FF2B86 /* Main.storyboard in Resources */,
 				D1DD71F01AF767E100FF2B86 /* LaunchScreen.xib in Resources */,
 				D1DD71ED1AF767E100FF2B86 /* Images.xcassets in Resources */,
@@ -363,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1DD722A1AF7AADB00FF2B86 /* AdOverlayPreloadViewController.m in Sources */,
+				D1E6C4541B56333C004C5289 /* VideoAdsViewController.m in Sources */,
 				D1DD72211AF7797C00FF2B86 /* AdOverlayViewController.m in Sources */,
 				D1DD71E51AF767E100FF2B86 /* AppDelegate.m in Sources */,
 				D1DD722D1AF7AFCE00FF2B86 /* AdhesionViewController.m in Sources */,

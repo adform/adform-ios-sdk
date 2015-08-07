@@ -10,6 +10,8 @@
 
 @protocol AFAdInlineDelegate;
 
+@class AFVideoSettings;
+
 /**     
  The AFAdInline class provides a view container that displays inline advertisements.
  */
@@ -32,6 +34,17 @@
  @warning Ad size cannot be less than: 250x50.
  */
 @property (nonatomic, assign) CGSize adSize;
+
+/**
+ This property determines what kind of banners should be loaded and displayed inside of the ad placement.
+ By default ad placements load HTML banners (AFHTMLBanners type). If you want to load video ads,
+ you must set this property to AFVideoBanners.
+ 
+ Default value: AFHTMLBanners.
+ 
+ @see AFAdContentType
+ */
+@property (nonatomic, assign) AFAdContentType adContentType;
 
 /**
  This property determines how an ad transition should be animated inside the ad view.
@@ -61,6 +74,12 @@
 @property (nonatomic, assign, getter=isDimOverlayEnabled) BOOL dimOverlayEnabled;
 
 /**
+ If you are using the ad view to display video advertisment, you can use this property to setup 
+ video player behavior.
+ */
+@property (nonatomic, strong, readonly) AFVideoSettings *videoSettings;
+
+/**
  Required reference to the view controller which is presenting the ad view.
  
  You should set this property when you are creating an ad view instance.
@@ -68,15 +87,6 @@
  @warning Ads will not be loaded if this property is not set.
  */
 @property (nonatomic, weak) UIViewController *presentingViewController;
-
-/**
- Indicates ad view state.
- 
- For available values check AFAdState enum.
- 
- @see AFAdState
- */
-@property (nonatomic, assign, readonly) AFAdState state;
 
 /**
  Turns on/off debug mode.
@@ -92,9 +102,53 @@
 @property (nonatomic, strong) NSURL *customImpression;
 
 /**
+ This property determines if ad should be expand automatically after the first successfull load.
+ You can use this flag to first load the ad and them show it (expand it) manually by calling 'showAd' method.
+ Default value - YES.
+ */
+@property (nonatomic, assign) BOOL showAdAutomatically;
+
+/**
+ You can add an array of keywords to identify the placement,
+ this way the Adform will be able to target ads to your users even more accurately, e.g. @[@"music", @"rock", @"pop"].
+ 
+ @warning This value should be set before loading the ad view, 
+ if it is set after calling the "loadAd" method this data won't be sent to our server.
+ If you want to change this data after loading the ad view, you should create a new ad view with updated data.
+ */
+@property (nonatomic, strong) NSArray *keywords;
+
+/**
+ You can add custom key-value pair data to identify the placement, 
+ this way the Adform will be able to target ads to your users even more accurately, e.g. @{@"content": @"music"}.
+ 
+ @warning This value should be set before loading the ad view,
+ if it is set after calling the "loadAd" method this data won't be sent to our server.
+ If you want to change this data after loading the ad view, you should create a new ad view with updated data.
+ */
+@property (nonatomic, strong) NSDictionary *keyValues;
+
+
+/**
+ Indicates ad view state.
+ 
+ For available values check AFAdState enum.
+ 
+ @see AFAdState
+ */
+@property (nonatomic, assign, readonly) AFAdState state;
+
+/**
  Property indicating if ad view is viewable by the user.
  */
 @property (nonatomic, assign, readonly, getter = isViewable) BOOL viewable;
+
+/**
+ A property identifying if an ad has been loaded.
+ 
+ This property is set to YES after the first successful ad request.
+ */
+@property (nonatomic, assign, readonly, getter=isLoaded) BOOL loaded;
 
 /**
  Initializes an AFAdInline with the given master tag id.
@@ -124,6 +178,15 @@
  You can use AFAdInlineDelegate protocol to track ad loading state.
  */
 - (void)loadAd;
+
+/**
+ Shows (expands) the ad.
+ 
+ If you are setting 'showAdAutomatically' property to NO, then you must use this method to display the ad manually after the succesful load.
+ You can callthis method only when ad has finished loading. You can check this by waiting for a delegate callback 'adInlineDidLoadAd:',
+ or by checking the 
+ */
+- (void)showAd;
 
 /**
  Returns default ad size depending on iOS platform you are using (iPad or iPhone).
@@ -203,5 +266,28 @@
  @param adInline An ad view object calling the method.
  */
 - (void)adInlineWillOpenExternalBrowser:(AFAdInline *)adInline;
+
+/**
+ Gets called when an ad view has started playing a video advertisement.
+ 
+ @param adInline An ad view object calling the method.
+ @param muted Identifies if video ad is muted.
+ */
+- (void)adInlineSartedVideoPlayback:(AFAdInline *)adInline muted:(BOOL )muted;
+
+/**
+ Gets called when an ad view has finished playing a video advertisement.
+ 
+ @param adInline An ad view object calling the method.
+ */
+- (void)adInlineFinishedVideoPlayback:(AFAdInline *)adInline;
+
+/**
+ Gets called when a user has muted or unmuted the video advertisement.
+ 
+ @param adInline An ad view object calling the method.
+ @param muted Boolean value indicating if user has muted or unmuted the video ad.
+ */
+- (void)adInline:(AFAdInline *)adInline videoAdMuted:(BOOL )muted;
 
 @end

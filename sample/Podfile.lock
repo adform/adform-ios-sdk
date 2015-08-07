@@ -5,6 +5,6 @@ DEPENDENCIES:
   - AdformAdvertising
 
 SPEC CHECKSUMS:
-  AdformAdvertising: 354dbeb3720ed6270756cfeb3cfff83822d207c3
+  AdformAdvertising: 95cdc1c0e90b201b97534b1f0cf4537b6b469a39
 
-COCOAPODS: 0.36.4
+COCOAPODS: 0.35.0

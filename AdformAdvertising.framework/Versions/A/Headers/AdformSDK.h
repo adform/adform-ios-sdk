@@ -20,7 +20,7 @@
 /**
  Use this method to set publisher id.
  
- You can also add custom key-value pair data to target ads to your users even more accurately, e.g. @{@"gender": @"male"}.
+ You can also add custom key-value pair data to identify the user, that way you will target ads to your users even more accurately, e.g. @{@"gender": @"male"}.
  This parameter works globally to all ad placements.
  This parameter can be modified only before the first successful ad request (you can still set it later if you haven't done it before requesting ads).
  

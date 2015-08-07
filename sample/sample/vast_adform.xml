@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST xmlns:xsi="vast.xsd" version="2.0">
+    <Ad id="2393a471-f4c6-4175-895a-7efc9b1f00a0">
+        <InLine>
+            <AdSystem>Adform</AdSystem>
+            <AdTitle>VAST Player test</AdTitle>
+            <Impression><![CDATA[http://track.adform.net/adfserve/?bn=6571717;rotseqno=1;smid=-1;1x1inv=1;srctype=3;unloadid=8335080492491174203;icid=5395678928836737164;icidt=635702133246694067;;ord=764691]]></Impression>
+            <Creatives>
+                <Creative AdID="2393a471-f4c6-4175-895a-7efc9b1f00a0" sequence="1" id="000001">
+                    <Linear>
+                        <Duration>00:01:10</Duration>
+                        <TrackingEvents>
+                            <Tracking event="creativeView"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=40&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="start"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=25&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=26&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=27&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=28&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="complete"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=29&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="mute"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=34&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="unmute"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=33&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="pause"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=31&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="resume"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=37&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="fullscreen"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=35&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="rewind"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=38&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="close"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=23&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickThrough><![CDATA[http://track.adform.net/C/?bn=6571717;bsqno=1;smid=-1;unloadid=8335080492491174203;C=1;icid=5395678928836737164;icidt=635702133246694067;]]></ClickThrough>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile delivery="progressive" type="video/quicktime" bitrate="305" width="640" height="480" scalable="false" maintainAspectRatio="false"><![CDATA[http://files.adform.net/Banners/Stream/3686/sample_iTunes.mov]]></MediaFile>
+                            <MediaFile delivery="progressive" type="video/webm" bitrate="503" width="640" height="360" scalable="false" maintainAspectRatio="false"><![CDATA[http://files.adform.net/Banners/Stream/3686/big-buck-bunny_trailer.webm]]></MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+                <Creative AdID="2393a471-f4c6-4175-895a-7efc9b1f00a0" sequence="1" id="000002">
+                    <CompanionAds>
+                        <Companion id="1" width="728" height="90">
+                            <StaticResource creativeType="application/x-shockwave-flash"><![CDATA[http://s1.adform.net/Banners/Elements/Files/3686/356563.swf]]></StaticResource>
+                            <TrackingEvents>
+                                <Tracking event="creativeView"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=42&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            </TrackingEvents>
+                            <CompanionClickThrough><![CDATA[http://track.adform.net/C/?bn=6571717;bsqno=1;smid=-1;unloadid=8335080492491174203;C=2;icid=5395678928836737164;icidt=635702133246694067;]]></CompanionClickThrough>
+                        </Companion>
+                    </CompanionAds>
+                </Creative>
+                <Creative AdID="2393a471-f4c6-4175-895a-7efc9b1f00a0" sequence="1" id="000003">
+                    <NonLinearAds>
+                        <TrackingEvents>
+                            <Tracking event="creativeView"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=40&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="start"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=25&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=26&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=27&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=28&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="complete"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=29&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="mute"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=34&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="unmute"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=33&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="pause"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=31&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="resume"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=37&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="fullscreen"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=35&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="rewind"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=38&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                            <Tracking event="close"><![CDATA[http://track.adform.net/Serving/Event/?bn=6571717&event=23&time=0&banner=8127348&imprid=8335080492491174203&rnd=764691&icid=5395678928836737164&icidt=635702133246694067&]]></Tracking>
+                        </TrackingEvents>
+                        <NonLinear maintainAspectRatio="false" scalable="false" minSuggestedDuration="00:00:15" width="50" height="50">
+                            <StaticResource creativeType="image/png"><![CDATA[http://s1.adform.net/Banners/Elements/Files/3686/370735.png]]></StaticResource>
+                            <NonLinearClickThrough><![CDATA[http://track.adform.net/C/?bn=6571717;bsqno=1;smid=-1;unloadid=8335080492491174203;C=12;icid=5395678928836737164;icidt=635702133246694067;]]></NonLinearClickThrough>
+                        </NonLinear>
+                    </NonLinearAds>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension>
+                    <CustomTracking>
+                        <Tracking event="skip"><![CDATA[http://track.adform.net/Serving/Event/?bn=6424905&event=169&time=0&banner=7943272&imprid=1006794844264414772&rnd=861716&icid=5395678928836737164&icidt=635706392813687446&]]></Tracking>
+                    </CustomTracking>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>
+

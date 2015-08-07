@@ -78,6 +78,26 @@
 @property (nonatomic, assign) BOOL debugMode;
 
 /**
+ You can add an array of keywords to identify the placement,
+ this way the Adform will be able to target ads to your users even more accurately, e.g. @[@"music", @"rock", @"pop"].
+ 
+ @warning This value should be set before loading the ad view,
+ if it is set after calling the "loadAd" method this data won't be sent to our server.
+ If you want to change this data after loading the ad view, you should create a new ad view with updated data.
+ */
+@property (nonatomic, strong) NSArray *keywords;
+
+/**
+ You can add custom key-value pair data to identify the placement,
+ this way the Adform will be able to target ads to your users even more accurately, e.g. @{@"content": @"music"}.
+ 
+ @warning This value should be set before loading the ad view,
+ if it is set after calling the "loadAd" method this data won't be sent to our server.
+ If you want to change this data after loading the ad view, you should create a new ad view with updated data.
+ */
+@property (nonatomic, strong) NSDictionary *keyValues;
+
+/**
  Initializes an AFAdOverlay with the given master tag id.
  
  @param mid An integer representing Adform master tag id.
