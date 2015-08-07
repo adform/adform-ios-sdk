@@ -11,6 +11,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [Integrating Full Screen Overlay Ad](https://github.com/adform/adform-ios-sdk/wiki/Integrating-Full-Screen-Overlay-Ad)
 * [Integrating Adhesion Ad](https://github.com/adform/adform-ios-sdk/wiki/Integrating-AdHesion-Ad)
 * [Integrating Interstitial Ad](https://github.com/adform/adform-ios-sdk/wiki/Integrating-Interstitial-Ad)
+* [Integrating Video Ad](https://github.com/adform/adform-ios-sdk/wiki/Video-Ad-Integration)
 
 **Advanced integrations**
 
@@ -22,6 +23,8 @@ Adform brings brand advertising to the programmatic era at scale, making display
 **Other**
 
 * [Adding Custom Values](https://github.com/adform/adform-ios-sdk/wiki/Adding-custom-values)
+* [Adding Keywords](https://github.com/adform/adform-ios-sdk/wiki/Adding-keywordss)
+* [Adding Key Value Pairs](https://github.com/adform/adform-ios-sdk/wiki/Adding-key-value-pairs)
 * [Location Tracking](https://github.com/adform/adform-ios-sdk/wiki/Location-Tracking)
 
 # Release Notes
