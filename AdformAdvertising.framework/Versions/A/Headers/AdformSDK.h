@@ -47,4 +47,29 @@
  */
 + (BOOL)isUseOfLocationAllowed;
 
+/**
+ Use this method to define how the sdk should open external links.
+ 
+ If set to true - sdk will open external links in Safari app,
+ otherwise the sdk will open links in internal browser.
+ By default sdk uses Safari app to open external links.
+ 
+ @attention On iOS 9 applications are forced to use HTTPS,
+ therefore if you choose to use internal browser 
+ but don't have the ATS exception configured to allow HTTP use,
+ some of the links may not load in the browser. 
+ In this case we recomend to use the Safari app to open external links.
+ 
+ @param shouldOpen A boolean value indicating if app should open external links in safari browser.
+ */
++ (void)setShouldOpenLinksInSafari:(BOOL )shouldOpen;
+
+/**
+ Identifies how the sdk is going to open external links.
+ 
+ @return If true - sdk is going to open external links in Safari app,
+ otherwise - in internal browser.
+ */
++ (BOOL)shouldOpenLinksInSafari;
+
 @end
