@@ -201,7 +201,6 @@
     AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:presentingViewController.view.bounds masterTagId:_mid presentingViewController:presentingViewController];
     adView.adTransitionStyle = AFAdTransitionStyleNone;
     adView.debugMode = self.debugMode;
-    adView.adContentType = AFVideoBanners;
     adView.autoresizingMask = (UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
     adView.translatesAutoresizingMaskIntoConstraints = YES;
     adView.delegate = self;
@@ -519,7 +518,7 @@
             [self addTapGestures];
         }
         
-        if ([previousViewControllers containsObject:_adViewController]) {
+        if ([previousViewControllers containsObject:_adViewController] || ![_adViewController.adView isLoaded]) {
             [_adViewController.adView loadAd];
         }
     }
@@ -534,7 +533,7 @@
     }
 }
 
-- (NSUInteger)pageViewControllerSupportedInterfaceOrientations:(UIPageViewController *)pageViewController {
+- (UIInterfaceOrientationMask)pageViewControllerSupportedInterfaceOrientations:(UIPageViewController *)pageViewController {
     
     if ([self.originalDelegate respondsToSelector:@selector(pageViewControllerSupportedInterfaceOrientations:)]) {
         return [self.originalDelegate pageViewControllerSupportedInterfaceOrientations:pageViewController];
