@@ -35,7 +35,7 @@
 @property (nonatomic, weak) id <AFPageViewControllerMediatorDelegate> delegate;
 
 /**
- AFPageViewControllerMediator uses only one instance of AFPageAdView. You cannot acces it directly, but you can set the 'adViewDelegate' property of the mediator
+ AFPageViewControllerMediator uses only one instance of AFAdInterstitial. You cannot acces it directly, but you can set the 'adViewDelegate' property of the mediator
  to be informed about the state changes of that ad view.
  
  @see AFAdInlineDelegate
@@ -52,6 +52,11 @@
  Default value - 3.
  */
 @property (nonatomic, assign) NSInteger adFrequency;
+
+/**
+ Identifies the ad content type that should be used by mediator.
+ */
+@property (nonatomic, assign) AFAdContentType adContentType;
 
 /**
  Setting this property to TRUE enables debug mode on the page ad view.
@@ -79,6 +84,7 @@
  @param mid An integer representing Adform master tag id.
  @param adFrequency The frequecy of the page ad views.
  @param debugMode Enables debug mode.
+ @param adContentType Identifies the ad content type that should be used by mediator.
  @param pageViewController A page view controller used to display ads.
  
  @return A newly initialized ad view.
@@ -86,6 +92,7 @@
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
                           debugMode:(BOOL )debugMode
+                      adContentType:(AFAdContentType )adContentType
                  pageViewController:(UIPageViewController *)pageViewController;
 
 /**
@@ -95,12 +102,14 @@
  
  @param mid An integer representing Adform master tag id.
  @param debugMode Enables debug mode.
+ @param adContentType Identifies the ad content type that should be used by mediator.
  @param pageViewController A page view controller used to display ads.
  
  @return A newly initialized ad view.
  */
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                           debugMode:(BOOL )debugMode
+                      adContentType:(AFAdContentType )adContentType
                  pageViewController:(UIPageViewController *)pageViewController;
 
 /**

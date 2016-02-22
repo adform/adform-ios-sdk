@@ -42,7 +42,7 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 
 @end
 
-@interface AFCollectionViewMediator () <AFAdInlineDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
+@interface AFCollectionViewMediator () <AFAdInterstitialDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
     
 @private
     /// Master tag id.
@@ -70,6 +70,8 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 @property (nonatomic, assign) id <UICollectionViewDataSource> originalDatasource;
 @property (nonatomic, assign) id originalDelegate;
 
+@property (nonatomic) CGPoint lastContentOffset;
+
 @end
 
 @implementation AFCollectionViewMediator
@@ -95,6 +97,7 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
                           debugMode:(BOOL)debugMode
+                      adContentType:(AFAdContentType )adContentType
                      collectionView:(UICollectionView *)collectionView
            presentingViewController:(UIViewController *)presentingViewController{
     
@@ -102,6 +105,7 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
         
         self.debugMode = debugMode;
         self.adFrequency = adFrequency;
+        self.adContentType = adContentType;
         
         self.collectionView = collectionView;
         self.presentingViewController = presentingViewController;
@@ -111,12 +115,14 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                           debugMode:(BOOL)debugMode
+                      adContentType:(AFAdContentType )adContentType
                      collectionView:(UICollectionView *)collectionView
            presentingViewController:(UIViewController *)presentingViewController{
     
     if (self = [self initWithMasterTagId:mid]) {
         
         self.debugMode = debugMode;
+        self.adContentType = adContentType;
         
         self.collectionView = collectionView;
         self.presentingViewController = presentingViewController;
@@ -132,9 +138,10 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 
 - (void )initAdView {
     
-    AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:_adCell.contentView.bounds masterTagId:_mid presentingViewController:self.presentingViewController];
+    AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:self.collectionView.bounds masterTagId:_mid presentingViewController:self.presentingViewController];
     adView.adTransitionStyle = AFAdTransitionStyleNone;
     adView.debugMode = self.debugMode;
+    adView.adContentType = self.adContentType;
     adView.autoresizingMask = (UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
     adView.translatesAutoresizingMaskIntoConstraints = YES;
     adView.delegate = self;
@@ -328,19 +335,7 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 
 - (void)scrollingStarted {
     
-    CGPoint velocity = [self.collectionView.panGestureRecognizer velocityInView:self.collectionView.panGestureRecognizer.view];
-    
-    NSLog(@"%@", NSStringFromCGPoint(velocity));
-    
-    if (velocity.y < 0) {
-        _scrollDirection = AFScrollingDirectionDown;
-    } else if (velocity.y > 0) {
-        _scrollDirection = AFScrollingDirectionUp;
-    } else if (velocity.x < 0) {
-        _scrollDirection = AFScrollingDirectionRight;
-    } else {
-        _scrollDirection = AFScrollingDirectionLeft;
-    }
+    self.lastContentOffset = self.collectionView.contentOffset;
     
     // We must update the collection view when it stops scrolling,
     // otherwise we may mess up the animations or create a condition when cell insertion or deletion logic
@@ -359,6 +354,21 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
     }
     
     [self updateCollectionView];
+}
+
+- (void)didScroll {
+    
+    CGPoint contentOffset = self.collectionView.contentOffset;
+    
+    if (contentOffset.y > self.lastContentOffset.y) {
+        _scrollDirection = AFScrollingDirectionDown;
+    } else if (contentOffset.y < self.lastContentOffset.y) {
+        _scrollDirection = AFScrollingDirectionUp;
+    } else if (contentOffset.x > self.lastContentOffset.x) {
+        _scrollDirection = AFScrollingDirectionRight;
+    } else {
+        _scrollDirection = AFScrollingDirectionLeft;
+    }
 }
 
 - (void)updateCollectionView {
@@ -514,7 +524,7 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 
 #pragma mark - AFPageAdViewDelegate
 
-- (void)adInterstitialCloseCalled:(AFAdInterstitial *)pageAdView completionHandler:(void (^)())completion {
+- (void)adInterstitial:(AFAdInterstitial *)adInterstitial didReceiveCloseCommandWithCompletionHandler:(void (^)(BOOL))completionHandler {
     
     NSIndexPath *indexPath;
     if (_scrollDirection == AFScrollingDirectionRight || _scrollDirection == AFScrollingDirectionDown) {
@@ -538,7 +548,7 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
         // content offset animation and finish ad close with delay.
         [self updateCollectionView];
         self.collectionView.userInteractionEnabled = YES;
-        completion();
+        completionHandler(true);
     });
 }
 
@@ -561,6 +571,8 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    [self didScroll];
     
     if ([self.originalDelegate respondsToSelector:@selector(scrollViewDidScroll:)]) {
         [self.originalDelegate scrollViewDidScroll:scrollView];

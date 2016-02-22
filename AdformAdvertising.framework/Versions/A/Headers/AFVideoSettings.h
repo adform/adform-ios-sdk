@@ -73,4 +73,13 @@ typedef NS_ENUM(NSInteger, AFVideoAdCloseButtonBehavior) {
  */
 @property (nonatomic, assign) AFVideoPlayerControlsStyle controlsStyle;
 
+/**
+ Setting this property will enable fallback for video ads.
+
+ If a valid master tag id is set to this property 
+ then after failing to load a video banner the ad view will try to load an HTML banner 
+ using the provided master tag to fill the placement.
+ */
+@property (nonatomic, assign) NSInteger fallbackMasterTagId;
+
 @end

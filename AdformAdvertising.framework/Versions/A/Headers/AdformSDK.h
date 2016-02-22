@@ -17,6 +17,7 @@
  */
 + (NSString *)sdkVersion;
 
+
 /**
  Use this method to set publisher id.
  
@@ -29,6 +30,72 @@
  */
 + (void)setPublisherId:(NSInteger)publisherId andCustomData:(NSDictionary *)customData;
 
+
+/**
+ Use this property to allow or deny the sdk to use current user location.
+ 
+ By default use of location is disabled.
+ Enabling the use of current user location will allow sdk to server ads more accurately.
+ 
+ @warning You need to define NSLocationWhenInUseUsageDescription key in your applications info.plist file, if you don't have one.
+ Set it's text to "Your location is used to show relevant ads nearby." or its translation.
+ 
+ @param allow Boolean value indicating if use of current user location should be allowed or denied.
+ */
++ (void)setAllowUseOfLocation:(BOOL )allow;
+
+/**
+ You can use this to check if the use of current user location is allowed.
+ */
++ (BOOL)isUseOfLocationAllowed;
+
+
+/**
+ Use this method to define how the sdk should open external links.
+ 
+ If set to true - sdk will open external links in in-app browser,
+ otherwise the sdk will open links in Safari app.
+ By default sdk uses Safari app to open external links.
+ 
+ @attention On iOS 9 applications are forced to use HTTPS,
+ therefore if you choose to use internal browser 
+ but don't have the ATS exception configured to allow HTTP use,
+ some of the links may not load in the browser. 
+ In this case we recomend to use the Safari app to open external links.
+ 
+ @param shouldOpen A boolean value indicating if app should open external links in in-app browser.
+ */
++ (void)setOpenLinksInAppBrowser:(BOOL )shouldOpen;
+
+/**
+ Identifies how the sdk is going to open external links.
+ 
+ @return If true - sdk is going to open external links in in-app browser,
+ otherwise - in Safari app.
+ */
++ (BOOL)shouldOpenLinksInAppBrowser;
+
+/**
+ Enables or disables HTTPS support. 
+
+ By default sdk uses HTTPS because that is required by Apple on iOS 9+ platforms.
+ It is not recomended, but you can use this method to disable HTTPS.
+ */
++ (void)setHTTPSEnabled:(BOOL)enabled;
+
+/**
+ Identifies if sdk is using the HTTPS protocol for network communications.
+ 
+ @return True - if sdk is using HTTPS, otherwise - false.
+ */
++ (BOOL)isHTTPSEnabled;
+
+@end
+
+@interface AdformSDK ()
+
+// Deprecated
+
 /**
  Use this property to allow or deny the sdk to use current user location.
  
@@ -40,12 +107,8 @@
  
  @param allowed Boolean value indicating if use of current user location should be allowed or denied.
  */
-+ (void)allowUseOfLocation:(BOOL )allowed;
++ (void)allowUseOfLocation:(BOOL )allowed __deprecated_msg("Use 'setAllowUseOfLocation:' instead.");
 
-/**
- You can use this to check if the use of current user location is allowed.
- */
-+ (BOOL)isUseOfLocationAllowed;
 
 /**
  Use this method to define how the sdk should open external links.
@@ -55,14 +118,14 @@
  By default sdk uses Safari app to open external links.
  
  @attention On iOS 9 applications are forced to use HTTPS,
- therefore if you choose to use internal browser 
+ therefore if you choose to use internal browser
  but don't have the ATS exception configured to allow HTTP use,
- some of the links may not load in the browser. 
+ some of the links may not load in the browser.
  In this case we recomend to use the Safari app to open external links.
  
  @param shouldOpen A boolean value indicating if app should open external links in safari browser.
  */
-+ (void)setShouldOpenLinksInSafari:(BOOL )shouldOpen;
++ (void)setShouldOpenLinksInSafari:(BOOL )shouldOpen __deprecated_msg("Use 'setOpenLinksInAppBrowser:' instead.");
 
 /**
  Identifies how the sdk is going to open external links.
@@ -70,6 +133,6 @@
  @return If true - sdk is going to open external links in Safari app,
  otherwise - in internal browser.
  */
-+ (BOOL)shouldOpenLinksInSafari;
++ (BOOL)shouldOpenLinksInSafari __deprecated_msg("Use 'shouldOpenLinksInAppBrowser:' instead.");
 
 @end

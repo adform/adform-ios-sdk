@@ -18,22 +18,88 @@
 @interface AFAdInline : UIView
 
 /**
- The object implementing AFAdInlineDelegate protocol, which is notified about the ad view state changes.
+ Indicates ad view state.
+ 
+ For available values check AFAdState enum.
+ 
+ @see AFAdState
  */
-@property (nonatomic, assign) id<AFAdInlineDelegate> delegate;
+@property (nonatomic, assign, readonly) AFAdState state;
 
 /**
- Ad view size shows the size of the ad placement. 
+ Property indicating if ad view is viewable by the user.
+ */
+@property (nonatomic, assign, readonly, getter = isViewable) BOOL viewable;
+
+/**
+ A property identifying if an ad has been loaded.
  
- This property can differ from frame.size when ad view hasn't loaded any ads.
- When an ad view loads an ad its frame.size becomes equal to adSize.
+ This property is set to YES after the first successful ad request.
+ */
+@property (nonatomic, assign, readonly, getter=isLoaded) BOOL loaded;
+
+/**
+ An integer representing Adform master tag id.
+ */
+@property (nonatomic, assign, readonly) NSInteger mid;
+
+
+/**
+ Ad view size shows the size of the currently loaded ad.
+ 
  You can set this property to use custom size ads.
+ Ad size must be set before loading the ad.
+ If you want to support multiple ad sizes at the same placement use additional dimmensions feature.
+ 
+ If you have enabled aditional dimensions this property may change
+ when ad is laoded or relaoded to match the size retreived from the server.
+ 
+ This property can differ from frame.size when ad view wasn't shown yet.
+ When an ad view is displayed its frame.size becomes equal to adSize.
  
  Default values: iPhone - 320x50, iPad - 728x90.
- 
- @warning Ad size cannot be less than: 250x50.
  */
 @property (nonatomic, assign) CGSize adSize;
+
+/**
+ Identifies if ad view should load creatives with various dimensions.
+ 
+ If enabled, ad placement will load ads with multiple sizes defined in ad server.
+ The ad view will automatically resize itself to match the ad creative size after loading or reloading the ad.
+ To match these size changes implement AFAdInlineDelegate 'adInlineWillChangeSize:toSize:' method.
+ 
+ To define which sizes are supported by this placement use 'supportedDimensions' property.
+ 
+ @important Additional dimmensions are not supported for video banners.
+ 
+ Default value - false.
+ 
+ @see AFAdInlineDelegate
+ */
+@property (nonatomic, assign, getter=areAditionalDimmensionsEnabled) BOOL additionalDimmensionsEnabled;
+
+/**
+ An array of NSValue encoded CGSize structures, specifying ad creative sizes that are supported by this placement.
+ 
+ For convenience you can use 'AFAdDimension' or 'AFAdDimensionFromCGSize' methods to create NSValue objects.
+ 
+ Example:
+    \code
+        adView.supportedDimmensions = @[AFAdDimension(320, 50), AFAdDimension(320, 150)];
+    \endcode
+ 
+ You can use this property to define what sizes can be loaded in this creative.
+ Supported dimensions are ignored if 'additionalDimmensionsEnabled' property is false.
+ If you change this value when an ad is already loaded, the ad size will change only when the ad view is reloaded.
+ */
+@property (nonatomic, strong) NSArray *supportedDimmensions;
+
+
+/**
+ The object implementing AFAdInlineDelegate protocol, which is notified about the ad view state changes.
+ */
+@property (nonatomic, weak) id<AFAdInlineDelegate> delegate;
+
 
 /**
  This property determines what kind of banners should be loaded and displayed inside of the ad placement.
@@ -130,27 +196,6 @@
 
 
 /**
- Indicates ad view state.
- 
- For available values check AFAdState enum.
- 
- @see AFAdState
- */
-@property (nonatomic, assign, readonly) AFAdState state;
-
-/**
- Property indicating if ad view is viewable by the user.
- */
-@property (nonatomic, assign, readonly, getter = isViewable) BOOL viewable;
-
-/**
- A property identifying if an ad has been loaded.
- 
- This property is set to YES after the first successful ad request.
- */
-@property (nonatomic, assign, readonly, getter=isLoaded) BOOL loaded;
-
-/**
  Initializes an AFAdInline with the given master tag id.
  
  @param mid An integer representing Adform master tag id.
@@ -183,8 +228,8 @@
  Shows (expands) the ad.
  
  If you are setting 'showAdAutomatically' property to NO, then you must use this method to display the ad manually after the succesful load.
- You can callthis method only when ad has finished loading. You can check this by waiting for a delegate callback 'adInlineDidLoadAd:',
- or by checking the 
+ You can call this method only when ad has finished loading. You can check this by waiting for a delegate callback 'adInlineDidLoadAd:',
+ or by checking the 'isLoaded' property.
  */
 - (void)showAd;
 
@@ -235,9 +280,21 @@
  This method is called before the ad view animation.
  It is recommended to use adSize, not frame or bounds, property to determine ad view size.
  
+ @important When ad view is hidden its frame.size.height is set to 0, but adSize.height stays the same.
+ 
  @param adInline An ad view object calling the method.
  */
 - (void)adInlineWillHide:(AFAdInline *)adInline;
+
+/**
+ Informs the delegate that the ad view is about to change its size.
+ 
+ This method gets called when ad view is show, hidden or changes size when a new banner is loaded.
+ 
+ @param adInline An ad view object calling the method.
+ @param newSize The size to which the ad view is going to resize.
+ */
+- (void)adInlineWillChangeSize:(AFAdInline *)adInline toSize:(CGSize)newSize;
 
 /**
  Gets called when an ad view is about to present a modal view with advertisement.

@@ -18,7 +18,7 @@
 /**
  The object implementing AFAdOverlayDelegate protocol, which is notified about banner state changes.
  */
-@property (nonatomic, assign) id<AFAdOverlayDelegate> delegate;
+@property (nonatomic, weak) id<AFAdOverlayDelegate> delegate;
 
 /**
  Required reference to the view controller which is presenting the overlay ad.

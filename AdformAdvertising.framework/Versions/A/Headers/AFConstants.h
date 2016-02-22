@@ -117,3 +117,6 @@ typedef NS_ENUM(NSInteger, AFErrorCode) {
     /// The ad server returned valid response, but there was no ad to show.
     AFNoAdToShowError
 };
+
+extern NSValue *AFAdDimension(CGFloat width, CGFloat height);
+extern NSValue *AFAdDimensionFromCGSize(CGSize size);

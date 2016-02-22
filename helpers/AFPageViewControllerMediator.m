@@ -31,7 +31,7 @@
 
 @end
 
-@interface AFPageViewControllerMediator () <AFAdInlineDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate> {
+@interface AFPageViewControllerMediator () <AFAdInterstitialDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate> {
     
     @private
     /// Master tag id.
@@ -77,11 +77,13 @@
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
                           debugMode:(BOOL)debugMode
+                      adContentType:(AFAdContentType )adContentType
                  pageViewController:(UIPageViewController *)pageViewController {
     
     if (self = [self initWithMasterTagId:mid]) {
         self.adFrequency = adFrequency;
         self.debugMode = debugMode;
+        self.adContentType = adContentType;
         
         self.pageViewController = pageViewController;
     }
@@ -91,10 +93,12 @@
 
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                           debugMode:(BOOL)debugMode
+                      adContentType:(AFAdContentType )adContentType
                  pageViewController:(UIPageViewController *)pageViewController {
     
     if (self = [self initWithMasterTagId:mid]) {
         self.debugMode = debugMode;
+        self.adContentType = adContentType;
         
         self.pageViewController = pageViewController;
     }
@@ -201,6 +205,7 @@
     AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:presentingViewController.view.bounds masterTagId:_mid presentingViewController:presentingViewController];
     adView.adTransitionStyle = AFAdTransitionStyleNone;
     adView.debugMode = self.debugMode;
+    adView.adContentType = self.adContentType;
     adView.autoresizingMask = (UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
     adView.translatesAutoresizingMaskIntoConstraints = YES;
     adView.delegate = self;
@@ -600,6 +605,12 @@
     if ([self.adViewDelegate respondsToSelector:@selector(adInlineWillOpenExternalBrowser:)]) {
         [self.adViewDelegate adInlineWillOpenExternalBrowser:adView];
     }
+}
+
+- (void)adInterstitial:(AFAdInterstitial *)adInterstitial didReceiveCloseCommandWithCompletionHandler:(void (^)(BOOL))completionHandler {
+    [self hideAdView:^{
+        completionHandler(true);
+    }];
 }
 
 @end
