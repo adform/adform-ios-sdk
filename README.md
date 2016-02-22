@@ -28,6 +28,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [Adding Keywords](https://github.com/adform/adform-ios-sdk/wiki/Adding-keywords)
 * [Adding Key Value Pairs](https://github.com/adform/adform-ios-sdk/wiki/Adding-key-value-pairs)
 * [Location Tracking](https://github.com/adform/adform-ios-sdk/wiki/Location-Tracking)
+* [Security](https://github.com/adform/adform-ios-sdk/wiki/Security)
 
 # Release Notes
 
