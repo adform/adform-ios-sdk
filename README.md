@@ -33,6 +33,18 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+## 2.2
+
+### New Features
+
+* Multiple sizes support.
+* Mraid resize function.
+* HTTPS control.
+
+### Bug Fixes
+
+* Minor bug fixes.
+
 ## 2.1.3
 
 * Fixes Xcode 7 warnings
