@@ -40,6 +40,7 @@ static NSInteger const kMasterTag = 4660165;
     self.mediator = [[AFPageViewControllerMediator alloc] initWithMasterTagId:kMasterTag
                                                                   adFrequency:5
                                                                     debugMode:YES
+                                                                adContentType:AFHTMLBanners
                                                            pageViewController:self.pageViewController];
     self.mediator.delegate = self;
 }

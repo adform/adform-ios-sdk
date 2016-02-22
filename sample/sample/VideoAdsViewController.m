@@ -29,6 +29,9 @@
     // Define custom size of the banner.
     adHesion.adSize = CGSizeMake(320, 300);
     
+    // To enable video fallback uncomment this line of code.
+    // adHesion.videoSettings.fallbackMasterTagId = [self fallbackMasterTag];
+    
     // Setup video settings.
     adHesion.videoSettings.closeButtonBehavior = AFVideoAdCloseButtonBehaviorAllways;
     adHesion.videoSettings.controlsStyle = AFVideoPlayerControlsStyleMinimal;
@@ -40,9 +43,13 @@
     [adHesion loadAd];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger )fallbackMasterTag {
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        return 4935562;
+    } else {
+        return 4030700;
+    }
 }
 
 @end

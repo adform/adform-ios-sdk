@@ -22,6 +22,12 @@
     self.adInline = [[AFAdInline alloc] initWithMasterTagId:[self masterTag] presentingViewController:self];
     self.adInline.debugMode = YES;
     
+    // To enable multiple ad size support uncomment this line of code.
+    // self.adInline.additionalDimmensionsEnabled = true;
+    
+    // If you want to define the supported ad sizes uncomment this line of code too.
+    // self.adInline.supportedDimmensions = @[AFAdDimension(320, 50), AFAdDimension(320, 100), AFAdDimension(320, 150)];
+    
     // Set custom position for the ad.
     self.adInline.frame = CGRectMake((self.view.frame.size.width - self.adInline.adSize.width) / 2, 300, self.adInline.adSize.width, 0);
     
