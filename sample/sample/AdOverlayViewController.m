@@ -8,7 +8,7 @@
 
 #import "AdOverlayViewController.h"
 
-NSInteger const kMasterTag = 4660166;
+NSInteger const kMasterTag = 142636;
 
 @interface AdOverlayViewController ()
 
@@ -22,9 +22,6 @@ NSInteger const kMasterTag = 4660166;
     
     // Initialize AFAdOverlay object with master tag.
     self.adOverlay = [[AFAdOverlay alloc] initWithMasterTagID:kMasterTag];
-    
-    // We define that this is not a production application.
-    self.adOverlay.debugMode = YES;
     
     // Display the ad at least 2 seconds after pushing the view controller.
     [self.adOverlay showFromViewController:self];

@@ -33,11 +33,7 @@ static NSInteger const kAdInlineTag = 101;
 
 - (NSInteger )masterTag {
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return 4022833;
-    } else {
-        return 4030700;
-    }
+    return 142493;
 }
 
 #pragma mark - Table view data source
@@ -82,8 +78,11 @@ static NSInteger const kAdInlineTag = 101;
         
         // Create and setup a new adInline object.
         adInline = [[AFAdInline alloc] initWithMasterTagId:[self masterTag] presentingViewController:self];
+        
+        // This line of code enables multiple ad size support.
+        adInline.additionalDimmensionsEnabled = true;
+        
         adInline.delegate = self;
-        adInline.debugMode = YES;
         adInline.tag = kAdInlineTag;
         
         // Add it to footer view and initiate ad loading.

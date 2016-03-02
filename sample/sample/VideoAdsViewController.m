@@ -20,14 +20,13 @@
     // Do any additional setup after loading the view.
     
     // Create a new banner.
-    AFAdHesion *adHesion = [[AFAdHesion alloc] initWithMasterTagId:4935562 position:AFAdPositionTop presentingViewController:self];
-    adHesion.debugMode = YES;
+    AFAdHesion *adHesion = [[AFAdHesion alloc] initWithMasterTagId:142494 position:AFAdPositionTop presentingViewController:self];
     
     // Set its content type to video banners.
     adHesion.adContentType = AFVideoBanners;
     
     // Define custom size of the banner.
-    adHesion.adSize = CGSizeMake(320, 300);
+    adHesion.adSize = CGSizeMake(320, 240);
     
     // To enable video fallback uncomment this line of code.
     // adHesion.videoSettings.fallbackMasterTagId = [self fallbackMasterTag];
@@ -44,12 +43,7 @@
 }
 
 - (NSInteger )fallbackMasterTag {
-    
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return 4935562;
-    } else {
-        return 4030700;
-    }
+    return 142493;
 }
 
 @end

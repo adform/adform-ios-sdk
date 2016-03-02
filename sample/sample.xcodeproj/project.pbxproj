@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		08DCD012A2EC94DDE823692E /* libPods-sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F57D2B34277334F34AFB61FC /* libPods-sample.a */; };
+		D14FE2FF1C8731A700B6F9B4 /* AFCollectionViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FE2FC1C8731A700B6F9B4 /* AFCollectionViewMediator.m */; };
+		D14FE3001C8731A700B6F9B4 /* AFPageViewControllerMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D14FE2FE1C8731A700B6F9B4 /* AFPageViewControllerMediator.m */; };
 		D1DD71E21AF767E100FF2B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD71E11AF767E100FF2B86 /* main.m */; };
 		D1DD71E51AF767E100FF2B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD71E41AF767E100FF2B86 /* AppDelegate.m */; };
 		D1DD71EB1AF767E100FF2B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DD71E91AF767E100FF2B86 /* Main.storyboard */; };
@@ -27,8 +29,6 @@
 		D1DD724E1AF7BC5C00FF2B86 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD724B1AF7BC5C00FF2B86 /* ModelController.m */; };
 		D1E6C4541B56333C004C5289 /* VideoAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */; };
 		D1E6C4561B56357D004C5289 /* vast_adform.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1E6C4551B56357D004C5289 /* vast_adform.xml */; };
-		D1EE58EC1AFB4BCA00C6A71B /* AFCollectionViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */; };
-		D1EE58ED1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		9534DE4894BC8972B67CEB96 /* Pods-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sample/Pods-sample.debug.xcconfig"; sourceTree = "<group>"; };
+		D14FE2FB1C8731A700B6F9B4 /* AFCollectionViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFCollectionViewMediator.h; path = ../../helpers/AFCollectionViewMediator.h; sourceTree = "<group>"; };
+		D14FE2FC1C8731A700B6F9B4 /* AFCollectionViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFCollectionViewMediator.m; path = ../../helpers/AFCollectionViewMediator.m; sourceTree = "<group>"; };
+		D14FE2FD1C8731A700B6F9B4 /* AFPageViewControllerMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPageViewControllerMediator.h; path = ../../helpers/AFPageViewControllerMediator.h; sourceTree = "<group>"; };
+		D14FE2FE1C8731A700B6F9B4 /* AFPageViewControllerMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPageViewControllerMediator.m; path = ../../helpers/AFPageViewControllerMediator.m; sourceTree = "<group>"; };
 		D1DD71DC1AF767E100FF2B86 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DD71E01AF767E100FF2B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1DD71E11AF767E100FF2B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,10 +83,6 @@
 		D1E6C4521B56333C004C5289 /* VideoAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAdsViewController.h; sourceTree = "<group>"; };
 		D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAdsViewController.m; sourceTree = "<group>"; };
 		D1E6C4551B56357D004C5289 /* vast_adform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vast_adform.xml; sourceTree = "<group>"; };
-		D1EE58E81AFB4BCA00C6A71B /* AFCollectionViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFCollectionViewMediator.h; path = ../../../Helpers/AFCollectionViewMediator.h; sourceTree = "<group>"; };
-		D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFCollectionViewMediator.m; path = ../../../Helpers/AFCollectionViewMediator.m; sourceTree = "<group>"; };
-		D1EE58EA1AFB4BCA00C6A71B /* AFPageViewControllerMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPageViewControllerMediator.h; path = ../../../Helpers/AFPageViewControllerMediator.h; sourceTree = "<group>"; };
-		D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPageViewControllerMediator.m; path = ../../../Helpers/AFPageViewControllerMediator.m; sourceTree = "<group>"; };
 		F57D2B34277334F34AFB61FC /* libPods-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE275EE1D6D43BE66A58ABDD /* Pods-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample/Pods-sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,10 +214,10 @@
 		D1DD723A1AF7B28600FF2B86 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D1EE58E81AFB4BCA00C6A71B /* AFCollectionViewMediator.h */,
-				D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */,
-				D1EE58EA1AFB4BCA00C6A71B /* AFPageViewControllerMediator.h */,
-				D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */,
+				D14FE2FB1C8731A700B6F9B4 /* AFCollectionViewMediator.h */,
+				D14FE2FC1C8731A700B6F9B4 /* AFCollectionViewMediator.m */,
+				D14FE2FD1C8731A700B6F9B4 /* AFPageViewControllerMediator.h */,
+				D14FE2FE1C8731A700B6F9B4 /* AFPageViewControllerMediator.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -247,6 +247,7 @@
 				D1DD71D91AF767E100FF2B86 /* Frameworks */,
 				D1DD71DA1AF767E100FF2B86 /* Resources */,
 				9035AB182C4DB2D11DD40264 /* Copy Pods Resources */,
+				63B58015AD76B915575DD246 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +335,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		63B58015AD76B915575DD246 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sample/Pods-sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9035AB182C4DB2D11DD40264 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,19 +388,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1DD722A1AF7AADB00FF2B86 /* AdOverlayPreloadViewController.m in Sources */,
+				D14FE3001C8731A700B6F9B4 /* AFPageViewControllerMediator.m in Sources */,
 				D1E6C4541B56333C004C5289 /* VideoAdsViewController.m in Sources */,
 				D1DD72211AF7797C00FF2B86 /* AdOverlayViewController.m in Sources */,
 				D1DD71E51AF767E100FF2B86 /* AppDelegate.m in Sources */,
 				D1DD722D1AF7AFCE00FF2B86 /* AdhesionViewController.m in Sources */,
+				D14FE2FF1C8731A700B6F9B4 /* AFCollectionViewMediator.m in Sources */,
 				D1DD71E21AF767E100FF2B86 /* main.m in Sources */,
 				D1DD720E1AF76DAD00FF2B86 /* AdInlineViewController.m in Sources */,
 				D1DD72331AF7B25A00FF2B86 /* CollectionPagerViewController.m in Sources */,
 				D1DD72071AF7684300FF2B86 /* PlacementsViewController.m in Sources */,
-				D1EE58EC1AFB4BCA00C6A71B /* AFCollectionViewMediator.m in Sources */,
 				D1DD724D1AF7BC5C00FF2B86 /* DataViewController.m in Sources */,
 				D1DD724C1AF7BC5C00FF2B86 /* RootViewController.m in Sources */,
 				D1DD724E1AF7BC5C00FF2B86 /* ModelController.m in Sources */,
-				D1EE58ED1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m in Sources */,
 				D1DD72271AF796BC00FF2B86 /* AdInlineResponsiveViewController.m in Sources */,
 				D1DD72241AF77DB300FF2B86 /* AdInlineTableViewController.m in Sources */,
 			);

@@ -10,7 +10,7 @@
 #import <AdformAdvertising/AdformAdvertising.h>
 #import "AFCollectionViewMediator.h"
 
-static NSInteger const kMasterTag = 4660165;
+static NSInteger const kMasterTag = 142636;
 
 @interface CollectionPagerViewController () <UICollectionViewDelegateFlowLayout, AFCollectionViewMediatorDelegate>
 
@@ -32,7 +32,7 @@ static NSInteger const kMasterTag = 4660165;
     // Create ad mediator for collection view.
     self.mediator = [[AFCollectionViewMediator alloc] initWithMasterTagId:kMasterTag
                                                               adFrequency:3
-                                                                debugMode:YES
+                                                                debugMode:false
                                                             adContentType:AFHTMLBanners
                                                            collectionView:self.collectionView
                                                  presentingViewController:self];

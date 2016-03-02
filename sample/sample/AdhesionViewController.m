@@ -22,7 +22,9 @@
     
     // Create and setu the ad view.
     self.adHesion = [[AFAdHesion alloc] initWithMasterTagId:[self masterTag] position:self.adPosition presentingViewController:self];
-    self.adHesion.debugMode = YES;
+    
+    // This line of code enables multiple ad size support.
+    self.adHesion.additionalDimmensionsEnabled = true;
     
     // Add it to view hierarchy and initiate ad loading.
     [self.view addSubview:self.adHesion];
@@ -31,11 +33,7 @@
 
 - (NSInteger )masterTag {
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return 4935562;
-    } else {
-        return 4030700;
-    }
+    return 142493;
 }
 
 @end

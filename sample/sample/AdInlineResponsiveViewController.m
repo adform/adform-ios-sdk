@@ -45,11 +45,7 @@
 
 - (NSInteger )masterTag {
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return 4022668;
-    } else {
-        return 4030444;
-    }
+    return 142493;
 }
 
 - (void)updateConstraints {

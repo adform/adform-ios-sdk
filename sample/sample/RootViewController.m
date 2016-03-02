@@ -12,7 +12,7 @@
 #import "AFPageViewControllerMediator.h"
 #import <AdformAdvertising/AdformAdvertising.h>
 
-static NSInteger const kMasterTag = 4660165;
+static NSInteger const kMasterTag = 142636;
 
 @interface RootViewController () <AFPageViewControllerMediatorDelegate>
 
@@ -39,7 +39,7 @@ static NSInteger const kMasterTag = 4660165;
     // To display ads we need to create and setup AFPageViewControllerMediator.
     self.mediator = [[AFPageViewControllerMediator alloc] initWithMasterTagId:kMasterTag
                                                                   adFrequency:5
-                                                                    debugMode:YES
+                                                                    debugMode:false
                                                                 adContentType:AFHTMLBanners
                                                            pageViewController:self.pageViewController];
     self.mediator.delegate = self;
