@@ -34,6 +34,12 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+## 2.2.1
+
+### Bug fixes
+
+* Fixed a bug where ads were not loading on iOS 6 and 7. 
+
 ## 2.2
 
 ### New Features
