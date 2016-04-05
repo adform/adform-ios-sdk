@@ -43,6 +43,15 @@
  */
 @property (nonatomic, assign, readonly) NSInteger mid;
 
+/**
+ You can directly set HTML or VAST adTag to be loaded on the ad view.
+ 
+ HTML adTags must be of type NSString.
+ VAST adTags may be NSString or NSData XML documents
+ or an URL object with a link to VAST XML document.
+ */
+@property (nonatomic, strong) id adTag;
+
 
 /**
  Ad view size shows the size of the currently loaded ad.
@@ -70,7 +79,8 @@
  
  To define which sizes are supported by this placement use 'supportedDimensions' property.
  
- @important Additional dimmensions are not supported for video banners.
+ @important Additional dimmensions are not supported for video banners, therefore if you are loading video ads 
+    you must set the adSize property before loading them.
  
  Default value - false.
  
@@ -81,14 +91,14 @@
 /**
  An array of NSValue encoded CGSize structures, specifying ad creative sizes that are supported by this placement.
  
- For convenience you can use 'AFAdDimension' or 'AFAdDimensionFromCGSize' methods to create NSValue objects.
+ For convenience you can use 'AFAdDimension' or 'AFAdDimensionFromCGSize' functions to create NSValue objects.
  
  Example:
     \code
-        adView.supportedDimmensions = @[AFAdDimension(320, 50), AFAdDimension(320, 150)];
+ adView.supportedDimmensions = @[AFAdDimension(320, 50), AFAdDimension(320, 150)];
     \endcode
  
- You can use this property to define what sizes can be loaded in this creative.
+ You can use this property to define what sizes can be loaded in this placement.
  Supported dimensions are ignored if 'additionalDimmensionsEnabled' property is false.
  If you change this value when an ad is already loaded, the ad size will change only when the ad view is reloaded.
  */
@@ -98,19 +108,8 @@
 /**
  The object implementing AFAdInlineDelegate protocol, which is notified about the ad view state changes.
  */
-@property (nonatomic, weak) id<AFAdInlineDelegate> delegate;
+@property (nonatomic, weak) id delegate;
 
-
-/**
- This property determines what kind of banners should be loaded and displayed inside of the ad placement.
- By default ad placements load HTML banners (AFHTMLBanners type). If you want to load video ads,
- you must set this property to AFVideoBanners.
- 
- Default value: AFHTMLBanners.
- 
- @see AFAdContentType
- */
-@property (nonatomic, assign) AFAdContentType adContentType;
 
 /**
  This property determines how an ad transition should be animated inside the ad view.
@@ -215,6 +214,19 @@
  @return A newly initialized ad view.
  */
 - (instancetype)initWithMasterTagId:(NSInteger )mid presentingViewController:(UIViewController *)viewController adSize:(CGSize )size;
+
+/**
+ Initializes an AFAdInline with the given ad tag.
+ 
+ @param adTag An object containing adTag that will be loaded.
+    For HTML ads adTag must be a NSString object containing the HTML for the banner.
+    For VAST ads adTag may be NSString or NSData object containing VAST xml document
+    of NSURL object containing an URL for VAST xml document on remote server.
+ @param viewController The view controller which is presenting the ad view.
+ 
+ @return A newly initialized ad view.
+ */
+- (instancetype)initWithAdTag:(id )adTag presentingViewController:(UIViewController *)viewController;
 
 /**
  Initiates advertisement loading.

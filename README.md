@@ -29,14 +29,27 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [Adding Key Value Pairs](https://github.com/adform/adform-ios-sdk/wiki/Adding-key-value-pairs)
 * [Location Tracking](https://github.com/adform/adform-ios-sdk/wiki/Location-Tracking)
 * [Security](https://github.com/adform/adform-ios-sdk/wiki/Security)
+* [Ad Tags](https://github.com/adform/adform-ios-sdk/wiki/Ad-Tags)
 
 # Release Notes
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.3
+
+### New Features
+
+* Smart ad size feature - now ad views can dynamically adapt to multiple screen sizes when used with smart ad size. For more details check [Smart ad size](https://github.com/adform/adform-ios-sdk/wiki/Advanced-Inline-Ad-Integration#smart-ad-size).
+* Ad tag support - now ad views can load html or url ad tags provided by developer. For more details check [Ad Tags](https://github.com/adform/adform-ios-sdk/wiki/Ad-Tags).
+* MRAID viewable percentage support - now MRAID banners may listen for viewablePercentageChange event or use getViewablePercentage() method to know how much of the creative is viewable.  
+
+### Bug Fixes
+
+* Minnor bug fixes.
+
 ## 2.2.1
 
-### Bug fixes
+### Bug Fixes
 
 * Fixed a bug where ads were not loading on iOS 6 and 7. 
 

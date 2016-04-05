@@ -11,17 +11,43 @@
 /**
  Ad view animation duration, use it to match content animation with ad view animations.
  */
-extern const CGFloat kAdViewAnimationDuration;
+extern CGFloat const AFAdViewAnimationDuration;
 
 /**
  Default ad size for iPhone - 320x50.
  */
-extern const CGSize kDefaultIphoneAdSize;
+extern CGSize const AFDefaultIphoneAdSize;
 
 /**
  Default ad size for iPad - 728x90.
  */
-extern const CGSize kDefaultIpadAdSize;
+extern CGSize const AFDefaultIpadAdSize;
+
+/**
+ The size for a smart ad placement.
+ */
+extern CGSize const AFSmartAdSize;
+
+/**
+ A key that may be used to assign a different message for mraid.storePicture method confirmation alert.
+ Usually this should be done to translate this message to application language.
+ By default sdk uses this message: "Do you want to save this image to photos?".
+ */
+extern NSString * const kAFStorePictureAlertMessageKey;
+
+/**
+ A key that may be used to assign a different title for mraid.storePicture method confirmation alert save button.
+ Usually this should be done to translate the title of the button to application language.
+ By default sdk uses this title: "Save".
+ */
+extern NSString * const kAFStorePictureAlertSaveButtonTitleKey;
+
+/**
+ A key that may be used to assign a different title for mraid.storePicture method confirmation alert cancel button.
+ Usually this should be done to translate the title of the button to application language.
+ By default sdk uses this title: "Cancel".
+ */
+extern NSString * const kAFStorePictureAlertCancelButtonTitleKey;
 
 /**
  Ad view state values.
@@ -82,16 +108,6 @@ typedef NS_ENUM (NSInteger, AFModalPresentationStyle) {
     AFModalPresentationStyleNone
 };
 
-/**
- Ad view content type values.
- */
-typedef NS_ENUM(NSInteger, AFAdContentType) {
-    /// Ad placement will display HTML banners.
-    AFHTMLBanners,
-    // Ad placement will display video banners.
-    AFVideoBanners
-};
-
 /// Adform Advertising SDK error domain.
 extern NSString *const kAFErrorDomain;
 
@@ -100,23 +116,26 @@ extern NSString *const kAFErrorDomain;
 */
 typedef NS_ENUM(NSInteger, AFErrorCode) {
     /// A network error occurred while loading ads from server.
-    AFNetworkError,
+    AFNetworkError = 0,
     
     /// The request has timed out.
-    AFTimedOutError,
+    AFTimedOutError = 1,
     
     /// An ad server error occurred.
-    AFServerError,
+    AFServerError = 2,
     
     /// An internal SDK error occurred.
-    AFInternalError,
+    AFInternalError = 3,
     
     /// The ad server returned invalid response.
-    AFInvalidServerResponseError,
+    AFInvalidServerResponseError = 4,
     
     /// The ad server returned valid response, but there was no ad to show.
-    AFNoAdToShowError
+    AFNoAdToShowError = 5,
+    
+    /// The sdk was unable to handle a VAST xml retreived from the ad server.
+    AFInvalidVASTResponseError = 6
 };
 
-extern NSValue *AFAdDimension(CGFloat width, CGFloat height);
 extern NSValue *AFAdDimensionFromCGSize(CGSize size);
+extern NSValue *AFAdDimension(CGFloat width, CGFloat height);

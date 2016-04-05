@@ -21,6 +21,16 @@
 @property (nonatomic, weak) id<AFAdOverlayDelegate> delegate;
 
 /**
+ An integer representing Adform master tag id.
+ */
+@property (nonatomic, assign, readonly) NSInteger mid;
+
+/**
+ You can directly set HTML adTag to be loaded on the ad view.
+ */
+@property (nonatomic, strong) NSString *adTag;
+
+/**
  Required reference to the view controller which is presenting the overlay ad.
  Don't assign this property directly, instead use 'showFromViewController:' method, which assigns it automatically.
 
@@ -104,6 +114,14 @@
  @return A newly initialized overlay ad controller.
  */
 - (instancetype)initWithMasterTagID:(NSInteger )mid;
+
+/**
+ Initializes an AFAdOverlay with the given ad tag.
+ 
+ @param adTag A NSString containing ad tag that will be loaded .
+ @return A newly initialized overlay ad controller.
+ */
+- (instancetype)initWithAdTag:(NSString *)adTag;
 
 /**
  Loads an ad if needed and displays it in an overlay ad view.
