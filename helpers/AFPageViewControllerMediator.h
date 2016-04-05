@@ -54,11 +54,6 @@
 @property (nonatomic, assign) NSInteger adFrequency;
 
 /**
- Identifies the ad content type that should be used by mediator.
- */
-@property (nonatomic, assign) AFAdContentType adContentType;
-
-/**
  Setting this property to TRUE enables debug mode on the page ad view.
  
  Default value - FALSE.
@@ -84,7 +79,6 @@
  @param mid An integer representing Adform master tag id.
  @param adFrequency The frequecy of the page ad views.
  @param debugMode Enables debug mode.
- @param adContentType Identifies the ad content type that should be used by mediator.
  @param pageViewController A page view controller used to display ads.
  
  @return A newly initialized ad view.
@@ -92,7 +86,6 @@
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
                           debugMode:(BOOL )debugMode
-                      adContentType:(AFAdContentType )adContentType
                  pageViewController:(UIPageViewController *)pageViewController;
 
 /**
@@ -102,14 +95,12 @@
  
  @param mid An integer representing Adform master tag id.
  @param debugMode Enables debug mode.
- @param adContentType Identifies the ad content type that should be used by mediator.
  @param pageViewController A page view controller used to display ads.
  
  @return A newly initialized ad view.
  */
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                           debugMode:(BOOL )debugMode
-                      adContentType:(AFAdContentType )adContentType
                  pageViewController:(UIPageViewController *)pageViewController;
 
 /**

@@ -97,7 +97,6 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
                           debugMode:(BOOL)debugMode
-                      adContentType:(AFAdContentType )adContentType
                      collectionView:(UICollectionView *)collectionView
            presentingViewController:(UIViewController *)presentingViewController{
     
@@ -105,7 +104,6 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
         
         self.debugMode = debugMode;
         self.adFrequency = adFrequency;
-        self.adContentType = adContentType;
         
         self.collectionView = collectionView;
         self.presentingViewController = presentingViewController;
@@ -115,14 +113,12 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                           debugMode:(BOOL)debugMode
-                      adContentType:(AFAdContentType )adContentType
                      collectionView:(UICollectionView *)collectionView
            presentingViewController:(UIViewController *)presentingViewController{
     
     if (self = [self initWithMasterTagId:mid]) {
         
         self.debugMode = debugMode;
-        self.adContentType = adContentType;
         
         self.collectionView = collectionView;
         self.presentingViewController = presentingViewController;
@@ -141,7 +137,6 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
     AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:self.collectionView.bounds masterTagId:_mid presentingViewController:self.presentingViewController];
     adView.adTransitionStyle = AFAdTransitionStyleNone;
     adView.debugMode = self.debugMode;
-    adView.adContentType = self.adContentType;
     adView.autoresizingMask = (UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
     adView.translatesAutoresizingMaskIntoConstraints = YES;
     adView.delegate = self;

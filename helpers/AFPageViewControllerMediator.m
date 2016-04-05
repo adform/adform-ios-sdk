@@ -77,13 +77,11 @@
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
                           debugMode:(BOOL)debugMode
-                      adContentType:(AFAdContentType )adContentType
                  pageViewController:(UIPageViewController *)pageViewController {
     
     if (self = [self initWithMasterTagId:mid]) {
         self.adFrequency = adFrequency;
         self.debugMode = debugMode;
-        self.adContentType = adContentType;
         
         self.pageViewController = pageViewController;
     }
@@ -93,12 +91,10 @@
 
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                           debugMode:(BOOL)debugMode
-                      adContentType:(AFAdContentType )adContentType
                  pageViewController:(UIPageViewController *)pageViewController {
     
     if (self = [self initWithMasterTagId:mid]) {
         self.debugMode = debugMode;
-        self.adContentType = adContentType;
         
         self.pageViewController = pageViewController;
     }
@@ -205,7 +201,6 @@
     AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:presentingViewController.view.bounds masterTagId:_mid presentingViewController:presentingViewController];
     adView.adTransitionStyle = AFAdTransitionStyleNone;
     adView.debugMode = self.debugMode;
-    adView.adContentType = self.adContentType;
     adView.autoresizingMask = (UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
     adView.translatesAutoresizingMaskIntoConstraints = YES;
     adView.delegate = self;

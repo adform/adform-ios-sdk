@@ -62,11 +62,6 @@
 
 
 /**
- Identifies the ad content type that should be used by mediator.
- */
-@property (nonatomic, assign) AFAdContentType adContentType;
-
-/**
  Initializes an AFPageViewControllerMediator with the given master tag id.
  
  Master tag id is used to initialize AFPageAdView.
@@ -85,7 +80,6 @@
  @param mid An integer representing Adform master tag id.
  @param adFrequency The frequecy of the page ad views.
  @param debugMode Enables debug mode.
- @param adContentType Identifies the ad content type that should be used by mediator.
  @param collectionView A collection view used to display ads.
  @param presentingViewController The view controller presenting the collection view.
  
@@ -94,7 +88,6 @@
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
                           debugMode:(BOOL )debugMode
-                      adContentType:(AFAdContentType )adContentType
                      collectionView:(UICollectionView *)collectionView
            presentingViewController:(UIViewController *)presentingViewController;
 
@@ -105,7 +98,6 @@
  
  @param mid An integer representing Adform master tag id.
  @param debugMode Enables debug mode.
- @param adContentType Identifies the ad content type that should be used by mediator.
  @param collectionView A collection view used to display ads.   
  @param presentingViewController The view controller presenting the collection view.
  
@@ -113,7 +105,6 @@
  */
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                           debugMode:(BOOL )debugMode
-                      adContentType:(AFAdContentType )adContentType
                      collectionView:(UICollectionView *)collectionView
            presentingViewController:(UIViewController *)presentingViewController;
 
