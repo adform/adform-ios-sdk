@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, AFVideoAdCloseButtonBehavior) {
 @property (nonatomic, assign) AFVideoAdCloseButtonBehavior closeButtonBehavior;
 
 /**
- This property determines if video should start playing muted. If this property is set to TRUE,
+ This property defines if video should start playing muted. If this property is set to TRUE,
  then after the loading, video will start playing muted.
  
  Default value - TRUE
@@ -65,7 +65,7 @@ typedef NS_ENUM(NSInteger, AFVideoAdCloseButtonBehavior) {
 @property (nonatomic, assign) BOOL autoClose;
 
 /**
- This property specifies what controls visual style video player should use. You can choose from default and minimal style.
+ This property specifies what visual style video player should use for its controls. You can choose from default and minimal style.
  
  Default value - AFVideoPlayerControlsStyleDefault
  

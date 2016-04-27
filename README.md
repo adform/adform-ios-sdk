@@ -35,6 +35,17 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.3.1
+
+### New Features
+
+* Added an option to AdHesion ads to enable close button. By default it is disabled.
+* Added autohide feature to AdHesion ads. If enabled, AdHesion ad will hide when user interacts wit the application and reveal itself when the interaction ends.
+
+### Bug Fixes
+
+* Minnor bug fixes.
+
 # 2.3
 
 ### New Features
