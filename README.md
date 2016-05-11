@@ -33,6 +33,17 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 # Release Notes
 
+# 2.5
+
+### New Features
+
+* Included Adform Header Bidding SDK v.1.0;
+* Add additional 'price' and 'customData' parameters to ad views for header bidding support.
+
+### Bug Fixes
+
+* Minor bug fixes;
+
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
 # 2.3.1

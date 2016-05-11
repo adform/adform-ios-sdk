@@ -3,7 +3,7 @@
 //  AdformAdvertising
 //
 //  Created by Vladas Drejeris on 22/06/15.
-//  Copyright (c) 2015 adform. All rights reserved.
+//  Copyright (c) 2015 Adform. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

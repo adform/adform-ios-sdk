@@ -108,6 +108,16 @@
 @property (nonatomic, strong) NSDictionary *keyValues;
 
 /**
+ Allows to pass bid price from header bidding auction.
+ */
+@property (nonatomic, assign) float price;
+
+/**
+ Provides an easy way of passing some data back to the ad that needs to be rendered in a webview.
+ */
+@property (nonatomic, strong) NSDictionary *customData;
+
+/**
  Initializes an AFAdOverlay with the given master tag id.
  
  @param mid An integer representing Adform master tag id.
@@ -164,6 +174,13 @@
  @param error An error indicating what went wrong.
  */
 - (void)adOverlayDidFailToLoadAd:(AFAdOverlay *)adOverlay withError:(NSError *)error;
+
+/**
+ Gets called when an AFAdOverlay was clicked by the user to open a landing page.
+ 
+ @param adOverlay An ad view object calling the method.
+ */
+- (void)adOverlayDidClick:(AFAdOverlay *)adOverlay;
 
 /**
  Gets called when an AFAdOverlay is about to show.

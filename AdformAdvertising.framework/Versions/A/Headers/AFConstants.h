@@ -3,7 +3,7 @@
 //  AdformAdvertising
 //
 //  Created by Vladas Drejeris on 25/02/15.
-//  Copyright (c) 2015 adform. All rights reserved.
+//  Copyright (c) 2015 Adform. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

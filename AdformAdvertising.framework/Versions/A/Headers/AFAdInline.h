@@ -193,6 +193,15 @@
  */
 @property (nonatomic, strong) NSDictionary *keyValues;
 
+/**
+ Allows to pass bid price from header bidding auction.
+ */
+@property (nonatomic, assign) float price;
+
+/**
+ Provides an easy way of passing some data back to the ad that needs to be rendered in a webview.
+ */
+@property (nonatomic, strong) NSDictionary *customData;
 
 /**
  Initializes an AFAdInline with the given master tag id.
@@ -275,6 +284,13 @@
  @param error An error indicating what went wrong.
  */
 - (void)adInlineDidFailToLoadAd:(AFAdInline *)adInline withError:(NSError *)error;
+
+/**
+ Gets called when an AFAdInline was clicked by the user to open a landing page.
+ 
+ @param adInline An ad view object calling the method.
+ */
+- (void)adInlineDidClick:(AFAdInline *)adInline;
 
 /**
  Gets called when an AFAdInline is about to be shown.
