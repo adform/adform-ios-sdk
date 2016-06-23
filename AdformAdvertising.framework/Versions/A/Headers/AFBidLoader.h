@@ -31,7 +31,7 @@
  Request bids with bid request.
  
  @param bidRequest A bid request containing parameter used to request bids.
- @param completionHandler A block of code called when bid request finishes.
+ @param completion A block of code called when bid request finishes.
     If sdk was unable to reach the adx server then bidResponses parameter passed to 
     block will be nil and an error containing information about what went wrong 
     will be passed to the compleation handler.
@@ -47,7 +47,7 @@
  A convenience method to request bids on default bid loader.
  
  @param bidRequest A bid request containing parameter used to request bids.
- @param completionHandler A block of code called when bid request finishes.
+ @param completion A block of code called when bid request finishes.
     If sdk was unable to reach the adx server then bidResponses parameter passed to
     block will be nil and an error containing information about what went wrong
     will be passed to the compleation handler.

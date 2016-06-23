@@ -137,5 +137,33 @@ typedef NS_ENUM(NSInteger, AFErrorCode) {
     AFInvalidVASTResponseError = 6
 };
 
-extern NSValue *AFAdDimensionFromCGSize(CGSize size);
-extern NSValue *AFAdDimension(CGFloat width, CGFloat height);
+
+/**
+ Video player controls mask.
+ 
+ Defines which controlls should be visible when playing content media.
+ */
+typedef NS_OPTIONS(NSInteger, AFVideoPlayerControlsMask) {
+    /// All controls are hidden.
+    AFVideoPlayerControlsMaskNone = 0,
+    /// Play/pause button is visible.
+    AFVideoPlayerControlsMaskPlayPause = (1 << 0),
+    /// Elapsed time label is visible.
+    AFVideoPlayerControlsMaskCurrentTime = (1 << 1),
+    /// Time scrubber is visible.
+    AFVideoPlayerControlsMaskScrubber = (1 << 2),
+    /// Time remaining label is visible. Time remaining is displayed as negative value.
+    AFVideoPlayerControlsMaskTimeRemaining = (1 << 3),
+    /// Mute button is visible.
+    AFVideoPlayerControlsMaskMute = (1 << 4),
+    /// Fullscreen button is visible.
+    AFVideoPlayerControlsMaskFullScreen = (1 << 5),
+    /// Video count view is visible.
+    AFVideoPlayerControlsMaskVideoCount = (1 << 6),
+    /// All controls are visible.
+    AFVideoPlayerControlsMaskAll = (AFVideoPlayerControlsMaskPlayPause | AFVideoPlayerControlsMaskCurrentTime | AFVideoPlayerControlsMaskScrubber | AFVideoPlayerControlsMaskTimeRemaining | AFVideoPlayerControlsMaskMute | AFVideoPlayerControlsMaskFullScreen | AFVideoPlayerControlsMaskVideoCount),
+    /// Controls for ads.
+    AFVideoPlayerControlsMaskAds = (AFVideoPlayerControlsMaskPlayPause | AFVideoPlayerControlsMaskScrubber | AFVideoPlayerControlsMaskTimeRemaining | AFVideoPlayerControlsMaskMute | AFVideoPlayerControlsMaskFullScreen | AFVideoPlayerControlsMaskVideoCount),
+    /// Controls for ads without fullscreen.
+    AFVideoPlayerControlsMaskAdsNoFullscreen = (AFVideoPlayerControlsMaskPlayPause | AFVideoPlayerControlsMaskScrubber | AFVideoPlayerControlsMaskTimeRemaining | AFVideoPlayerControlsMaskMute | AFVideoPlayerControlsMaskVideoCount)
+};

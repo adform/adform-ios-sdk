@@ -82,4 +82,11 @@ typedef NS_ENUM(NSInteger, AFVideoAdCloseButtonBehavior) {
  */
 @property (nonatomic, assign) NSInteger fallbackMasterTagId;
 
+/**
+ Defines if video ad should be initially displayed fullscreen.
+ 
+ Default value - FALSE
+ */
+@property (nonatomic, assign) BOOL fullscreen;
+
 @end

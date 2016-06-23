@@ -14,3 +14,9 @@
 #import <AdformAdvertising/AFAdHesion.h>
 #import <AdformAdvertising/AFAdOverlay.h>
 #import <AdformAdvertising/AFAdInterstitial.h>
+
+#import <AdformAdvertising/AFContentPlayback.h>
+#import <AdformAdvertising/AFMPMoviePlayerContentPlayback.h>
+#import <AdformAdvertising/AFVideoPlayerController.h>
+#import <AdformAdvertising/AFAVPlayerViewControllerPlayback.h>
+#import <AdformAdvertising/AFCuePoint.h>
