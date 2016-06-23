@@ -21,6 +21,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [Integrating Inline Ads in UITableView](https://github.com/adform/adform-ios-sdk/wiki/Integrating-Inline-Ads-in-UITableView)
 * [Advanced Full Screen Overlay Ad Integration](https://github.com/adform/adform-ios-sdk/wiki/Advanced-Full-Screen-Overlay-Ad-Integration)
 * [Advanced Interstitial Ad Integration](https://github.com/adform/adform-ios-sdk/wiki/Advanced-Interstitial-Ad-Integration)
+* [Instream Video Ads](https://github.com/adform/adform-ios-sdk/wiki/Instream-Video-Ads)
 
 **Other**
 
