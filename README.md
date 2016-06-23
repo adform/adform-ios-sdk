@@ -30,6 +30,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [Location Tracking](https://github.com/adform/adform-ios-sdk/wiki/Location-Tracking)
 * [Security](https://github.com/adform/adform-ios-sdk/wiki/Security)
 * [Ad Tags](https://github.com/adform/adform-ios-sdk/wiki/Ad-Tags)
+* [Header bidding](https://github.com/adform/adform-ios-sdk/wiki/header-bidding)
 
 # Release Notes
 
