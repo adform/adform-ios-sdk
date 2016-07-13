@@ -37,6 +37,8 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [AdMob](https://github.com/adform/adform-ios-sdk/wiki/Advertising-SDK-adapter-for-AdMob-mediation)
 * [DFP](https://github.com/adform/adform-ios-sdk/wiki/Advertising-SDK-adapter-for-DFP-mediation)
 
+**Plugins**
+* [Unity](https://github.com/adform/adform-advertising-sdk-unity-plugin)
 
 # Release Notes
 
