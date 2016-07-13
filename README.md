@@ -34,8 +34,8 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [Header bidding](https://github.com/adform/adform-ios-sdk/wiki/header-bidding)
  
 **Mediation adapters**
-* [AdMob](https://github.com/adform/adform-advertising-admob-adapter-ios)
-* [DFP](https://github.com/adform/adform-advertising-dfp-adapter-ios)
+* [AdMob](https://github.com/adform/adform-ios-sdk/wiki/Advertising-SDK-adapter-for-AdMob-mediation)
+* [DFP](https://github.com/adform/adform-ios-sdk/wiki/Advertising-SDK-adapter-for-DFP-mediation)
 
 
 # Release Notes
