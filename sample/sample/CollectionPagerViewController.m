@@ -33,7 +33,6 @@ static NSInteger const kMasterTag = 142636;
     self.mediator = [[AFCollectionViewMediator alloc] initWithMasterTagId:kMasterTag
                                                               adFrequency:3
                                                                 debugMode:false
-                                                            adContentType:AFHTMLBanners
                                                            collectionView:self.collectionView
                                                  presentingViewController:self];
     self.mediator.delegate = self;
