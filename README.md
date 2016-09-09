@@ -44,6 +44,15 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+
+# 2.7
+
+### New Features
+
+* Added video ads support in AdOverlay type;
+* Added iOS 10 support;
+
+
 # 2.6
 
 ### New Features

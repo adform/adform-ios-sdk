@@ -9,6 +9,7 @@
 #import "AFConstants.h"
 
 @protocol AFAdOverlayDelegate;
+@class AFVideoSettings;
 
 /**
  The AFAdOverlay class provides a controller that displays overlay advertisements.
@@ -86,6 +87,15 @@
  Default value - NO.
  */
 @property (nonatomic, assign) BOOL debugMode;
+
+/**
+ If you are using the ad overlay to display video advertisment, you can use this property to setup
+ video player behavior.
+ 
+ @important 'closeButtonBehavior' property is ignored and close button is allways displayed in 
+    overlay ads.
+ */
+@property (nonatomic, strong, readonly) AFVideoSettings *videoSettings;
 
 /**
  You can add an array of keywords to identify the placement,
