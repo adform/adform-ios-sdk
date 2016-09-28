@@ -28,26 +28,6 @@ extern CGSize const AFDefaultIpadAdSize;
  */
 extern CGSize const AFSmartAdSize;
 
-/**
- A key that may be used to assign a different message for mraid.storePicture method confirmation alert.
- Usually this should be done to translate this message to application language.
- By default sdk uses this message: "Do you want to save this image to photos?".
- */
-extern NSString * const kAFStorePictureAlertMessageKey;
-
-/**
- A key that may be used to assign a different title for mraid.storePicture method confirmation alert save button.
- Usually this should be done to translate the title of the button to application language.
- By default sdk uses this title: "Save".
- */
-extern NSString * const kAFStorePictureAlertSaveButtonTitleKey;
-
-/**
- A key that may be used to assign a different title for mraid.storePicture method confirmation alert cancel button.
- Usually this should be done to translate the title of the button to application language.
- By default sdk uses this title: "Cancel".
- */
-extern NSString * const kAFStorePictureAlertCancelButtonTitleKey;
 
 /**
  Ad view state values.

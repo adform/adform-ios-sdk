@@ -89,27 +89,6 @@
  */
 + (BOOL)isHTTPSEnabled;
 
-/**
- Sets a custom string resource for the sdk.
- 
- This method can be used as one of the options to translate sdk string resources.
- You can use it to define custom strings for storePicture confirmation alert view.
- 
- Another way to localize sdk resources is to add these strings to applications localizable.strings files
- and translate them there. You should add default string values defined at the definitions
- of the constants provided bellow as keys for localizable strings.
- 
- Available keys: kAFStorePictureAlertMessageKey, kAFStorePictureAlertSaveButtonTitleKey, kAFStorePictureAlertCancelButtonTitleKey.
- */
-+ (void)setStringResource:(NSString *)resource forKey:(NSString *)key;
-
-/**
- Returns a previously set custom string resource.
- 
- Available keys: kAFStorePictureAlertMessageKey, kAFStorePictureAlertSaveButtonTitleKey, kAFStorePictureAlertCancelButtonTitleKey.
- */
-+ (NSString *)stringResourceForKey:(NSString *)key;
-
 @end
 
 @interface AdformSDK ()
