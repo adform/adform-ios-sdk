@@ -45,6 +45,12 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.7.1
+
+### New Features
+
+* With the rollout of iOS 10, the App Store’s privacy policy requires apps to provide a usage description when attempting to access privacy-sensitive data, such as a user’s calendar. To comply with the App Store privacy changes, we removed support for the mraid.createCalendarEvent() and mraid.storePicture() methods.
+
 
 # 2.7
 
