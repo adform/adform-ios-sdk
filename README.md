@@ -4,7 +4,6 @@ Adform Advertising iOS SDK
 Adform brings brand advertising to the programmatic era at scale, making display advertising simple, relevant and rewarding!
 
 ### [IMPORTANT - IOS 9 Support](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started#ios-9-support)
-### [IMPORTANT - IOS 10 Support](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started#ios-10-support)
 
 ### [Getting Started](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started)
 
