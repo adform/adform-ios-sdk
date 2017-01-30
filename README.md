@@ -56,8 +56,8 @@ This part lists release notes from all versions of Adform Mobile Advertising iOS
 The new SDK version uses different method for setting key values to a banner. 
 Therefore, if you were setting key values to banners using older sdk you need to update it.
 You can use two methods to do it:
-1. Create an NSArray with AFKeyValue objects and set it to the banner.
-2. Use "AFKeyValuesFromNSDictionary()" function to convert a NSDictionary with key values that you used to set to the banner, to to NSArray with AFKeyValue objects and set it to the banner.
+ 1. Create an NSArray with AFKeyValue objects and set it to the banner.
+ 2. Use "AFKeyValuesFromNSDictionary()" function to convert a NSDictionary with key values that you used to set to the banner, to to NSArray with AFKeyValue objects and set it to the banner.
 You can find an example [here](https://github.com/adform/adform-ios-sdk/wiki/Adding-key-value-pairs).
 
 
