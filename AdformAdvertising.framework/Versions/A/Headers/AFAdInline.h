@@ -10,7 +10,7 @@
 
 @protocol AFAdInlineDelegate;
 
-@class AFVideoSettings;
+@class AFVideoSettings, AFKeyValue;
 
 /**     
  The AFAdInline class provides a view container that displays inline advertisements.
@@ -185,13 +185,13 @@
 
 /**
  You can add custom key-value pair data to identify the placement, 
- this way the Adform will be able to target ads to your users even more accurately, e.g. @{@"content": @"music"}.
+ this way the Adform will be able to target ads to your users even more accurately, e.g. AFKeyValue(@"content": @"music").
  
  @warning This value should be set before loading the ad view,
  if it is set after calling the "loadAd" method this data won't be sent to our server.
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
-@property (nonatomic, strong) NSDictionary *keyValues;
+@property (nonatomic, strong) NSArray<AFKeyValue *> *keyValues;
 
 /**
  Allows to pass bid price from header bidding auction.
