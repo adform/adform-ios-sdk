@@ -45,6 +45,17 @@ Adform brings brand advertising to the programmatic era at scale, making display
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
 
+# 2.8.0
+
+### New Features
+
+* Added Search Words support.
+
+### Bug Fixes
+
+* Fixed AFADInterstitial interaction issues.
+
+
 # 2.7.2
 
 ### New Features
@@ -61,16 +72,6 @@ You can use two methods to do it:
  
 You can find an example [here](https://github.com/adform/adform-ios-sdk/wiki/Adding-key-value-pairs).
 
-
-# 2.8.0
-
-### New Features
-
-* Added Search Words support.
-
-### Bug Fixes
-
-* Fixed AFADInterstitial interaction issues.
 
 # 2.7.1
 
