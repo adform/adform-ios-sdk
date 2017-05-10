@@ -62,6 +62,16 @@ You can use two methods to do it:
 You can find an example [here](https://github.com/adform/adform-ios-sdk/wiki/Adding-key-value-pairs).
 
 
+# 2.8.0
+
+### New Features
+
+* Added Search Words support.
+
+### Bug Fixes
+
+* Fixed AFADInterstitial interaction issues.
+
 # 2.7.1
 
 ### New Features
