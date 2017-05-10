@@ -181,7 +181,7 @@
  if it is set after calling the "loadAd" method this data won't be sent to our server.
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
-@property (nonatomic, strong) NSArray *keywords;
+@property (nonatomic, strong) NSArray<NSString *> *keywords;
 
 /**
  You can add custom key-value pair data to identify the placement, 
@@ -192,6 +192,16 @@
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
 @property (nonatomic, strong) NSArray<AFKeyValue *> *keyValues;
+
+/**
+ You can add custom key-value pair data to target user search words,
+ this way the Adform will be able to target ads to your users even more accurately, e.g. AFKeyValue(@"product": @"book").
+ 
+ @warning This value should be set before loading the ad view,
+ if it is set after calling the "loadAd" method this data won't be sent to our server.
+ If you want to change this data after loading the ad view, you should create a new ad view with updated data.
+ */
+@property (nonatomic, strong) NSArray<AFKeyValue *> *searchWords;
 
 /**
  Allows to pass bid price from header bidding auction.
