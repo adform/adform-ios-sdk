@@ -40,7 +40,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 **Plugins**
 * [Unity](https://github.com/adform/adform-advertising-sdk-unity-plugin)
 
-# Release Notes
+# CHANGELOG
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
