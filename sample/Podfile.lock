@@ -1,10 +1,12 @@
 PODS:
-  - AdformAdvertising (2.2.1)
+  - AdformAdvertising (2.8.0)
 
 DEPENDENCIES:
   - AdformAdvertising
 
 SPEC CHECKSUMS:
-  AdformAdvertising: c2e385ab55aa4f365c574e74923e731ac75a3edc
+  AdformAdvertising: aab714fb808b7008c64a3f11100738f36b9b4615
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 6e6f4c8fce9e312308cf057da00b508fe6208353
+
+COCOAPODS: 1.2.1

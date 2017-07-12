@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TE9-et-XSF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TE9-et-XSF">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -296,6 +296,26 @@
                                             <segue destination="DL1-bv-PFZ" kind="show" id="VuN-lc-gTY"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ANK-J9-nUs" style="IBUITableViewCellStyleDefault" id="ecx-jZ-Xc2">
+                                        <rect key="frame" x="0.0" y="548" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecx-jZ-Xc2" id="x0y-oA-B8Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Instream Video ads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ANK-J9-nUs">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="UCT-As-EHg" kind="show" id="Nk1-VE-wsa"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -414,10 +434,10 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="cc4-bz-IG2">
-                                <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc4-bz-IG2" id="VQg-8E-9cQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -498,6 +518,46 @@
             </objects>
             <point key="canvasLocation" x="1112" y="119"/>
         </scene>
+        <!--Instream video ads-->
+        <scene sceneID="9JN-cy-spr">
+            <objects>
+                <viewController title="Instream video ads" id="UCT-As-EHg" customClass="InstreamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="81w-5f-eJh"/>
+                        <viewControllerLayoutGuide type="bottom" id="R9Z-4V-Qvb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Upd-XL-guf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbl-94-qtK">
+                                <rect key="frame" x="20" y="72" width="112" height="30"/>
+                                <state key="normal" title="Show sdk player"/>
+                                <connections>
+                                    <action selector="showSDKPlayer:" destination="UCT-As-EHg" eventType="touchUpInside" id="8zo-ck-5hn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqS-wE-M57">
+                                <rect key="frame" x="140" y="72" width="204" height="30"/>
+                                <state key="normal" title="Show AVPlayerViewController"/>
+                                <connections>
+                                    <action selector="showAVPlayer:" destination="UCT-As-EHg" eventType="touchUpInside" id="kyN-1F-B4a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hbl-94-qtK" firstAttribute="leading" secondItem="Upd-XL-guf" secondAttribute="leadingMargin" id="Isc-q3-OOu"/>
+                            <constraint firstItem="Hbl-94-qtK" firstAttribute="top" secondItem="81w-5f-eJh" secondAttribute="bottom" constant="8" id="JK9-cj-BdQ"/>
+                            <constraint firstItem="AqS-wE-M57" firstAttribute="top" secondItem="81w-5f-eJh" secondAttribute="bottom" constant="8" id="aAc-vQ-eFk"/>
+                            <constraint firstItem="AqS-wE-M57" firstAttribute="leading" secondItem="Hbl-94-qtK" secondAttribute="trailing" constant="8" id="rQR-QN-dfg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zs2-sz-JZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="815"/>
+        </scene>
         <!--Adhesion ads-->
         <scene sceneID="vWN-6e-ZC4">
             <objects>
@@ -510,10 +570,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNf-uo-Xv0">
-                                <rect key="frame" x="0.0" y="-920" width="600" height="1520"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Justo donec augue eros in felis tellus arcu tempor nullam eget. Risus augue. Vitae risus. Etiam netus. Neque nulla eleifend morbi egestas aliquet arcu ut fames nibh. Nulla netus ipsum sem sapien torquent per donec litora ullamcorper vitae phasellus quam convallis. Class risus a nisi id consectetuer integer. Lacus porta mollis velit duis. Massa risus nunc et. Augue morbi sagittis nec litora feugiat et cras sapien ac sagittis. Velit fames sociis lorem nonummy magnis orci magna turpis sollicitudin. Augue morbi est morbi vestibulum dapibus urna ac venenatis dignissim erat ante quam. Fusce class tempus ut quis malesuada cursus augue. Netus proin. Risus magna. Ipsum porta rutrum turpis interdum lectus vivamus arcu. Ipsum justo taciti sociis faucibus nascetur ligula. Netus felis risus ipsum molestie et auctor accumsan. Lorem nulla a laoreet at. Porta risus mus arcu pellentesque et dolor. Curae velit eget est. Justo risus lacus lorem feugiat quis neque maecenas quis sagittis a pulvinar est nulla etiam.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-Qq-y8u">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpA-qn-pJF">
+                                        <rect key="frame" x="8" y="8" width="584" height="2110"/>
+                                        <string key="text">Justo donec augue eros in felis tellus arcu tempor nullam eget. Risus augue. Vitae risus. Etiam netus. Neque nulla eleifend morbi egestas aliquet arcu ut fames nibh. Nulla netus ipsum sem sapien torquent per donec litora ullamcorper vitae phasellus quam convallis. Class risus a nisi id consectetuer integer. Lacus porta mollis velit duis. Massa risus nunc et. Augue morbi sagittis nec litora feugiat et cras sapien ac sagittis. Velit fames sociis lorem nonummy magnis orci magna turpis sollicitudin. Augue morbi est morbi vestibulum dapibus urna ac venenatis dignissim erat ante quam. Fusce class tempus ut quis malesuada cursus augue. Netus proin. Risus magna. Ipsum porta rutrum turpis interdum lectus vivamus arcu. Ipsum justo taciti sociis faucibus nascetur ligula. Netus felis risus ipsum molestie et auctor accumsan. Lorem nulla a laoreet at. Porta risus mus arcu pellentesque et dolor. Curae velit eget est. Justo risus lacus lorem feugiat quis neque maecenas quis sagittis a pulvinar est nulla etiam.
 
 Neque velit. Ipsum massa. Vitae felis vel quam dictumst vestibulum mauris nisi tortor. Felis morbi cras habitant porta eu mattis eleifend. Justo ipsum egestas sit congue ac. Curae neque. Justo netus justo neque scelerisque pharetra lorem urna. Massa augue fusce nec vestibulum parturient ad tincidunt metus purus. Metus proin semper pulvinar amet hac platea. Fames lorem elementum senectus et fusce mauris. Purus neque amet sed vel pellentesque. Lacus neque hac pede enim porttitor curae nisi eleifend vitae nisi. Lacus lorem.
 
@@ -532,18 +594,33 @@ Justo nulla quam posuere pede eu pulvinar commodo pellentesque ligula turpis con
 Nulla class. Fames ipsum dui ante pulvinar nostra primis fames scelerisque torquent lacus feugiat fusce donec. Massa felis. Velit magna primis. Fusce neque cras nec pellentesque mi natoque nisl porttitor dictum. Felis class. Vitae fames varius sapien vitae pretium. Lorem proin etiam eleifend elementum. Class fusce nibh dis feugiat inceptos netus. Augue risus pulvinar est. Massa donec odio cursus malesuada metus ante cum quam primis hendrerit molestie cras. Metus dolor montes adipiscing pharetra metus. Fames porta augue tellus duis sollicitudin. Neque nulla bibendum velit nisl.
 
 Augue lorem aptent aenean dui elit. Class netus hac tempor a parturient dui parturient varius inceptos. Neque magna nonummy ligula ad duis. Proin porta felis ullamcorper sit nisl magnis tincidunt. Class massa odio. Etiam felis sagittis magna justo a vivamus tortor vel. Vitae lacus primis parturient consectetuer potenti placerat ut cum. Ipsum lorem diam nibh nisl duis non dis nam hac non. Velit massa risus lacus scelerisque pulvinar fringilla. Purus fusce ullamcorper inceptos penatibus nulla nascetur in scelerisque nibh elit duis natoque ad justo cursus mauris. Fusce magna sed placerat ridiculus eu. Magna etiam non odio metus ultricies.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LpA-qn-pJF" firstAttribute="leading" secondItem="1N0-Qq-y8u" secondAttribute="leading" constant="8" id="JR3-7w-yEX"/>
+                                    <constraint firstAttribute="trailing" secondItem="LpA-qn-pJF" secondAttribute="trailing" constant="8" id="KC5-v1-mFf"/>
+                                    <constraint firstItem="LpA-qn-pJF" firstAttribute="top" secondItem="1N0-Qq-y8u" secondAttribute="top" constant="8" id="KgO-YX-0eQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="LpA-qn-pJF" secondAttribute="bottom" constant="8" id="axK-hg-v82"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MNf-uo-Xv0" firstAttribute="bottom" secondItem="Jw2-ma-bkf" secondAttribute="top" id="4D0-zW-Jgq"/>
-                            <constraint firstItem="MNf-uo-Xv0" firstAttribute="leading" secondItem="zVC-69-JL4" secondAttribute="leading" id="KdZ-xf-Tfw"/>
-                            <constraint firstItem="MNf-uo-Xv0" firstAttribute="top" secondItem="zVC-69-JL4" secondAttribute="top" id="Mcr-h8-0O5"/>
-                            <constraint firstAttribute="trailing" secondItem="MNf-uo-Xv0" secondAttribute="trailing" id="R4n-wj-Sup"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1N0-Qq-y8u" secondAttribute="trailing" constant="-20" id="GOp-jI-Py2"/>
+                            <constraint firstItem="1N0-Qq-y8u" firstAttribute="leading" secondItem="zVC-69-JL4" secondAttribute="leadingMargin" constant="-20" id="KqE-yG-Fft"/>
+                            <constraint firstItem="Jw2-ma-bkf" firstAttribute="top" secondItem="1N0-Qq-y8u" secondAttribute="bottom" id="Sx9-Hl-chA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LpA-qn-pJF" secondAttribute="trailing" constant="-12" id="dUe-0W-YeX"/>
+                            <constraint firstItem="1N0-Qq-y8u" firstAttribute="top" secondItem="zVC-69-JL4" secondAttribute="topMargin" id="kWG-Ql-9gv"/>
+                            <constraint firstItem="LpA-qn-pJF" firstAttribute="leading" secondItem="zVC-69-JL4" secondAttribute="leadingMargin" constant="-12" id="rc1-vH-7nN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelBottomConstraint" destination="axK-hg-v82" id="YRf-PV-pAr"/>
+                        <outlet property="labelTopConstraint" destination="KgO-YX-0eQ" id="smK-3w-q9j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTA-Sq-RnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -596,16 +673,16 @@ Augue lorem aptent aenean dui elit. Class netus hac tempor a parturient dui part
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-id-bty">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tb7-id-bty">
                                 <rect key="frame" x="20" y="20" width="560" height="17"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlo-vr-D9S">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlo-vr-D9S">
                                 <rect key="frame" x="20" y="44" width="560" height="536"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUc-Oo-fzK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUc-Oo-fzK">
                                         <rect key="frame" x="8" y="8" width="544" height="536"/>
                                         <string key="text">Class nulla accumsan. Donec risus vel maecenas vulputate dolor integer euismod massa nam massa hendrerit elementum adipiscing nonummy. Metus netus quis mus est penatibus odio eget. Curae velit massa non nibh est potenti. Metus lorem sem arcu in convallis a elementum fames nisl. Class nulla donec ante nisl fermentum litora accumsan faucibus ac. Ipsum morbi a quis risus velit sapien hendrerit nec urna parturient dignissim. Vitae netus nullam id habitant natoque enim hymenaeos ad mattis sodales. Massa donec dis quam a.
 

@@ -22,9 +22,6 @@
     // Create a new banner.
     AFAdHesion *adHesion = [[AFAdHesion alloc] initWithMasterTagId:142494 position:AFAdPositionTop presentingViewController:self];
     
-    // Set its content type to video banners.
-    adHesion.adContentType = AFVideoBanners;
-    
     // Define custom size of the banner.
     adHesion.adSize = CGSizeMake(320, 240);
     

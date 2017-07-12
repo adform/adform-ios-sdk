@@ -91,7 +91,7 @@
     
     // When ad is being displayed we should update label constraints to push it down and make place for the ad.
     // This transition is animated.
-    [UIView animateWithDuration:kAdViewAnimationDuration
+    [UIView animateWithDuration:AFAdViewAnimationDuration
                      animations:^{
                          [self.verticalSpacing setConstant:(self.verticalSpacing.constant + adInline.adSize.height)];
                          [self.scrollView layoutIfNeeded];
@@ -102,7 +102,7 @@
     
     // When ad is being hidden we should update label constraints and put it back to its initial place.
     // This transition is animated.
-    [UIView animateWithDuration:kAdViewAnimationDuration
+    [UIView animateWithDuration:AFAdViewAnimationDuration
                      animations:^{
                          [self.verticalSpacing setConstant:(self.verticalSpacing.constant - adInline.adSize.height)];
                          [self.scrollView layoutIfNeeded];

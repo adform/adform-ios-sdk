@@ -79,6 +79,12 @@ static NSInteger const kAdInlineTag = 101;
         // Create and setup a new adInline object.
         adInline = [[AFAdInline alloc] initWithMasterTagId:[self masterTag] presentingViewController:self];
         
+        // Center the ad in footer.
+        CGRect frame = adInline.frame;
+        frame.origin = CGPointMake((footerView.frame.size.width - frame.size.width) / 2, 0);
+        adInline.frame = frame;
+        adInline.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin);
+        
         // This line of code enables multiple ad size support.
         adInline.additionalDimmensionsEnabled = true;
         
