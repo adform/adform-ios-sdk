@@ -46,6 +46,13 @@ Adform brings brand advertising to the programmatic era at scale, making display
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
 
+# 2.9.0-alpha
+
+### New Features
+
+* WKWebView support. We have changed SDK to use WKWebView to render HTML banners. WKWebView is used by default on iOS 8+ and UIWebView is used on older iOS versions. If you prefer to use the old UIWebView even on newer iSO versions, you can do this by setting web view type parameter on AdformSDK class.
+
+
 # 2.8.0
 
 ### New Features
