@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFConstants.h"
 
 /**
  Generic Adform Advertising SDK class, used to provide global functions.
@@ -73,6 +74,20 @@
  otherwise - in Safari app.
  */
 + (BOOL)shouldOpenLinksInAppBrowser;
+
+/**
+ Use this method to defines what web view SDK should use to render HTML banners.
+ 
+ @param type The type of web view to set.
+ */
++ (void)setWebViewType:(AFWebViewType )type;
+
+/**
+ Identifies what web view SDK is using to load HTML banners.
+ 
+ @return Currently set web view type.
+ */
++ (AFWebViewType )webViewType;
 
 /**
  Enables or disables HTTPS support. 
