@@ -46,6 +46,13 @@ Adform brings brand advertising to the programmatic era at scale, making display
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
 
+# 2.10.0
+
+### New Features
+
+* It is now possible to specify which ADX servers SDK should use by setting ADX domain. Check out documentation on how to do it [here](https://github.com/adform/adform-ios-sdk/wiki/Changing-ADX-Domain).
+
+
 # 2.9.0
 
 ### New Features
