@@ -8,6 +8,7 @@
 
 #import <AdformAdvertising/AdformSDK.h>
 #import <AdformAdvertising/AFConstants.h>
+#import <AdformAdvertising/AFHBConstants.h>
 #import <AdformAdvertising/AFVideoSettings.h>
 #import <AdformAdvertising/AFKeyValue.h>
 

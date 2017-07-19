@@ -34,20 +34,19 @@ typedef NS_ENUM(NSInteger, AFHBErrorCode) {
     AFHBInvalidBidRequestError = 5
 };
 
-/**
- Defines available adx servers.
- */
-typedef NS_ENUM(NSInteger, AFAdxDomain) {
-    
-    /// Adx server used for European markets.
-    AFAdxDomainEUR = 100,
-    
-    /// Adx server used for USA markets.
-    AFAdxDomainUSA = 101,
-    
-    /// European adx server is the default one.
-    AFAdxDomainDefault = AFAdxDomainEUR
-};
+
+
+// - Constants defining vailable adx servers. - //
+
+/// Adx server used for European markets.
+extern NSString *const kAFAdxDomainEUR;
+
+/// Adx server used for USA markets.
+extern NSString *const kAFAdxDomainUSA;
+
+/// Default adx server is equal to kAFAdxDomainEUR.
+extern NSString *const kAFAdxDomainDefault;
+
 
 extern NSValue *AFAdDimensionFromCGSize(CGSize size);
 extern NSValue *AFAdDimension(CGFloat width, CGFloat height);

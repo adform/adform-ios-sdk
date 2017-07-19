@@ -36,10 +36,10 @@
 @property (nonatomic, assign) NSTimeInterval bidTimeOut;
 /**
  Defines which adx server should be used.
- 
- @see AFAdxDomain
+ Available values: kAFAdxDomainEUR, kAFAdxDomainEUR, kAFAdxDomainDefault.
+ You can also set another custom adx domain provided by Adform.
  */
-@property (nonatomic, assign) AFAdxDomain adxDomain;
+@property (nonatomic, strong) NSString *adxDomain;
 
 
 /**
