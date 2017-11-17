@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4C458347B9088AEB63A4298 /* libPods-sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD08E479AC65B66B72DCFC8F /* libPods-sample.a */; };
+		8297ECA48962013C6BF7FBE9 /* Pods_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A351EF1A8D36CC1143806B5 /* Pods_sample.framework */; };
 		D11019771CEC464400421E13 /* InstreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D11019761CEC464400421E13 /* InstreamViewController.m */; };
+		D18DD2601FBF1B3C00028FA1 /* AFCollectionViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D18DD25D1FBF1B3C00028FA1 /* AFCollectionViewMediator.m */; };
+		D18DD2611FBF1B3C00028FA1 /* AFPageViewControllerMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D18DD25F1FBF1B3C00028FA1 /* AFPageViewControllerMediator.m */; };
+		D18DD2641FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18DD2631FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift */; };
 		D1DD71E21AF767E100FF2B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD71E11AF767E100FF2B86 /* main.m */; };
 		D1DD71E51AF767E100FF2B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD71E41AF767E100FF2B86 /* AppDelegate.m */; };
 		D1DD71EB1AF767E100FF2B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DD71E91AF767E100FF2B86 /* Main.storyboard */; };
@@ -28,8 +31,6 @@
 		D1DD724E1AF7BC5C00FF2B86 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD724B1AF7BC5C00FF2B86 /* ModelController.m */; };
 		D1E6C4541B56333C004C5289 /* VideoAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */; };
 		D1E6C4561B56357D004C5289 /* vast_adform.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1E6C4551B56357D004C5289 /* vast_adform.xml */; };
-		D1EE58EC1AFB4BCA00C6A71B /* AFCollectionViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */; };
-		D1EE58ED1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A351EF1A8D36CC1143806B5 /* Pods_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11019751CEC464400421E13 /* InstreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstreamViewController.h; sourceTree = "<group>"; };
 		D11019761CEC464400421E13 /* InstreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstreamViewController.m; sourceTree = "<group>"; };
+		D18DD25C1FBF1B3C00028FA1 /* AFCollectionViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCollectionViewMediator.h; sourceTree = "<group>"; };
+		D18DD25D1FBF1B3C00028FA1 /* AFCollectionViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFCollectionViewMediator.m; sourceTree = "<group>"; };
+		D18DD25E1FBF1B3C00028FA1 /* AFPageViewControllerMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPageViewControllerMediator.h; sourceTree = "<group>"; };
+		D18DD25F1FBF1B3C00028FA1 /* AFPageViewControllerMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPageViewControllerMediator.m; sourceTree = "<group>"; };
+		D18DD2621FBF1C9A00028FA1 /* sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		D18DD2631FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAdsCollectionViewController.swift; sourceTree = "<group>"; };
 		D1DD71DC1AF767E100FF2B86 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DD71E01AF767E100FF2B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1DD71E11AF767E100FF2B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,13 +89,8 @@
 		D1E6C4521B56333C004C5289 /* VideoAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAdsViewController.h; sourceTree = "<group>"; };
 		D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAdsViewController.m; sourceTree = "<group>"; };
 		D1E6C4551B56357D004C5289 /* vast_adform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vast_adform.xml; sourceTree = "<group>"; };
-		D1EE58E81AFB4BCA00C6A71B /* AFCollectionViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFCollectionViewMediator.h; path = ../../../Helpers/AFCollectionViewMediator.h; sourceTree = "<group>"; };
-		D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFCollectionViewMediator.m; path = ../../../Helpers/AFCollectionViewMediator.m; sourceTree = "<group>"; };
-		D1EE58EA1AFB4BCA00C6A71B /* AFPageViewControllerMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPageViewControllerMediator.h; path = ../../../Helpers/AFPageViewControllerMediator.h; sourceTree = "<group>"; };
-		D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPageViewControllerMediator.m; path = ../../../Helpers/AFPageViewControllerMediator.m; sourceTree = "<group>"; };
 		D78AED9E7ECC3253F3A77B71 /* Pods-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sample/Pods-sample.debug.xcconfig"; sourceTree = "<group>"; };
 		D8CCCFC912A84259DAFF568C /* Pods-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample/Pods-sample.release.xcconfig"; sourceTree = "<group>"; };
-		FD08E479AC65B66B72DCFC8F /* libPods-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C458347B9088AEB63A4298 /* libPods-sample.a in Frameworks */,
+				8297ECA48962013C6BF7FBE9 /* Pods_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +115,21 @@
 		45CB2B0D551597B2D00A5201 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD08E479AC65B66B72DCFC8F /* libPods-sample.a */,
+				0A351EF1A8D36CC1143806B5 /* Pods_sample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D18DD25B1FBF1B3C00028FA1 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D18DD25C1FBF1B3C00028FA1 /* AFCollectionViewMediator.h */,
+				D18DD25D1FBF1B3C00028FA1 /* AFCollectionViewMediator.m */,
+				D18DD25E1FBF1B3C00028FA1 /* AFPageViewControllerMediator.h */,
+				D18DD25F1FBF1B3C00028FA1 /* AFPageViewControllerMediator.m */,
+			);
+			name = helpers;
+			path = ../../helpers;
 			sourceTree = "<group>";
 		};
 		D1DD71D31AF767E000FF2B86 = {
@@ -140,7 +155,7 @@
 		D1DD71DE1AF767E100FF2B86 /* sample */ = {
 			isa = PBXGroup;
 			children = (
-				D1DD723A1AF7B28600FF2B86 /* Helpers */,
+				D18DD25B1FBF1B3C00028FA1 /* helpers */,
 				D1DD71E31AF767E100FF2B86 /* AppDelegate.h */,
 				D1DD71E41AF767E100FF2B86 /* AppDelegate.m */,
 				D1DD72051AF7684300FF2B86 /* PlacementsViewController.h */,
@@ -203,19 +218,10 @@
 				D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */,
 				D11019751CEC464400421E13 /* InstreamViewController.h */,
 				D11019761CEC464400421E13 /* InstreamViewController.m */,
+				D18DD2631FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift */,
+				D18DD2621FBF1C9A00028FA1 /* sample-Bridging-Header.h */,
 			);
 			name = Placements;
-			sourceTree = "<group>";
-		};
-		D1DD723A1AF7B28600FF2B86 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				D1EE58E81AFB4BCA00C6A71B /* AFCollectionViewMediator.h */,
-				D1EE58E91AFB4BCA00C6A71B /* AFCollectionViewMediator.m */,
-				D1EE58EA1AFB4BCA00C6A71B /* AFPageViewControllerMediator.h */,
-				D1EE58EB1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m */,
-			);
-			name = Helpers;
 			sourceTree = "<group>";
 		};
 		D1DD72451AF7BC0400FF2B86 /* Page view controller */ = {
@@ -292,6 +298,7 @@
 				TargetAttributes = {
 					D1DD71DB1AF767E100FF2B86 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0910;
 					};
 					D1DD71F41AF767E100FF2B86 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -397,16 +404,17 @@
 				D1DD72211AF7797C00FF2B86 /* AdOverlayViewController.m in Sources */,
 				D1DD71E51AF767E100FF2B86 /* AppDelegate.m in Sources */,
 				D1DD722D1AF7AFCE00FF2B86 /* AdhesionViewController.m in Sources */,
+				D18DD2611FBF1B3C00028FA1 /* AFPageViewControllerMediator.m in Sources */,
 				D1DD71E21AF767E100FF2B86 /* main.m in Sources */,
 				D1DD720E1AF76DAD00FF2B86 /* AdInlineViewController.m in Sources */,
 				D1DD72331AF7B25A00FF2B86 /* CollectionPagerViewController.m in Sources */,
+				D18DD2601FBF1B3C00028FA1 /* AFCollectionViewMediator.m in Sources */,
+				D18DD2641FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift in Sources */,
 				D11019771CEC464400421E13 /* InstreamViewController.m in Sources */,
 				D1DD72071AF7684300FF2B86 /* PlacementsViewController.m in Sources */,
-				D1EE58EC1AFB4BCA00C6A71B /* AFCollectionViewMediator.m in Sources */,
 				D1DD724D1AF7BC5C00FF2B86 /* DataViewController.m in Sources */,
 				D1DD724C1AF7BC5C00FF2B86 /* RootViewController.m in Sources */,
 				D1DD724E1AF7BC5C00FF2B86 /* ModelController.m in Sources */,
-				D1EE58ED1AFB4BCA00C6A71B /* AFPageViewControllerMediator.m in Sources */,
 				D1DD72271AF796BC00FF2B86 /* AdInlineResponsiveViewController.m in Sources */,
 				D1DD72241AF77DB300FF2B86 /* AdInlineTableViewController.m in Sources */,
 			);
@@ -537,15 +545,19 @@
 			baseConfigurationReference = D78AED9E7ECC3253F3A77B71 /* Pods-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = sample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -554,21 +566,25 @@
 			baseConfigurationReference = D8CCCFC912A84259DAFF568C /* Pods-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = sample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		D1DD72031AF767E100FF2B86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -588,6 +604,7 @@
 		D1DD72041AF767E100FF2B86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

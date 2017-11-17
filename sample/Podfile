@@ -1,6 +1,7 @@
 platform :ios, '7.0'
 
 target 'sample' do
+    use_frameworks!
 
 	pod 'AdformAdvertising'
 
