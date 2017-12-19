@@ -111,6 +111,18 @@
  */
 + (BOOL)isHTTPSEnabled;
 
+/**
+ Sets banner loading behaviour.
+
+ Default value - AFBannerLoadingBehaviourWaitForPageshowEvent.
+ */
++ (void)setBannerLoadingBehaviour:(AFBannerLoadingBehaviour )behaviour;
+
+/**
+ Returns current banner loading behaviour.
+ */
++ (AFBannerLoadingBehaviour )bannerLoadingBehaviour;
+
 @end
 
 @interface AdformSDK ()

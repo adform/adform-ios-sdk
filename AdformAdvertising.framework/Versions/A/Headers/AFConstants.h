@@ -159,3 +159,24 @@ typedef NS_OPTIONS(NSInteger, AFVideoPlayerControlsMask) {
     /// Controls for ads without fullscreen.
     AFVideoPlayerControlsMaskAdsNoFullscreen = (AFVideoPlayerControlsMaskPlayPause | AFVideoPlayerControlsMaskScrubber | AFVideoPlayerControlsMaskTimeRemaining | AFVideoPlayerControlsMaskMute | AFVideoPlayerControlsMaskVideoCount)
 };
+
+/**
+ Banner loading behaviour.
+
+ Defines how SDK should load banners.
+ */
+typedef NS_ENUM(NSInteger, AFBannerLoadingBehaviour) {
+
+    /// SDK doesn't wait for any JS event indicating that banner has finished loading
+    /// and decides based on web view delegate callback.
+    AFBannerLoadingBehaviourInstant = 0,
+
+    /// SDK waits fo 'load' JS event to detect the end of banner loading.
+    AFBannerLoadingBehaviourWaitForLoadEvent = 1,
+
+    /// SDK waits fo 'DOMContentLoaded' JS event to detect the end of banner loading.
+    AFBannerLoadingBehaviourWaitForDOMContentLoadedEvent = 2,
+
+    /// SDK waits fo 'pageshow' JS event to detect the end of banner loading.
+    AFBannerLoadingBehaviourWaitForPageshowEvent = 3
+};

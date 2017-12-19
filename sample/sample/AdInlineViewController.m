@@ -8,7 +8,7 @@
 
 #import "AdInlineViewController.h"
 
-@interface AdInlineViewController ()
+@interface AdInlineViewController () <AFAdInlineDelegate>
 
 @end
 
@@ -23,6 +23,8 @@
     
     // This line of code enables multiple ad size support.
     self.adInline.additionalDimmensionsEnabled = true;
+
+    self.adInline.delegate = self;
     
     // If you want to define the supported ad sizes uncomment this line of code too.
     // self.adInline.supportedDimmensions = @[AFAdDimension(320, 50), AFAdDimension(320, 100), AFAdDimension(320, 150)];
@@ -38,6 +40,17 @@
 - (NSInteger )masterTag {
     
     return 142493;
+}
+
+
+#pragma mark - AFAdInlineDelegate
+
+- (void)adInlineDidLoadAd:(AFAdInline *)adInline {
+    NSLog(@"Did load ad!");
+}
+
+- (void)adInlineDidFailToLoadAd:(AFAdInline *)adInline withError:(NSError *)error {
+    NSLog(@"Failed to load an ad!");
 }
 
 @end
