@@ -5,20 +5,29 @@
 //  Copyright (c) 2014 Adform. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 
-#import <AdformAdvertising/AdformSDK.h>
-#import <AdformAdvertising/AFConstants.h>
-#import <AdformAdvertising/AFHBConstants.h>
-#import <AdformAdvertising/AFVideoSettings.h>
-#import <AdformAdvertising/AFKeyValue.h>
+//! Project version number for module.
+FOUNDATION_EXPORT double moduleVersionNumber;
 
-#import <AdformAdvertising/AFAdInline.h>
-#import <AdformAdvertising/AFAdHesion.h>
-#import <AdformAdvertising/AFAdOverlay.h>
-#import <AdformAdvertising/AFAdInterstitial.h>
+//! Project version string for module.
+FOUNDATION_EXPORT const unsigned char moduleVersionString[];
 
-#import <AdformAdvertising/AFContentPlayback.h>
-#import <AdformAdvertising/AFMPMoviePlayerContentPlayback.h>
-#import <AdformAdvertising/AFVideoPlayerController.h>
-#import <AdformAdvertising/AFAVPlayerViewControllerPlayback.h>
-#import <AdformAdvertising/AFCuePoint.h>
+
+#import "AdformSDK.h"
+#import "AFConstants.h"
+#import "AFHBConstants.h"
+#import "AFVideoSettings.h"
+#import "AFKeyValue.h"
+
+#import "AFAdInline.h"
+#import "AFAdHesion.h"
+#import "AFAdOverlay.h"
+#import "AFAdInterstitial.h"
+
+#import "AFContentPlayback.h"
+#import "AFMPMoviePlayerContentPlayback.h"
+#import "AFVideoPlayerController.h"
+#import "AFAVPlayerViewControllerPlayback.h"
+#import "AFCuePoint.h"
+
