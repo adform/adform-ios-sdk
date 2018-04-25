@@ -6,11 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SafariServices/SafariServices.h>
 #import "AFConstants.h"
 
 @protocol AFAdInlineDelegate;
 
-@class AFVideoSettings, AFKeyValue;
+@class AFVideoSettings, AFKeyValue, AFBrowserViewController;
 
 /**     
  The AFAdInline class provides a view container that displays inline advertisements.
@@ -384,5 +385,21 @@
  @param muted Boolean value indicating if user has muted or unmuted the video ad.
  */
 - (void)adInline:(AFAdInline *)adInline videoAdMuted:(BOOL )muted;
+
+/**
+ Gets called when ad view is presenting an internal browser to allow customization.
+
+ @param adInline An ad view object calling the method.
+ @param browserViewController A browser view controller that will be presented.
+ */
+- (void)adInline:(AFAdInline *)adInline willOpenInternalBrowser:(AFBrowserViewController *)browserViewController;
+
+/**
+ Gets called when ad view is presenting a safari view controller to allow customization.
+
+ @param adInline An ad view object calling the method.
+ @param safariViewController A safari view controller that is being presented.
+ */
+- (void)adInline:(AFAdInline *)adInline willOpenSafariViewController:(SFSafariViewController *)safariViewController;
 
 @end

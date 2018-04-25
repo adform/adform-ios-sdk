@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SafariServices/SafariServices.h>
 #import "AFConstants.h"
 
 @protocol AFAdOverlayDelegate;
-@class AFVideoSettings, AFKeyValue;
+@class AFVideoSettings, AFKeyValue, AFBrowserViewController;
 
 /**
  The AFAdOverlay class provides a controller that displays overlay advertisements.
@@ -242,5 +243,21 @@
  @param adOverlay An overlay ad view object calling the method.
  */
 - (void)adOverlayWillOpenExternalBrowser:(AFAdOverlay *)adOverlay;
+
+/**
+ Gets called when ad view is presenting an internal browser to allow customization.
+
+ @param adOverlay An ad view object calling the method.
+ @param browserViewController A browser view controller that will be presented.
+*/
+- (void)adOverlay:(AFAdOverlay *)adOverlay willOpenInternalBrowser:(AFBrowserViewController *)browserViewController;
+
+/**
+ Gets called when ad view is presenting a safari view controller to allow customization.
+
+ @param adOverlay An ad view object calling the method.
+ @param safariViewController A safari view controller that is being presented.
+*/
+- (void)adOverlay:(AFAdOverlay *)adOverlay willOpenSafariViewController:(SFSafariViewController *)safariViewController;
 
 @end

@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <SafariServices/SafariServices.h>
+
 #import "AFVideoSettings.h"
 #import "AFContentPlayback.h"
+#import "AFBrowserViewController.h"
 
 /**
  Video player types.
@@ -490,5 +493,21 @@ typedef NS_ENUM(NSInteger, AFVideoPlaybackState) {
  @param videoPlayer A video player object calling the method.
  */
 - (void)videoPlayerResumed:(AFVideoPlayerController *)videoPlayer;
+
+/**
+ Gets called when ad view is presenting an internal browser to allow customization.
+
+ @param videoPlayer A video player object calling the method.
+ @param browserViewController A browser view controller that will be presented.
+*/
+- (void)videoPlayer:(AFVideoPlayerController *)videoPlayer willOpenInternalBrowser:(AFBrowserViewController *)browserViewController;
+
+/**
+ Gets called when ad view is presenting a safari view controller to allow customization.
+
+ @param videoPlayer A video player object calling the method.
+ @param safariViewController A safari view controller that is being presented.
+*/
+- (void)videoPlayer:(AFVideoPlayerController *)videoPlayer willOpenSafariViewController:(SFSafariViewController *)safariViewController;
 
 @end
