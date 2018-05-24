@@ -41,6 +41,20 @@
  */
 @property (nonatomic, strong) NSString *adxDomain;
 
+/**
+ Specifies if GDPR is applied.
+ Must be a BOOL value wraped in a NSNumber.
+ Default value: nil.
+ */
+@property (nonatomic, strong) NSNumber *gdpr;
+
+/**
+ Specifies the GDPR consent.
+ Base64 encoded string with vendor and purpose consent strings.
+ Default value: nil.
+ */
+@property (nonatomic, strong) NSString *gdprConsent;
+
 
 /**
  Unix timestamp identifying when bid was requested.

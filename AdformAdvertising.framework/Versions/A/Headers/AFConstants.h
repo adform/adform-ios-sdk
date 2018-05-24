@@ -171,12 +171,12 @@ typedef NS_ENUM(NSInteger, AFBannerLoadingBehaviour) {
     /// and decides based on web view delegate callback.
     AFBannerLoadingBehaviourInstant = 0,
 
-    /// SDK waits fo 'load' JS event to detect the end of banner loading.
+    /// SDK waits for 'load' JS event to detect the end of banner loading.
     AFBannerLoadingBehaviourWaitForLoadEvent = 1,
 
-    /// SDK waits fo 'DOMContentLoaded' JS event to detect the end of banner loading.
+    /// SDK waits for 'DOMContentLoaded' JS event to detect the end of banner loading.
     AFBannerLoadingBehaviourWaitForDOMContentLoadedEvent = 2,
 
-    /// SDK waits fo 'pageshow' JS event to detect the end of banner loading.
+    /// SDK waits for 'pageshow' JS event to detect the end of banner loading.
     AFBannerLoadingBehaviourWaitForPageshowEvent = 3
 };

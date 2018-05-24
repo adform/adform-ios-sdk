@@ -46,6 +46,12 @@ Adform brings brand advertising to the programmatic era at scale, making display
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
 
+# 2.12.0
+
+### New features
+
+* Added GDPR support. More info in [GDPR](https://github.com/adform/adform-ios-sdk/wiki/GDPR).
+
 # 2.11.0
 
 ### New features
