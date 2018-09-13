@@ -10,7 +10,7 @@
 #import <AdformAdvertising/AdformAdvertising.h>
 #import "AFCollectionViewMediator.h"
 
-static NSInteger const kMasterTag = 142636;
+static NSInteger const kMasterTag = 580965;
 
 @interface CollectionPagerViewController () <UICollectionViewDelegateFlowLayout, AFCollectionViewMediatorDelegate>
 

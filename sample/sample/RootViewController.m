@@ -12,7 +12,7 @@
 #import "AFPageViewControllerMediator.h"
 #import <AdformAdvertising/AdformAdvertising.h>
 
-static NSInteger const kMasterTag = 142636;
+static NSInteger const kMasterTag = 580421;
 
 @interface RootViewController () <AFPageViewControllerMediatorDelegate>
 
