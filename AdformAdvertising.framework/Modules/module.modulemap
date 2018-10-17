@@ -1,6 +1,6 @@
 framework module AdformAdvertising {
-    umbrella header "AdformAdvertising.h"
+  umbrella header "AdformAdvertising.h"
 
-    export *
-    module * { export * }
+  export *
+  module * { export * }
 }
