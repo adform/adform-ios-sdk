@@ -33,6 +33,11 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [Security](https://github.com/adform/adform-ios-sdk/wiki/Security)
 * [Ad Tags](https://github.com/adform/adform-ios-sdk/wiki/Ad-Tags)
 * [Header bidding](https://github.com/adform/adform-ios-sdk/wiki/header-bidding)
+* [Changing ADX Domain](https://github.com/adform/adform-ios-sdk/wiki/Changing-ADX-Domain)
+* [Specifying banner loading behaviour](https://github.com/adform/adform-ios-sdk/wiki/Specifying-banner-loading-behaviour)
+* [Customizing in app browser](https://github.com/adform/adform-ios-sdk/wiki/Customizing-in-app-browser)
+* [GDPR](https://github.com/adform/adform-ios-sdk/wiki/GDPR)
+* [Localization](https://github.com/adform/adform-ios-sdk/wiki/Localization)
  
 **Mediation adapters**
 * [AdMob](https://github.com/adform/adform-ios-sdk/wiki/Advertising-SDK-adapter-for-AdMob-mediation)
