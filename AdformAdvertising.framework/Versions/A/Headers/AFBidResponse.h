@@ -31,17 +31,18 @@ typedef NS_ENUM(NSInteger, AFBidStatus) {
 
 @class AFBidRequest;
 
+NS_ASSUME_NONNULL_BEGIN
 @interface AFBidResponse : NSObject
 
 /**
  Ad unit script represented in string.
  */
-@property (nonatomic, strong, readonly) NSString *adUnitScriptRaw;
+@property (nonatomic, strong, readonly, nullable) NSString *adUnitScriptRaw;
 
 /**
  Ad unit script represented in base64 encoded string.
  */
-@property (nonatomic, strong, readonly) NSString *adUnitScriptEncoded;
+@property (nonatomic, strong, readonly, nullable) NSString *adUnitScriptEncoded;
 
 /**
  Ad unit size.
@@ -56,7 +57,7 @@ typedef NS_ENUM(NSInteger, AFBidStatus) {
 /**
  Bid currency.
  */
-@property (nonatomic, strong, readonly) NSString *currency;
+@property (nonatomic, strong, readonly, nullable) NSString *currency;
 
 /**
  Unix timestamp identifying when bid was requested.
@@ -83,12 +84,13 @@ typedef NS_ENUM(NSInteger, AFBidStatus) {
 /**
  Message identifying bid status.
  */
-@property (nonatomic, strong, readonly) NSString *statusMessage;
+@property (nonatomic, strong, readonly, nullable) NSString *statusMessage;
 
 
 /**
  Original ad request that was used.
  */
-@property (nonatomic, strong, readonly) AFBidRequest *bidRequest;
+@property (nonatomic, strong, readonly, nullable) AFBidRequest *bidRequest;
 
 @end
+NS_ASSUME_NONNULL_END

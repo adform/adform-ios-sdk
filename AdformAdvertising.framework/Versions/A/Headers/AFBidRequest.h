@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AFHBConstants.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @interface AFBidRequest : NSObject
 
 /**
@@ -29,7 +30,7 @@
         adView.supportedDimmensions = @[AFAdDimension(320, 50), AFAdDimension(320, 150)];
     \endcode
  */
-@property (nonatomic, strong) NSArray<NSValue *> *supportedAdSizes;
+@property (nonatomic, strong, nullable) NSArray<NSValue *> *supportedAdSizes;
 /**
  A timeout for the bid request.
  */
@@ -76,3 +77,4 @@
                    supportedAdSizes:(NSArray<NSValue *> *)adSizes;
 
 @end
+NS_ASSUME_NONNULL_END

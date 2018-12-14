@@ -50,6 +50,12 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.13.3
+
+### New features
+
+* Carthage support.
+
 # 2.13.2
 
 ### New features

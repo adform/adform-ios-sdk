@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  Cue point describes a place intended for ad in video.
  */
@@ -34,3 +35,4 @@
 - (instancetype)initWithTime:(NSTimeInterval )time identifier:(NSInteger )identifier;
 
 @end
+NS_ASSUME_NONNULL_END

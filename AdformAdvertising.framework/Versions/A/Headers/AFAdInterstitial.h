@@ -10,6 +10,7 @@
 
 @protocol AFAdInterstitialDelegate;
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  The AFAdInterstitial class provides a view container that displays in page advertisements.
  */
@@ -29,7 +30,7 @@
  */
 @property (nonatomic, assign, readonly, getter=wasDisplayed) BOOL displayed;
 
-@property (nonatomic, weak) id<AFAdInterstitialDelegate> delegate;
+@property (nonatomic, weak, nullable) id<AFAdInterstitialDelegate> delegate;
 
 /**
  Initializes a new AFAdView.
@@ -73,3 +74,4 @@
 - (void)adInterstitial:(AFAdInterstitial *)adInterstitial didReceiveCloseCommandWithCompletionHandler:(void(^)(BOOL shouldClose))completionHandler;
 
 @end
+NS_ASSUME_NONNULL_END

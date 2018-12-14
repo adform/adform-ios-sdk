@@ -8,6 +8,7 @@
 
 #import <AdformAdvertising/AdformAdvertising.h>
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  The AFAdHesion class provides a view container that displays sticky inline advertisements.
  
@@ -116,3 +117,4 @@
 - (void)setNeedsPositionUpdate:(BOOL)animated;
 
 @end
+NS_ASSUME_NONNULL_END

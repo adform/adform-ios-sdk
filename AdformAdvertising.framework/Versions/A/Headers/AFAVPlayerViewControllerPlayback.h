@@ -11,6 +11,7 @@
 #import <AVKit/AVKit.h>
 #import "AFContentPlayback.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @interface AFAVPlayerViewControllerPlayback : NSObject <AFContentPlayback>
 
 /**
@@ -43,3 +44,4 @@
 - (void)resetAds;
 
 @end
+NS_ASSUME_NONNULL_END

@@ -185,8 +185,8 @@ typedef NS_ENUM(NSInteger, AFBannerLoadingBehaviour) {
 
 /// Key for "Skip" localizable text. Used in skippable video ads.
 /// You can define this string in your Localizable.strings using "AFSkipLocalizationKey" constant.
-extern NSString * const AFSkipLocalizationKey;
+extern NSString * const _Nonnull AFSkipLocalizationKey;
 
 /// Key for "Skip in" localizable text. Used in skippable video ads.
 /// You can define this string in your Localizable.strings using "AFSkipInLocalizationKey" constant.
-extern NSString * const AFSkipInLocalizationKey;
+extern NSString * const _Nonnull AFSkipInLocalizationKey;

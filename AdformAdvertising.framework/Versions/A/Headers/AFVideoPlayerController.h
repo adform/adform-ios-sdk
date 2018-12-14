@@ -68,6 +68,7 @@ typedef NS_ENUM(NSInteger, AFVideoPlaybackState) {
 
 @protocol AFVideoPlayerDelegate;
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  The AFVideoPlayerController class provides a media player that is capable of displaying video advertisements alongside content media.
  */
@@ -111,18 +112,18 @@ typedef NS_ENUM(NSInteger, AFVideoPlaybackState) {
 /**
  The object implementing AFVideoPlayerDelegate protocol, which is notified about the video player state changes.
  */
-@property (nonatomic, weak) id <AFVideoPlayerDelegate> delegate;
+@property (nonatomic, weak, nullable) id <AFVideoPlayerDelegate> delegate;
 
 
 /**
  URL used to load media content.
  */
-@property (nonatomic, strong) NSURL *contentURL;
+@property (nonatomic, strong, nullable) NSURL *contentURL;
 
 /**
  Currently loaded AVAsset.
  */
-@property (nonatomic, strong, readonly) AVAsset *currentAsset;
+@property (nonatomic, strong, readonly, nullable) AVAsset *currentAsset;
 
 /**
  Currently loaded AVAsset source type.
@@ -291,7 +292,7 @@ typedef NS_ENUM(NSInteger, AFVideoPlaybackState) {
  An array of cue points, that define places in content video, where ads may be played.
  Cue points are cleared automatically when content url changes.
  */
-@property (nonatomic, strong, readonly) NSArray<AFCuePoint *> *cuePoints;
+@property (nonatomic, strong, readonly, nullable) NSArray<AFCuePoint *> *cuePoints;
 
 /**
  Loads all ads in advance.
@@ -349,7 +350,7 @@ typedef NS_ENUM(NSInteger, AFVideoPlaybackState) {
  @param time NSTimeInterval value indicating seeking position.
  @param completionHandler A block of code called when seeking has finished.
  */
-- (void)seekToTime:(NSTimeInterval )time completionHandler:(void (^)(BOOL finished))completionHandler;
+- (void)seekToTime:(NSTimeInterval )time completionHandler:(nullable void (^)(BOOL finished))completionHandler;
 
 @end
 
@@ -375,12 +376,12 @@ typedef NS_ENUM(NSInteger, AFVideoPlaybackState) {
 /**
  Acces log from internal AVPlayer.
  */
-@property (nonatomic, strong, readonly) AVPlayerItemAccessLog *accessLog;
+@property (nonatomic, strong, readonly, nullable) AVPlayerItemAccessLog *accessLog;
 
 /**
  Error log from internal AVPlayer.
  */
-@property (nonatomic, strong, readonly) AVPlayerItemErrorLog *errorLog; 
+@property (nonatomic, strong, readonly, nullable) AVPlayerItemErrorLog *errorLog;
 
 @end
 
@@ -512,3 +513,4 @@ typedef NS_ENUM(NSInteger, AFVideoPlaybackState) {
 - (void)videoPlayer:(AFVideoPlayerController *)videoPlayer willOpenSafariViewController:(SFSafariViewController *)safariViewController API_AVAILABLE(ios(9.0));
 
 @end
+NS_ASSUME_NONNULL_END

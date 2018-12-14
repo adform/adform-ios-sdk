@@ -10,23 +10,24 @@
 
 #define AFKeyValue(aKey, aValue) [[AFKeyValue alloc] initWithKey:aKey value:aValue]
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  A key value pair that can be set to ad views.
  */
 @interface AFKeyValue : NSObject
 
 /// A key.
-@property (nonnull, nonatomic, strong) NSString *key;
+@property (nonatomic, strong) NSString *key;
 
 /// A value.
-@property (nonnull, nonatomic, strong) NSString *value;
+@property (nonatomic, strong) NSString *value;
 
 /**
  Designated initializer.
  
  For convenience you should use 'AFKeyValue(key, value)' macro.
  */
-- (nonnull instancetype)initWithKey:(nonnull NSString *)key value:(nonnull NSString *)value;
+- (instancetype)initWithKey:(NSString *)key value:(NSString *)value;
 
 /**
  Creates a key value from dictionary representation.
@@ -40,7 +41,7 @@
     \endcode
  This code creates a key value object where key is "age" and value is "21".
  */
-- (nonnull instancetype)initWithDictionary:(nonnull NSDictionary<NSString *, NSString *> *)keyValue;
+- (instancetype)initWithDictionary:(NSDictionary<NSString *, NSString *> *)keyValue;
 
 @end
 
@@ -51,4 +52,5 @@
  @param dictionary A dictionary you want to convert.
  @return An array containing AFKeyValue objects created from dictionary values.
  */
-extern NSArray<AFKeyValue *> * _Nonnull AFKeyValuesFromNSDictionary(NSDictionary<NSString *, NSString *> * _Nonnull dictionary);
+extern NSArray<AFKeyValue *> * AFKeyValuesFromNSDictionary(NSDictionary<NSString *, NSString *> * dictionary);
+NS_ASSUME_NONNULL_END

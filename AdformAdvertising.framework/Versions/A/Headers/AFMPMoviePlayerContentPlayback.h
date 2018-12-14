@@ -10,6 +10,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "AFContentPlayback.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @interface AFMPMoviePlayerContentPlayback : NSObject <AFContentPlayback>
 
 /**
@@ -44,3 +45,4 @@
 - (void)resetAds;
 
 @end
+NS_ASSUME_NONNULL_END

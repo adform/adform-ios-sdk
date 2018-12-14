@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  This notification must be posted by an object implementing AFContentPlayback protocol
  when content video player starts video playback.
@@ -81,3 +82,4 @@ static NSString *const kAFContentPlaybackFinishedNotificaiton = @"kAFContentPlay
 - (BOOL)isFullscreenOnly;
 
 @end
+NS_ASSUME_NONNULL_END

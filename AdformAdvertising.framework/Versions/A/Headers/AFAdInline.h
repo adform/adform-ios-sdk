@@ -10,9 +10,9 @@
 #import "AFConstants.h"
 
 @protocol AFAdInlineDelegate;
-
 @class AFVideoSettings, AFKeyValue, AFBrowserViewController;
 
+NS_ASSUME_NONNULL_BEGIN
 /**     
  The AFAdInline class provides a view container that displays inline advertisements.
  */
@@ -51,7 +51,7 @@
  VAST adTags may be NSString or NSData XML documents
  or an URL object with a link to VAST XML document.
  */
-@property (nonatomic, strong) id adTag;
+@property (nonatomic, strong, nullable) id adTag;
 
 
 /**
@@ -103,13 +103,13 @@
  Supported dimensions are ignored if 'additionalDimmensionsEnabled' property is false.
  If you change this value when an ad is already loaded, the ad size will change only when the ad view is reloaded.
  */
-@property (nonatomic, strong) NSArray *supportedDimmensions;
+@property (nonatomic, strong, nullable) NSArray *supportedDimmensions;
 
 
 /**
  The object implementing AFAdInlineDelegate protocol, which is notified about the ad view state changes.
  */
-@property (nonatomic, weak) id delegate;
+@property (nonatomic, weak, nullable) id delegate;
 
 
 /**
@@ -165,7 +165,7 @@
  Custom impression url.
  This impression is fired when an ad is loaded.
  */
-@property (nonatomic, strong) NSURL *customImpression;
+@property (nonatomic, strong, nullable) NSURL *customImpression;
 
 /**
  This property determines if ad should be expand automatically after the first successfull load.
@@ -182,7 +182,7 @@
  if it is set after calling the "loadAd" method this data won't be sent to our server.
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
-@property (nonatomic, strong) NSArray<NSString *> *keywords;
+@property (nonatomic, strong, nullable) NSArray<NSString *> *keywords;
 
 /**
  You can add custom key-value pair data to identify the placement, 
@@ -192,7 +192,7 @@
  if it is set after calling the "loadAd" method this data won't be sent to our server.
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
-@property (nonatomic, strong) NSArray<AFKeyValue *> *keyValues;
+@property (nonatomic, strong, nullable) NSArray<AFKeyValue *> *keyValues;
 
 /**
  You can add custom key-value pair data to target user search words,
@@ -202,7 +202,7 @@
  if it is set after calling the "loadAd" method this data won't be sent to our server.
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
-@property (nonatomic, strong) NSArray<AFKeyValue *> *searchWords;
+@property (nonatomic, strong, nullable) NSArray<AFKeyValue *> *searchWords;
 
 /**
  Allows to pass bid price from header bidding auction.
@@ -212,7 +212,7 @@
 /**
  Provides an easy way of passing some data back to the ad that needs to be rendered in a webview.
  */
-@property (nonatomic, strong) NSDictionary *customData;
+@property (nonatomic, strong, nullable) NSDictionary *customData;
 
 /**
  Initializes an AFAdInline with the given master tag id.
@@ -426,3 +426,4 @@
 - (void)adInline:(AFAdInline *)adInline willOpenSafariViewController:(SFSafariViewController *)safariViewController API_AVAILABLE(ios(9.0));
 
 @end
+NS_ASSUME_NONNULL_END

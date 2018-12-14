@@ -12,6 +12,7 @@
 @protocol AFAdOverlayDelegate;
 @class AFVideoSettings, AFKeyValue, AFBrowserViewController;
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  The AFAdOverlay class provides a controller that displays overlay advertisements.
  */
@@ -20,7 +21,7 @@
 /**
  The object implementing AFAdOverlayDelegate protocol, which is notified about banner state changes.
  */
-@property (nonatomic, weak) id<AFAdOverlayDelegate> delegate;
+@property (nonatomic, weak, nullable) id<AFAdOverlayDelegate> delegate;
 
 /**
  An integer representing Adform master tag id.
@@ -30,7 +31,7 @@
 /**
  You can directly set HTML adTag to be loaded on the ad view.
  */
-@property (nonatomic, strong) NSString *adTag;
+@property (nonatomic, strong, nullable) NSString *adTag;
 
 /**
  Required reference to the view controller which is presenting the overlay ad.
@@ -80,7 +81,7 @@
 /**
  Custom impression url, which is fired when an ad is loaded.
  */
-@property (nonatomic, strong) NSURL *customImpression;
+@property (nonatomic, strong, nullable) NSURL *customImpression;
 
 /**
  Turns on/off debug mode.
@@ -106,7 +107,7 @@
  if it is set after calling the "loadAd" method this data won't be sent to our server.
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
-@property (nonatomic, strong) NSArray<NSString *> *keywords;
+@property (nonatomic, strong, nullable) NSArray<NSString *> *keywords;
 
 /**
  You can add custom key-value pair data to identify the placement,
@@ -117,7 +118,7 @@
  if it is set after calling the "loadAd" method this data won't be sent to our server.
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
-@property (nonatomic, strong) NSArray<AFKeyValue *> *keyValues;
+@property (nonatomic, strong, nullable) NSArray<AFKeyValue *> *keyValues;
 
 /**
  You can add custom key-value pair data to target user search words,
@@ -127,7 +128,7 @@
  if it is set after calling the "loadAd" method this data won't be sent to our server.
  If you want to change this data after loading the ad view, you should create a new ad view with updated data.
  */
-@property (nonatomic, strong) NSArray<AFKeyValue *> *searchWords;
+@property (nonatomic, strong, nullable) NSArray<AFKeyValue *> *searchWords;
 
 /**
  Allows to pass bid price from header bidding auction.
@@ -137,7 +138,7 @@
 /**
  Provides an easy way of passing some data back to the ad that needs to be rendered in a webview.
  */
-@property (nonatomic, strong) NSDictionary *customData;
+@property (nonatomic, strong, nullable) NSDictionary *customData;
 
 /**
  Initializes an AFAdOverlay with the given master tag id.
@@ -284,3 +285,4 @@
 - (void)adOverlay:(AFAdOverlay *)adOverlay willOpenSafariViewController:(SFSafariViewController *)safariViewController API_AVAILABLE(ios(9.0));
 
 @end
+NS_ASSUME_NONNULL_END

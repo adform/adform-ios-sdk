@@ -10,6 +10,7 @@
 
 @class AFBidRequest, AFBidResponse;
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  This class is responsable for executing bid requests.
  
@@ -59,3 +60,4 @@
   completionHandler:(void(^)(NSArray <AFBidResponse *> *bidResponses, NSError *error))completion;
 
 @end
+NS_ASSUME_NONNULL_END

@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "AFConstants.h"
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  Generic Adform Advertising SDK class, used to provide global functions.
  */
@@ -29,7 +30,7 @@
  @param publisherId An NSInteger with publisher id.
  @param customData An NSDictionary with custom key-value pair data.
  */
-+ (void)setPublisherId:(NSInteger)publisherId andCustomData:(NSDictionary *)customData;
++ (void)setPublisherId:(NSInteger)publisherId andCustomData:(nullable NSDictionary *)customData;
 
 
 /**
@@ -128,7 +129,7 @@
  Must be a BOOL value wraped in a NSNumber.
  You can pass in null to clear a previouslt set value.
  */
-+ (void)setGDPR:(NSNumber *)isSubject;
++ (void)setGDPR:(nullable NSNumber *)isSubject;
 
 /**
  Returns a currently set is GDPR subject value.
@@ -139,14 +140,14 @@
 
  Returns nil if no value was found or set manually.
  */
-+ (NSNumber *)isSubjectToGDPR;
++ (nullable NSNumber *)isSubjectToGDPR;
 
 /**
  You can use this method to manually set the GDPR consent value.
  It should be a base64 encoded string containing vendor and purpose consent.
  You can pass in null to clear a previouslt set value.
  */
-+ (void)setGDPRConsent:(NSString *)consent;
++ (void)setGDPRConsent:(nullable NSString *)consent;
 
 /**
  Returns a currently set GDPR consent value.
@@ -157,7 +158,7 @@
 
  Returns nil if no value was found or set manually.
  */
-+ (NSString *)GDPRConsent;
++ (nullable NSString *)GDPRConsent;
 
 /**
  Allows you to set localized strings that are used by the SDK. This method is convient if you are using some sort of
@@ -222,3 +223,4 @@
 + (BOOL)shouldOpenLinksInSafari __deprecated_msg("Use 'shouldOpenLinksInAppBrowser:' instead.");
 
 @end
+NS_ASSUME_NONNULL_END

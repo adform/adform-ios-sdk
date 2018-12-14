@@ -39,14 +39,14 @@ typedef NS_ENUM(NSInteger, AFHBErrorCode) {
 // - Constants defining vailable adx servers. - //
 
 /// Adx server used for European markets.
-extern NSString *const kAFAdxDomainEUR;
+extern NSString * const _Nonnull kAFAdxDomainEUR;
 
 /// Adx server used for USA markets.
-extern NSString *const kAFAdxDomainUSA;
+extern NSString * const _Nonnull kAFAdxDomainUSA;
 
 /// Default adx server is equal to kAFAdxDomainEUR.
-extern NSString *const kAFAdxDomainDefault;
+extern NSString * const _Nonnull kAFAdxDomainDefault;
 
 
-extern NSValue *AFAdDimensionFromCGSize(CGSize size);
-extern NSValue *AFAdDimension(CGFloat width, CGFloat height);
+extern NSValue * _Nonnull AFAdDimensionFromCGSize(CGSize size);
+extern NSValue * _Nonnull AFAdDimension(CGFloat width, CGFloat height);

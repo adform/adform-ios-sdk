@@ -32,6 +32,7 @@ typedef NS_ENUM(NSInteger, AFVideoAdCloseButtonBehavior) {
     AFVideoAdCloseButtonBehaviorAllways
 };
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  Video settings object allows you to configure video ads. 
  You can choose close button behiavior, set initial mute and enable auto close function.
@@ -90,3 +91,4 @@ typedef NS_ENUM(NSInteger, AFVideoAdCloseButtonBehavior) {
 @property (nonatomic, assign) BOOL fullscreen;
 
 @end
+NS_ASSUME_NONNULL_END
