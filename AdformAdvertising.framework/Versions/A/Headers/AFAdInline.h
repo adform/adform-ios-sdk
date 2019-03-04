@@ -261,6 +261,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addValue:(NSString *)value forKey:(NSString *)key;
 
 /**
+ A convenient method to remove key values from ad view.
+
+ Removes all key values with provided key.
+
+ @param key A key used to determine which key values to remove.
+ */
+- (void)removeValuesForKey:(NSString *)key;
+
+/**
  A convenient method to add custom parameter to `customData`property.
 
  If `customData` property is nil when this method is called, a new dictionary is created
@@ -270,6 +279,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param key A key to add.
  */
 - (void)addCustomParameter:(NSString *)parameter forKey:(NSString *)key;
+
+/**
+ A convenient method to remove custom parameter from `customData`property.
+
+ @param key A key for the parameter to remove.
+ */
+- (void)removeCustomParameterForKey:(NSString *)key;
 
 /**
  Initiates advertisement loading.
