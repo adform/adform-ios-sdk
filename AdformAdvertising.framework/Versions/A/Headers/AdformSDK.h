@@ -127,7 +127,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  You can use this method to manually specifying if GDPR is applied.
  Must be a BOOL value wraped in a NSNumber.
- You can pass in null to clear a previouslt set value.
+ You can pass in null to clear a previously set value.
  */
 + (void)setGDPR:(nullable NSNumber *)isSubject;
 
@@ -136,7 +136,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  First SDK tries to retrieve this value from CMP, e.g. checks if `IABConsent_CMPPresent` flag is set to true in `NSUserDefaults`
  and then retrieves and returns a value from `NSUserDefaults` for key `IABConsent_SubjectToGDPR`. If there are no such value in `NSUserDefaults`
- a manually set `isSubjectToGDPR` value is returned (use `setSubjectToGDPR:` method to set this value manually).
+ a manually set `isSubjectToGDPR` value is returned (use `setGDPR:` method to set this value manually).
 
  Returns nil if no value was found or set manually.
  */
@@ -145,7 +145,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  You can use this method to manually set the GDPR consent value.
  It should be a base64 encoded string containing vendor and purpose consent.
- You can pass in null to clear a previouslt set value.
+ You can pass in null to clear a previously set value.
  */
 + (void)setGDPRConsent:(nullable NSString *)consent;
 
