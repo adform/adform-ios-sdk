@@ -228,7 +228,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return A newly initialized AFVideoPlayerController.
  */
-- (instancetype)initWithURL:(NSURL *)url;
+- (instancetype)initWithURL:(nullable NSURL *)url;
 
 @end
 

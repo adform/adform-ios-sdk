@@ -33,12 +33,8 @@ extern CGSize const AFSmartAdSize;
  Defines the types of web views, that can be used by the SDK to load HTML banners.
  */
 typedef NS_ENUM (NSInteger, AFWebViewType) {
-    /// Identifies that the SDK should use UIWebView to load HTML banners.
-    AFUIWebView,
-    
     /// Identifies that the SDK should use WKWebView to load HTML banners.
-    /// This type is availbe obly on iOS 8+.
-    AFWKWebView NS_ENUM_AVAILABLE_IOS(8_0)
+    AFWKWebView
 };
 
 /**
@@ -101,7 +97,7 @@ typedef NS_ENUM (NSInteger, AFModalPresentationStyle) {
 };
 
 /// Adform Advertising SDK error domain.
-extern NSString *const kAFErrorDomain;
+extern NSString * _Nonnull const kAFErrorDomain;
 
 /**
  Error codes.
