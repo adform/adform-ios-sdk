@@ -17,6 +17,7 @@ framework module AdformAdvertising {
     link framework "CoreLocation"
     link framework "CoreMedia"
     link framework "AVFoundation"
+    link framework "AVKit"
     link framework "SafariServices"
     link framework "WebKit"
 }

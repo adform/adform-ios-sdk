@@ -50,6 +50,13 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.17.0
+
+### New Features
+
+* IAB CCPA Compliance Framework support.
+* Update Framework structure.
+
 # 2.16.0
 
 ### Bug fixes
