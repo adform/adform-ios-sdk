@@ -50,6 +50,13 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.18.0
+
+### New Features
+
+* Add iOS 14, AppTrackingTransparency support.
+* Change framework format to .xcframework.
+
 # 2.17.0
 
 ### New Features
