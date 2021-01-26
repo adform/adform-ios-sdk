@@ -30,19 +30,42 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign, readonly, getter=wasDisplayed) BOOL displayed;
 
+/**
+ Ad view size shows the size of the currently loaded ad from API.
+ */
+@property (nonatomic, assign) CGSize adSize;
+
+/**
+ Returns default ad size.
+ */
++ (CGSize )defaultAdSize;
+
 @property (nonatomic, weak, nullable) id<AFAdInterstitialDelegate> delegate;
 
 /**
- Initializes a new AFAdView.
- 
+ Initializes a new AFAdInterstitial.
+
  You should use this initialization method to create AFPageAdView objects.
- 
+
  @param frame Page ad view frame.
  @param mid An integer representing Adform master tag id.
- 
+
  @return A newly initialized ad view.
  */
 - (instancetype)initWithFrame:(CGRect )frame masterTagId:(NSInteger)mid presentingViewController:(UIViewController *)viewController;
+
+/**
+ Initializes a new AFAdInterstitial.
+ 
+ Initializes an AFAdInterstitial with the given master tag id, view frame, ad size.
+ 
+ @param frame Page ad view frame.
+ @param mid An integer representing Adform master tag id.
+ @param adSize required size of ad from API
+ 
+ @return A newly initialized ad view.
+ */
+- (instancetype)initWithFrame:(CGRect )frame masterTagId:(NSInteger)mid presentingViewController:(UIViewController *)viewController adSize:(CGSize )adSize;
 
 @end
 

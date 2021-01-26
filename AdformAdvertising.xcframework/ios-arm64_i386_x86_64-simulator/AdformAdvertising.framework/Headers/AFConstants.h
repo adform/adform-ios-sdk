@@ -14,6 +14,11 @@
 extern CGFloat const AFAdViewAnimationDuration;
 
 /**
+Default ad size  - uses 1x1
+ */
+extern CGSize const AFDefaultAdSize;
+
+/**
  Default ad size for iPhone - 320x50.
  */
 extern CGSize const AFDefaultIphoneAdSize;

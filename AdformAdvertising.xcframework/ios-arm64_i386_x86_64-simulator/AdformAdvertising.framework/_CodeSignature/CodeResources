@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/AFAdInterstitial.h</key>
 		<data>
-		Gfxptt9BBL3t4wb+brJXH/YkA9A=
+		1w/nlechCL2QIHn3dfGpKSmR/1Q=
 		</data>
 		<key>Headers/AFAdOverlay.h</key>
 		<data>
-		IOfVSBJcrrCDjijbg6F8Hgz9I9w=
+		rUXh54TpB8/7ShSFXgiCoD+zj9Y=
 		</data>
 		<key>Headers/AFBidLoader.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/AFConstants.h</key>
 		<data>
-		824jSpaiyUVbW/ALzwB/qwmBjqg=
+		7DoIQko3V14YvjUX12T08Z5mdqo=
 		</data>
 		<key>Headers/AFContentPlayback.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1QhCipdn1WpDaecRyHfoDbD0n0E=
+		HVzG3Eco2zQkS3/esvPniCIKqSg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -132,22 +132,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gfxptt9BBL3t4wb+brJXH/YkA9A=
+			1w/nlechCL2QIHn3dfGpKSmR/1Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			ocYpOB+b2kDdrpANwHclpMfvP4tfqcn+o3ZKJJnHbmk=
+			7JcKCCv8FpmNT/asf2HPvgrMfRU0rXsOWY+4aRsCvrQ=
 			</data>
 		</dict>
 		<key>Headers/AFAdOverlay.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IOfVSBJcrrCDjijbg6F8Hgz9I9w=
+			rUXh54TpB8/7ShSFXgiCoD+zj9Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			gfo/Yh6pnT9ECL6D+d3kb2G8h7ndk58mCTAnSqZMhhk=
+			FbFmTQ0urEGJKUP5zNux9VIf2LV6cZHIwuUFTnVi1IE=
 			</data>
 		</dict>
 		<key>Headers/AFBidLoader.h</key>
@@ -198,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			824jSpaiyUVbW/ALzwB/qwmBjqg=
+			7DoIQko3V14YvjUX12T08Z5mdqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			q/+sIeDEh+nvvDYBYrfas8nWjcf3RcxYNTtMGw3cUhk=
+			dribiRmBJ1yshbSYJvXgV8B72VDS9h0M/itOnceMVtI=
 			</data>
 		</dict>
 		<key>Headers/AFContentPlayback.h</key>

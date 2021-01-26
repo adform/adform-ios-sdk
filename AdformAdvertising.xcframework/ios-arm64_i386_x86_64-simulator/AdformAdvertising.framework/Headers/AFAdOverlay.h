@@ -141,6 +141,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) NSDictionary *customData;
 
 /**
+ Custom ad size
+ */
+@property (nonatomic, assign) CGSize adSize;
+
+/**
  Initializes an AFAdOverlay with the given master tag id.
  
  @param mid An integer representing Adform master tag id.
@@ -149,12 +154,30 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithMasterTagID:(NSInteger )mid;
 
 /**
+ Initializes an AFAdOverlay with the given master tag id, custom ad size.
+
+ @param mid An integer representing Adform master tag id.
+ @param adSize Custom ad size from API
+ @return A newly initialized overlay ad controller.
+ */
+- (instancetype)initWithMasterTagID:(NSInteger )mid adSize:(CGSize )adSize;
+
+/**
  Initializes an AFAdOverlay with the given ad tag.
  
  @param adTag A NSString containing ad tag that will be loaded .
  @return A newly initialized overlay ad controller.
  */
 - (instancetype)initWithAdTag:(NSString *)adTag;
+
+/**
+ Initializes an AFAdOverlay with the given ad tag, custom ad size.
+
+ @param adTag A NSString containing ad tag that will be loaded .
+ @param adSize Custom ad size from API
+ @return A newly initialized overlay ad controller.
+ */
+- (instancetype)initWithAdTag:(NSString *)adTag adSize:(CGSize )adSize;
 
 /**
  Loads an ad if needed and displays it in an overlay ad view.
@@ -210,6 +233,11 @@ NS_ASSUME_NONNULL_BEGIN
  You can use this method to control the precise tme when the ad will be displayed. First, preload an ad. Then, after the loading is complete you can display the ad with the 'showFromViewController:' method.
  */
 - (void)preloadAd;
+
+/**
+ Returns default ad size.
+ */
++ (CGSize )defaultAdSize;
 
 @end
 
