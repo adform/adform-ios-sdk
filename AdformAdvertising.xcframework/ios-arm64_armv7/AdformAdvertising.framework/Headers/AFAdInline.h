@@ -155,13 +155,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) UIViewController *presentingViewController;
 
 /**
- Turns on/off debug mode.
- 
- Default value - NO (debug mode turned off).
- */
-@property (nonatomic, assign) BOOL debugMode;
-
-/**
  Custom impression url.
  This impression is fired when an ad is loaded.
  */

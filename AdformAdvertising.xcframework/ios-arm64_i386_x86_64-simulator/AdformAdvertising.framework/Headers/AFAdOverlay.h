@@ -84,13 +84,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) NSURL *customImpression;
 
 /**
- Turns on/off debug mode.
- 
- Default value - NO.
- */
-@property (nonatomic, assign) BOOL debugMode;
-
-/**
  If you are using the ad overlay to display video advertisment, you can use this property to setup
  video player behavior.
  

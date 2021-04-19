@@ -50,6 +50,13 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.18.3
+
+### New Features
+
+* Adds debug mode, that can be enabled with `-AFADebugModeEnabled` launch argument. When debug mode is enabled SDK will print additional debug logs into the console.
+* Release XCFramework as Carthage package. 
+
 # 2.18.2
 
 ### New Features
