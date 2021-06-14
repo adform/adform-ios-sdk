@@ -82,7 +82,6 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
         _mid = mid;
         _adFrequency = 3;
         _pageViews = 0;
-        _debugMode = NO;
         _scrollDirection = AFScrollingDirectionRight;
         
         _flags.removeAd = NO;
@@ -96,13 +95,10 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
-                          debugMode:(BOOL)debugMode
                      collectionView:(UICollectionView *)collectionView
            presentingViewController:(UIViewController *)presentingViewController{
     
     if (self = [self initWithMasterTagId:mid]) {
-        
-        self.debugMode = debugMode;
         self.adFrequency = adFrequency;
         
         self.collectionView = collectionView;
@@ -112,14 +108,10 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
 }
 
 - (instancetype)initWithMasterTagId:(NSInteger )mid
-                          debugMode:(BOOL)debugMode
                      collectionView:(UICollectionView *)collectionView
            presentingViewController:(UIViewController *)presentingViewController{
     
     if (self = [self initWithMasterTagId:mid]) {
-        
-        self.debugMode = debugMode;
-        
         self.collectionView = collectionView;
         self.presentingViewController = presentingViewController;
     }
@@ -136,7 +128,6 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
     
     AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:self.collectionView.bounds masterTagId:_mid presentingViewController:self.presentingViewController];
     adView.adTransitionStyle = AFAdTransitionStyleNone;
-    adView.debugMode = self.debugMode;
     adView.autoresizingMask = (UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
     adView.translatesAutoresizingMaskIntoConstraints = YES;
     adView.delegate = self;
@@ -171,12 +162,6 @@ static NSString * const kAdCellIdentifier = @"AdCellIdentifier";
     }
     
     [_adView loadAd];
-}
-
-- (void)setDebugMode:(BOOL)debugMode {
-    
-    _debugMode = debugMode;
-    _adView.debugMode = debugMode;
 }
 
 #pragma mark - Ads injection

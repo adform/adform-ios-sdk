@@ -39,7 +39,6 @@ static NSInteger const kMasterTag = 580421;
     // To display ads we need to create and setup AFPageViewControllerMediator.
     self.mediator = [[AFPageViewControllerMediator alloc] initWithMasterTagId:kMasterTag
                                                                   adFrequency:5
-                                                                    debugMode:false
                                                            pageViewController:self.pageViewController];
     self.mediator.delegate = self;
 }

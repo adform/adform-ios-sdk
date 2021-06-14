@@ -32,7 +32,6 @@ static NSInteger const kMasterTag = 580965;
     // Create ad mediator for collection view.
     self.mediator = [[AFCollectionViewMediator alloc] initWithMasterTagId:kMasterTag
                                                               adFrequency:3
-                                                                debugMode:false
                                                            collectionView:self.collectionView
                                                  presentingViewController:self];
     self.mediator.delegate = self;
@@ -86,17 +85,16 @@ static NSInteger const kMasterTag = 580965;
     return CGSizeMake(self.collectionView.frame.size.width, self.collectionView.frame.size.height);
 }
 
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-    
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
     [self.collectionView performBatchUpdates:^{
         [self.collectionViewLayout invalidateLayout];
         [self.collectionView reloadData];
     }
                                   completion:^(BOOL finished) {
-                                      [self.collectionView scrollToItemAtIndexPath:self.collectionView.indexPathsForVisibleItems.firstObject
-                                                                  atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
-                                                                          animated:YES];
-                                  }];
+        [self.collectionView scrollToItemAtIndexPath:self.collectionView.indexPathsForVisibleItems.firstObject
+                                    atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
+                                            animated:YES];
+    }];
 }
 
 @end

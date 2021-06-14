@@ -1,0 +1,16 @@
+PODS:
+  - AdformAdvertising (2.18.3)
+
+DEPENDENCIES:
+  - AdformAdvertising
+
+SPEC REPOS:
+  trunk:
+    - AdformAdvertising
+
+SPEC CHECKSUMS:
+  AdformAdvertising: e981b8c36bf12c14c6b2ff2406e535a69e9b20e9
+
+PODFILE CHECKSUM: 3d154fcf4497cbe60de48be876d484f138ab8c04
+
+COCOAPODS: 1.10.0

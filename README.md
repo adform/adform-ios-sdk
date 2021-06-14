@@ -50,11 +50,22 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.18.4
+
+### New Features
+
+* SDK requires Xcode 12. 
+
+### Bug fixes
+
+* Fixes an issue when video ads may shows skip button incorrectly.
+* Fixes video ad fullscreen presentation issues. 
+
 # 2.18.3
 
 ### New Features
 
-* Adds debug mode, that can be enabled with `-AFADebugModeEnabled` launch argument. When debug mode is enabled SDK will print additional debug logs into the console.
+* Adds debug mode, that can be enabled with `AFADebugModeEnabled` launch argument. When debug mode is enabled SDK will print additional debug logs into the console.
 
 # 2.18.2
 

@@ -31,7 +31,7 @@ class InlineAdsCollectionViewController: UICollectionViewController, UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectionView?.register(BannerFooter.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: footerReuseIdentifier)
+        collectionView?.register(BannerFooter.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: footerReuseIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,7 +70,7 @@ class InlineAdsCollectionViewController: UICollectionViewController, UICollectio
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: footerReuseIdentifier, for: indexPath) as! BannerFooter
+        let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: footerReuseIdentifier, for: indexPath) as! BannerFooter
         
         footer.loadAd(masterTag: masterTag, presenter: self, delegate: self)
         
@@ -88,7 +88,7 @@ class InlineAdsCollectionViewController: UICollectionViewController, UICollectio
         return footerSize
     }
     
-    func adInlineWillShow(_ adInline: AFAdInline!) {
+    func adInlineWillShow(_ adInline: AFAdInline) {
         footerSize = adInline.adSize
         
         UIView.animate(withDuration: 0.3) {
@@ -119,7 +119,7 @@ class BannerFooter: UICollectionReusableView {
             return
         }
         
-        let adInline = AFAdInline(masterTagId: masterTag, presenting: viewController)!
+        let adInline = AFAdInline(masterTagId: masterTag, presenting: viewController)
         adInline.areAditionalDimmensionsEnabled = true
         adInline.delegate = delegate
         adInline.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleBottomMargin, .flexibleTopMargin]

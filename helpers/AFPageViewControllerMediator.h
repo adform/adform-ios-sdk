@@ -54,13 +54,6 @@
 @property (nonatomic, assign) NSInteger adFrequency;
 
 /**
- Setting this property to TRUE enables debug mode on the page ad view.
- 
- Default value - FALSE.
- */
-@property (nonatomic, assign) BOOL debugMode;
-
-/**
  Initializes an AFPageViewControllerMediator with the given master tag id.
  
  Master tag id is used to initialize AFPageAdView.
@@ -78,14 +71,12 @@
  
  @param mid An integer representing Adform master tag id.
  @param adFrequency The frequecy of the page ad views.
- @param debugMode Enables debug mode.
  @param pageViewController A page view controller used to display ads.
  
  @return A newly initialized ad view.
  */
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
-                          debugMode:(BOOL )debugMode
                  pageViewController:(UIPageViewController *)pageViewController;
 
 /**
@@ -94,13 +85,11 @@
  Master tag id is used to initialize AFPageAdView.
  
  @param mid An integer representing Adform master tag id.
- @param debugMode Enables debug mode.
  @param pageViewController A page view controller used to display ads.
  
  @return A newly initialized ad view.
  */
 - (instancetype)initWithMasterTagId:(NSInteger )mid
-                          debugMode:(BOOL )debugMode
                  pageViewController:(UIPageViewController *)pageViewController;
 
 /**

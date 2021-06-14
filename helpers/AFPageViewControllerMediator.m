@@ -67,7 +67,6 @@
         _mid = mid;
         _adFrequency = 3;
         _pageViews = 0;
-        _debugMode = NO;
         _lastNavigationDirection = UIPageViewControllerNavigationDirectionForward;
     }
     
@@ -76,13 +75,10 @@
 
 - (instancetype)initWithMasterTagId:(NSInteger )mid
                         adFrequency:(NSInteger )adFrequency
-                          debugMode:(BOOL)debugMode
                  pageViewController:(UIPageViewController *)pageViewController {
     
     if (self = [self initWithMasterTagId:mid]) {
         self.adFrequency = adFrequency;
-        self.debugMode = debugMode;
-        
         self.pageViewController = pageViewController;
     }
     
@@ -90,12 +86,9 @@
 }
 
 - (instancetype)initWithMasterTagId:(NSInteger )mid
-                          debugMode:(BOOL)debugMode
                  pageViewController:(UIPageViewController *)pageViewController {
     
     if (self = [self initWithMasterTagId:mid]) {
-        self.debugMode = debugMode;
-        
         self.pageViewController = pageViewController;
     }
     
@@ -135,13 +128,6 @@
         // If there is no ad view controller init one.
         [self initAdViewController];
     }
-}
-
-- (void)setDebugMode:(BOOL)debugMode {
-    
-    _debugMode = debugMode;
-    
-    _adViewController.adView.debugMode = debugMode;
 }
 
 - (UIViewController *)previousViewController {
@@ -200,7 +186,6 @@
     
     AFAdInterstitial *adView = [[AFAdInterstitial alloc] initWithFrame:presentingViewController.view.bounds masterTagId:_mid presentingViewController:presentingViewController];
     adView.adTransitionStyle = AFAdTransitionStyleNone;
-    adView.debugMode = self.debugMode;
     adView.autoresizingMask = (UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth);
     adView.translatesAutoresizingMaskIntoConstraints = YES;
     adView.delegate = self;
@@ -228,7 +213,7 @@
  In case of single page view controller, it is animated with stadard page view controller animation.
  On double page view controller, a custom fade transition is used to hide the ad view.
  */
-- (void)hideAdView:(void(^)())completion
+- (void)hideAdView:(void(^)(void))completion
 {
     NSArray *viewControllers;
     BOOL animated = YES;
@@ -291,7 +276,7 @@
     return @[nextController];
 }
 
-- (void)setPagerViewControllers:(NSArray *)viewControllers animated:(BOOL)animated completion:(void (^)())completion
+- (void)setPagerViewControllers:(NSArray *)viewControllers animated:(BOOL)animated completion:(void (^)(void))completion
 {
     if (!animated) {
         // If standard animation is disabled, use the custom CATransition.
