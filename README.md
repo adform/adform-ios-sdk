@@ -5,7 +5,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 ## ***iOS 15 support***
 
-You can check out the new Adform Header Bidding SDK version that supports iOS 15 in `ios_15` branch.
+You can check out the new Adform Advertising SDK version that supports iOS 15 in `ios_15` branch.
 
 ### [IMPORTANT - IOS 14 Support](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started#important-ios-14-support)
 
