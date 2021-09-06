@@ -3,13 +3,13 @@ Adform Advertising iOS SDK
 
 Adform brings brand advertising to the programmatic era at scale, making display advertising simple, relevant and rewarding!
 
-### [IMPORTANT - IOS 14 Support](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started#important-ios-14-support)
-
-### [Getting Started](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started)
-
 ## ***iOS 15 support***
 
 You can check out the new Adform Header Bidding SDK version that supports iOS 15 in `ios_15` branch.
+
+### [IMPORTANT - IOS 14 Support](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started#important-ios-14-support)
+
+### [Getting Started](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started)
 
 **Basic integrations**
 
