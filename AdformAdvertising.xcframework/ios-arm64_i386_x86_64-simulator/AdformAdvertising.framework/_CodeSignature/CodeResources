@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/AFAdInterstitial.h</key>
 		<data>
-		1w/nlechCL2QIHn3dfGpKSmR/1Q=
+		2JhZoaaABskDIgs+rXVvPjCNgNc=
 		</data>
 		<key>Headers/AFAdOverlay.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/AFBidLoader.h</key>
 		<data>
-		dPStGxG+7D/o1pHE0gbTbBMuFxo=
+		6hA2nvp4RF3y9C/Up15ciFJGjw4=
 		</data>
 		<key>Headers/AFBidRequest.h</key>
 		<data>
-		u+cuBggS92OgORwm1pdAC0YY+FE=
+		BZatd39EDEi9CvUTSPSXbzkVjeo=
 		</data>
 		<key>Headers/AFBidResponse.h</key>
 		<data>
@@ -74,11 +74,7 @@
 		</data>
 		<key>Headers/AdformAdvertising.h</key>
 		<data>
-		sXTm11m9/yP7FFpwwSsKJsBRgPQ=
-		</data>
-		<key>Headers/AdformHeaderBidding.h</key>
-		<data>
-		w0/Nl5JeVZZ3RBe3sCikoWUMEX0=
+		PaYCKPOObTjscmJ+alEgqQtitNM=
 		</data>
 		<key>Headers/AdformSDK.h</key>
 		<data>
@@ -86,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MHid8fUjDT4ABtxZNeQEaYqAQ/s=
+		qlxfKLyNPiIFuEWoDZXGauIYLQA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -132,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1w/nlechCL2QIHn3dfGpKSmR/1Q=
+			2JhZoaaABskDIgs+rXVvPjCNgNc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7JcKCCv8FpmNT/asf2HPvgrMfRU0rXsOWY+4aRsCvrQ=
+			krgO2OgTXfYXHE8xryulSkqhUEoHe8FkAF/6FpTfYVs=
 			</data>
 		</dict>
 		<key>Headers/AFAdOverlay.h</key>
@@ -154,22 +150,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dPStGxG+7D/o1pHE0gbTbBMuFxo=
+			6hA2nvp4RF3y9C/Up15ciFJGjw4=
 			</data>
 			<key>hash2</key>
 			<data>
-			zlOcF+hK72KmLUV1atmI7Oy8OmwD/vud5LssL6XqMpc=
+			+kaBA4sgrtJy8ol07lau1SECASamqgavo2C9wQVWQO4=
 			</data>
 		</dict>
 		<key>Headers/AFBidRequest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u+cuBggS92OgORwm1pdAC0YY+FE=
+			BZatd39EDEi9CvUTSPSXbzkVjeo=
 			</data>
 			<key>hash2</key>
 			<data>
-			DvL5ayZV8gV9WYoicMCpkZCrlNBDOK78GDrE0JtoOak=
+			F2hICl3wgwjKVuAsOgtTFRHyO53MWDiUV6d/PWu1Rks=
 			</data>
 		</dict>
 		<key>Headers/AFBidResponse.h</key>
@@ -286,22 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sXTm11m9/yP7FFpwwSsKJsBRgPQ=
+			PaYCKPOObTjscmJ+alEgqQtitNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			jQ0xW4Fy8RedLnRctWY5y806L0GnLkuCrEADc4vOhUk=
-			</data>
-		</dict>
-		<key>Headers/AdformHeaderBidding.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w0/Nl5JeVZZ3RBe3sCikoWUMEX0=
-			</data>
-			<key>hash2</key>
-			<data>
-			GZtZdLMlEps1bsnuqX0H4x0RGF5oJctoLKn6//8g0ng=
+			mD0zeZINP+i7y366xxheTmqB/ZssaH6UL/zEXMUm5es=
 			</data>
 		</dict>
 		<key>Headers/AdformSDK.h</key>

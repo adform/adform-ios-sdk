@@ -3,10 +3,6 @@ Adform Advertising iOS SDK
 
 Adform brings brand advertising to the programmatic era at scale, making display advertising simple, relevant and rewarding!
 
-## ***iOS 15 support***
-
-You can check out the new Adform Advertising SDK version that supports iOS 15 in `ios_15` branch.
-
 ### [IMPORTANT - IOS 14 Support](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started#important-ios-14-support)
 
 ### [Getting Started](https://github.com/adform/adform-ios-sdk/wiki/Getting-Started)
@@ -53,6 +49,12 @@ You can check out the new Adform Advertising SDK version that supports iOS 15 in
 # CHANGELOG
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
+
+# 2.19.0
+
+### New Features
+
+* iOS 15 update. 
 
 # 2.18.4
 

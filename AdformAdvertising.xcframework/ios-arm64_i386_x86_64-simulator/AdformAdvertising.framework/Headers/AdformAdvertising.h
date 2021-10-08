@@ -29,4 +29,7 @@ FOUNDATION_EXPORT const unsigned char AdformAdvertisingVersionString[];
 #import <AdformAdvertising/AFAVPlayerViewControllerPlayback.h>
 #import <AdformAdvertising/AFCuePoint.h>
 
-#import <AdformAdvertising/AdformHeaderBidding.h>
+#import <AdformAdvertising/AFBidRequest.h>
+#import <AdformAdvertising/AFBidResponse.h>
+#import <AdformAdvertising/AFBidLoader.h>
+#import <AdformAdvertising/AFHBConstants.h>

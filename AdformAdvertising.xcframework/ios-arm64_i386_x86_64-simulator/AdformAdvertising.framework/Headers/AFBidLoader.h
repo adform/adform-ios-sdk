@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  */
 - (void)requestBids:(AFBidRequest *)bidRequest
-  completionHandler:(void(^)(NSArray <AFBidResponse *> *bidResponses, NSError *error))completion;
+  completionHandler:(void(^)(NSArray <AFBidResponse *> *bidResponses, NSError * _Nullable error))completion;
 
 /**
  A convenience method to request bids on default bid loader.
@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
     if bid is available.
  */
 + (void)requestBids:(AFBidRequest *)bidRequest
-  completionHandler:(void(^)(NSArray <AFBidResponse *> *bidResponses, NSError *error))completion;
+  completionHandler:(void(^)(NSArray <AFBidResponse *> *bidResponses, NSError * _Nullable error))completion;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -31,11 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly, getter=wasDisplayed) BOOL displayed;
 
 /**
- Ad view size shows the size of the currently loaded ad from API.
- */
-@property (nonatomic, assign) CGSize adSize;
-
-/**
  Returns default ad size.
  */
 + (CGSize )defaultAdSize;

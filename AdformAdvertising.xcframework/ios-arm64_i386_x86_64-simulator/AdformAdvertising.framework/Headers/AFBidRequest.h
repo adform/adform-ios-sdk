@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFHBConstants.h"
+#import <AdformAdvertising/AFHBConstants.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @interface AFBidRequest : NSObject
@@ -47,17 +47,17 @@ NS_ASSUME_NONNULL_BEGIN
  Must be a BOOL value wraped in a NSNumber.
  Default value: nil.
  */
-@property (nonatomic, strong) NSNumber *gdpr;
+@property (nonatomic, strong, nullable) NSNumber *gdpr;
 
 /**
  Specifies the GDPR consent.
  Base64 encoded string with vendor and purpose consent strings.
  Default value: nil.
  */
-@property (nonatomic, strong) NSString *gdprConsent;
+@property (nonatomic, strong, nullable) NSString *gdprConsent;
 
 /** Specifies the US Privacy consent. */
-@property (nonatomic, strong) NSString *usPrivacy;
+@property (nonatomic, strong, nullable) NSString *usPrivacy;
 
 /**
  Unix timestamp identifying when bid was requested.
