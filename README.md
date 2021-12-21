@@ -50,6 +50,12 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.19.1
+
+### New feature
+
+* Enable in app deeplinks.
+
 # 2.19.0
 
 ### New Features
