@@ -56,6 +56,10 @@ This part lists release notes from all versions of Adform Mobile Advertising iOS
 
 * iOS 16 update. 
 
+### Important
+
+* Requires Xcode 14.
+
 # 2.19.1
 
 ### New feature
