@@ -10,10 +10,10 @@
 #import <AVFoundation/AVFoundation.h>
 #import <SafariServices/SafariServices.h>
 
-#import "AFVideoSettings.h"
-#import "AFContentPlayback.h"
-#import "AFBrowserViewController.h"
-#import "AFConstants.h"
+#import <AdformAdvertising/AFVideoSettings.h>
+#import <AdformAdvertising/AFContentPlayback.h>
+#import <AdformAdvertising/AFBrowserViewController.h>
+#import <AdformAdvertising/AFConstants.h>
 
 /**
  Video player types.

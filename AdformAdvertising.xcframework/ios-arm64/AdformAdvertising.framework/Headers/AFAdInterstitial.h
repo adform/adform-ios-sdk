@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Adform. All rights reserved.
 //
 
-#import "AFAdInline.h"
+#import <AdformAdvertising/AFAdInline.h>
 
 @protocol AFAdInterstitialDelegate;
 

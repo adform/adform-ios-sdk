@@ -31,7 +31,10 @@ typedef NS_ENUM(NSInteger, AFHBErrorCode) {
     AFHBInvalidServerResponseError = 4,
     
     /// Provided bid request is invalid.
-    AFHBInvalidBidRequestError = 5
+    AFHBInvalidBidRequestError = 5,
+    
+    /// Native ad mediation configuration is invalid.
+    AFHBInvalidNativeAdConfigurationError = 6
 };
 
 

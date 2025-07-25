@@ -33,3 +33,4 @@ FOUNDATION_EXPORT const unsigned char AdformAdvertisingVersionString[];
 #import <AdformAdvertising/AFBidResponse.h>
 #import <AdformAdvertising/AFBidLoader.h>
 #import <AdformAdvertising/AFHBConstants.h>
+#import <AdformAdvertising/AFOpenRTB.h>

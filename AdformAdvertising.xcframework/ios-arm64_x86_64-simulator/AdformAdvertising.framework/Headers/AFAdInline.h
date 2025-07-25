@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <SafariServices/SafariServices.h>
-#import "AFConstants.h"
+#import <AdformAdvertising/AFConstants.h>
 
 @protocol AFAdInlineDelegate;
 @class AFVideoSettings, AFKeyValue, AFBrowserViewController;

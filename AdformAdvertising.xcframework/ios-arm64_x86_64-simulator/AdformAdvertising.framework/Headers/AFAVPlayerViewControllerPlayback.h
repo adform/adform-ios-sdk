@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
-#import "AFContentPlayback.h"
+#import <AdformAdvertising/AFContentPlayback.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @interface AFAVPlayerViewControllerPlayback : NSObject <AFContentPlayback>
