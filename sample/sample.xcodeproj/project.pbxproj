@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0A9E2C2E3363E200AB67E5 /* AdformAdvertising in Frameworks */ = {isa = PBXBuildFile; productRef = 0E0A9E2B2E3363E200AB67E5 /* AdformAdvertising */; };
+		0E0A9E2E2E33649A00AB67E5 /* NativeAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A9E2D2E33649A00AB67E5 /* NativeAdsViewController.swift */; };
+		0E0A9E352E33650C00AB67E5 /* GADTSmallTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A9E302E33650C00AB67E5 /* GADTSmallTemplateView.m */; };
+		0E0A9E362E33650C00AB67E5 /* GADTTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A9E332E33650C00AB67E5 /* GADTTemplateView.m */; };
+		0E0A9E372E33650C00AB67E5 /* GADTSmallTemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A9E312E33650C00AB67E5 /* GADTSmallTemplateView.xib */; };
+		0E0A9E392E3367F800AB67E5 /* AdformAdmobMediation in Frameworks */ = {isa = PBXBuildFile; productRef = 0E0A9E382E3367F800AB67E5 /* AdformAdmobMediation */; };
 		8297ECA48962013C6BF7FBE9 /* Pods_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A351EF1A8D36CC1143806B5 /* Pods_sample.framework */; };
 		D11019771CEC464400421E13 /* InstreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D11019761CEC464400421E13 /* InstreamViewController.m */; };
 		D18DD2601FBF1B3C00028FA1 /* AFCollectionViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D18DD25D1FBF1B3C00028FA1 /* AFCollectionViewMediator.m */; };
@@ -45,6 +51,12 @@
 
 /* Begin PBXFileReference section */
 		0A351EF1A8D36CC1143806B5 /* Pods_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E0A9E2D2E33649A00AB67E5 /* NativeAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdsViewController.swift; sourceTree = "<group>"; };
+		0E0A9E2F2E33650C00AB67E5 /* GADTSmallTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADTSmallTemplateView.h; sourceTree = "<group>"; };
+		0E0A9E302E33650C00AB67E5 /* GADTSmallTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADTSmallTemplateView.m; sourceTree = "<group>"; };
+		0E0A9E312E33650C00AB67E5 /* GADTSmallTemplateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GADTSmallTemplateView.xib; sourceTree = "<group>"; };
+		0E0A9E322E33650C00AB67E5 /* GADTTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADTTemplateView.h; sourceTree = "<group>"; };
+		0E0A9E332E33650C00AB67E5 /* GADTTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADTTemplateView.m; sourceTree = "<group>"; };
 		D11019751CEC464400421E13 /* InstreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstreamViewController.h; sourceTree = "<group>"; };
 		D11019761CEC464400421E13 /* InstreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstreamViewController.m; sourceTree = "<group>"; };
 		D18DD25C1FBF1B3C00028FA1 /* AFCollectionViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCollectionViewMediator.h; sourceTree = "<group>"; };
@@ -98,7 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0A9E2C2E3363E200AB67E5 /* AdformAdvertising in Frameworks */,
 				8297ECA48962013C6BF7FBE9 /* Pods_sample.framework in Frameworks */,
+				0E0A9E392E3367F800AB67E5 /* AdformAdmobMediation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +126,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0A9E342E33650C00AB67E5 /* NativeAdTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				0E0A9E2F2E33650C00AB67E5 /* GADTSmallTemplateView.h */,
+				0E0A9E302E33650C00AB67E5 /* GADTSmallTemplateView.m */,
+				0E0A9E312E33650C00AB67E5 /* GADTSmallTemplateView.xib */,
+				0E0A9E322E33650C00AB67E5 /* GADTTemplateView.h */,
+				0E0A9E332E33650C00AB67E5 /* GADTTemplateView.m */,
+			);
+			path = NativeAdTemplate;
+			sourceTree = "<group>";
+		};
 		45CB2B0D551597B2D00A5201 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +189,7 @@
 				D1DD72081AF76D6A00FF2B86 /* Placements */,
 				D1DD71E91AF767E100FF2B86 /* Main.storyboard */,
 				D1DD71EC1AF767E100FF2B86 /* Images.xcassets */,
+				0E0A9E342E33650C00AB67E5 /* NativeAdTemplate */,
 				D1DD71EE1AF767E100FF2B86 /* LaunchScreen.xib */,
 				D1DD71DF1AF767E100FF2B86 /* Supporting Files */,
 			);
@@ -219,6 +246,7 @@
 				D11019751CEC464400421E13 /* InstreamViewController.h */,
 				D11019761CEC464400421E13 /* InstreamViewController.m */,
 				D18DD2631FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift */,
+				0E0A9E2D2E33649A00AB67E5 /* NativeAdsViewController.swift */,
 				D18DD2621FBF1C9A00028FA1 /* sample-Bridging-Header.h */,
 			);
 			name = Placements;
@@ -316,6 +344,9 @@
 				Base,
 			);
 			mainGroup = D1DD71D31AF767E000FF2B86;
+			packageReferences = (
+				0E0A9E282E3363E200AB67E5 /* XCLocalSwiftPackageReference "../../adform-ios-sdk" */,
+			);
 			productRefGroup = D1DD71DD1AF767E100FF2B86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -331,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0A9E372E33650C00AB67E5 /* GADTSmallTemplateView.xib in Resources */,
 				D1E6C4561B56357D004C5289 /* vast_adform.xml in Resources */,
 				D1DD71EB1AF767E100FF2B86 /* Main.storyboard in Resources */,
 				D1DD71F01AF767E100FF2B86 /* LaunchScreen.xib in Resources */,
@@ -385,11 +417,14 @@
 				D18DD2601FBF1B3C00028FA1 /* AFCollectionViewMediator.m in Sources */,
 				D18DD2641FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift in Sources */,
 				D11019771CEC464400421E13 /* InstreamViewController.m in Sources */,
+				0E0A9E2E2E33649A00AB67E5 /* NativeAdsViewController.swift in Sources */,
 				D1DD72071AF7684300FF2B86 /* PlacementsViewController.m in Sources */,
 				D1DD724D1AF7BC5C00FF2B86 /* DataViewController.m in Sources */,
 				D1DD724C1AF7BC5C00FF2B86 /* RootViewController.m in Sources */,
 				D1DD724E1AF7BC5C00FF2B86 /* ModelController.m in Sources */,
 				D1DD72271AF796BC00FF2B86 /* AdInlineResponsiveViewController.m in Sources */,
+				0E0A9E352E33650C00AB67E5 /* GADTSmallTemplateView.m in Sources */,
+				0E0A9E362E33650C00AB67E5 /* GADTTemplateView.m in Sources */,
 				D1DD72241AF77DB300FF2B86 /* AdInlineTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,8 +588,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = sample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
@@ -576,8 +614,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = sample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
@@ -601,7 +642,11 @@
 				);
 				INFOPLIST_FILE = sampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample.app/sample";
@@ -620,7 +665,11 @@
 				);
 				INFOPLIST_FILE = sampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample.app/sample";
@@ -658,6 +707,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0E0A9E282E3363E200AB67E5 /* XCLocalSwiftPackageReference "../../adform-ios-sdk" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../adform-ios-sdk";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E0A9E2B2E3363E200AB67E5 /* AdformAdvertising */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AdformAdvertising;
+		};
+		0E0A9E382E3367F800AB67E5 /* AdformAdmobMediation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E0A9E282E3363E200AB67E5 /* XCLocalSwiftPackageReference "../../adform-ios-sdk" */;
+			productName = AdformAdmobMediation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1DD71D41AF767E000FF2B86 /* Project object */;
 }

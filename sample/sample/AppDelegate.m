@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "CollectionPagerViewController.h"
+#import "AdformAdvertising/AdformAdvertising.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @interface AppDelegate ()
 
@@ -17,7 +19,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [AdformSDK requestTrackingPermissions:^(BOOL granted) {
+            NSLog(@"Tracking permission granted: %@", granted ? @"YES" : @"NO");
+        }];
+    });
+    
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:^(GADInitializationStatus * _Nonnull status) {
+        NSDictionary *statuses = [status adapterStatusesByClassName];
+        for (NSString *key in statuses.allKeys) {
+            GADAdapterStatus *adapterStatus = statuses[key];
+            NSLog(@"Adapter Name: %@, Description: %@, Latency: %f", key, adapterStatus.description, adapterStatus.latency);
+        }
+    }];
+    
     return YES;
 }
 

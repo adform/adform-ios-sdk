@@ -3,3 +3,5 @@
 //
 
 #import <AdformAdvertising/AdformAdvertising.h>
+#import "GADTSmallTemplateView.h"
+#import "GADTTemplateView.h"

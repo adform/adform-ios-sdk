@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFConstants.h"
+#import <AdformAdvertising/AFConstants.h>
 
 NS_ASSUME_NONNULL_BEGIN
 /**

@@ -6,16 +6,34 @@ import PackageDescription
 let package = Package(
     name: "AdformAdvertising",
     platforms: [
-            .iOS(.v9)
-        ],
+        .iOS(.v9)
+    ],
     products: [
         .library(
             name: "AdformAdvertising",
-            targets: ["AdformAdvertising"])
+            targets: ["AdformAdvertising"]),
+        .library(
+            name: "AdformAdmobMediation",
+            targets: ["AdformAdmobMediation"]),
+    ],
+    dependencies: [
+        .package(
+            name: "GoogleMobileAds",
+            url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+            from: "12.7.0"
+        )
     ],
     targets: [
         .binaryTarget(
-                    name: "AdformAdvertising",
-                    path: "AdformAdvertising.xcframework")
+            name: "AdformAdvertising",
+            path: "AdformAdvertising.xcframework"),
+        .target(
+            name: "AdformAdmobMediation",
+            dependencies: [
+                "AdformAdvertising",
+                .product(name: "GoogleMobileAds", package: "GoogleMobileAds")
+            ],
+            path: "AdformAdmobMediation"
+        )
     ]
 )

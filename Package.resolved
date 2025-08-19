@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "GoogleMobileAds",
+        "repositoryURL": "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+        "state": {
+          "branch": null,
+          "revision": "d24a9f5ad472610598449dc669befa5b7ed50658",
+          "version": "12.7.0"
+        }
+      },
+      {
+        "package": "GoogleUserMessagingPlatform",
+        "repositoryURL": "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
+        "state": {
+          "branch": null,
+          "revision": "69b53394c5258b3fe688e625a998047d1f393497",
+          "version": "3.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
