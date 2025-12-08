@@ -3,120 +3,146 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E0A9E2C2E3363E200AB67E5 /* AdformAdvertising in Frameworks */ = {isa = PBXBuildFile; productRef = 0E0A9E2B2E3363E200AB67E5 /* AdformAdvertising */; };
-		0E0A9E2E2E33649A00AB67E5 /* NativeAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A9E2D2E33649A00AB67E5 /* NativeAdsViewController.swift */; };
-		0E0A9E352E33650C00AB67E5 /* GADTSmallTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A9E302E33650C00AB67E5 /* GADTSmallTemplateView.m */; };
-		0E0A9E362E33650C00AB67E5 /* GADTTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A9E332E33650C00AB67E5 /* GADTTemplateView.m */; };
-		0E0A9E372E33650C00AB67E5 /* GADTSmallTemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A9E312E33650C00AB67E5 /* GADTSmallTemplateView.xib */; };
-		0E0A9E392E3367F800AB67E5 /* AdformAdmobMediation in Frameworks */ = {isa = PBXBuildFile; productRef = 0E0A9E382E3367F800AB67E5 /* AdformAdmobMediation */; };
-		8297ECA48962013C6BF7FBE9 /* Pods_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A351EF1A8D36CC1143806B5 /* Pods_sample.framework */; };
-		D11019771CEC464400421E13 /* InstreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D11019761CEC464400421E13 /* InstreamViewController.m */; };
-		D18DD2601FBF1B3C00028FA1 /* AFCollectionViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D18DD25D1FBF1B3C00028FA1 /* AFCollectionViewMediator.m */; };
-		D18DD2611FBF1B3C00028FA1 /* AFPageViewControllerMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D18DD25F1FBF1B3C00028FA1 /* AFPageViewControllerMediator.m */; };
-		D18DD2641FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18DD2631FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift */; };
-		D1DD71E21AF767E100FF2B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD71E11AF767E100FF2B86 /* main.m */; };
-		D1DD71E51AF767E100FF2B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD71E41AF767E100FF2B86 /* AppDelegate.m */; };
-		D1DD71EB1AF767E100FF2B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DD71E91AF767E100FF2B86 /* Main.storyboard */; };
-		D1DD71ED1AF767E100FF2B86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DD71EC1AF767E100FF2B86 /* Images.xcassets */; };
-		D1DD71F01AF767E100FF2B86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1DD71EE1AF767E100FF2B86 /* LaunchScreen.xib */; };
-		D1DD71FC1AF767E100FF2B86 /* sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD71FB1AF767E100FF2B86 /* sampleTests.m */; };
-		D1DD72071AF7684300FF2B86 /* PlacementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72061AF7684300FF2B86 /* PlacementsViewController.m */; };
-		D1DD720E1AF76DAD00FF2B86 /* AdInlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD720D1AF76DAD00FF2B86 /* AdInlineViewController.m */; };
-		D1DD72211AF7797C00FF2B86 /* AdOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72201AF7797C00FF2B86 /* AdOverlayViewController.m */; };
-		D1DD72241AF77DB300FF2B86 /* AdInlineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72231AF77DB300FF2B86 /* AdInlineTableViewController.m */; };
-		D1DD72271AF796BC00FF2B86 /* AdInlineResponsiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72261AF796BC00FF2B86 /* AdInlineResponsiveViewController.m */; };
-		D1DD722A1AF7AADB00FF2B86 /* AdOverlayPreloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72291AF7AADB00FF2B86 /* AdOverlayPreloadViewController.m */; };
-		D1DD722D1AF7AFCE00FF2B86 /* AdhesionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD722C1AF7AFCE00FF2B86 /* AdhesionViewController.m */; };
-		D1DD72331AF7B25A00FF2B86 /* CollectionPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72321AF7B25A00FF2B86 /* CollectionPagerViewController.m */; };
-		D1DD724C1AF7BC5C00FF2B86 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72471AF7BC5C00FF2B86 /* RootViewController.m */; };
-		D1DD724D1AF7BC5C00FF2B86 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD72491AF7BC5C00FF2B86 /* DataViewController.m */; };
-		D1DD724E1AF7BC5C00FF2B86 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DD724B1AF7BC5C00FF2B86 /* ModelController.m */; };
-		D1E6C4541B56333C004C5289 /* VideoAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */; };
-		D1E6C4561B56357D004C5289 /* vast_adform.xml in Resources */ = {isa = PBXBuildFile; fileRef = D1E6C4551B56357D004C5289 /* vast_adform.xml */; };
+		0E4BFFDB2EE7061000D718BF /* AdformAdvertising.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4BFFDA2EE7061000D718BF /* AdformAdvertising.xcframework */; };
+		D525BCF42E9E5A840029EAF7 /* GADTTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D525BCF02E9E5A840029EAF7 /* GADTTemplateView.m */; };
+		D525BCF52E9E5A840029EAF7 /* NativeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BCF22E9E5A840029EAF7 /* NativeAdViewController.swift */; };
+		D525BCF62E9E5A840029EAF7 /* GADTSmallTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D525BCED2E9E5A840029EAF7 /* GADTSmallTemplateView.m */; };
+		D525BCF72E9E5A840029EAF7 /* GADTSmallTemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D525BCEE2E9E5A840029EAF7 /* GADTSmallTemplateView.xib */; };
+		D525BCFA2E9E5C2F0029EAF7 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = D525BCF92E9E5C2F0029EAF7 /* GoogleMobileAds */; };
+		D525BD122E9F9AAC0029EAF7 /* InlineAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD112E9F9AAC0029EAF7 /* InlineAddView.swift */; };
+		D525BD142E9F9B010029EAF7 /* InterstitialAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD132E9F9B010029EAF7 /* InterstitialAddView.swift */; };
+		D525BD162E9F9B360029EAF7 /* AddsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD152E9F9B360029EAF7 /* AddsPageController.swift */; };
+		D525BD182E9F9B530029EAF7 /* AddOverlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD172E9F9B530029EAF7 /* AddOverlayScreen.swift */; };
+		D525BD1A2E9F9B750029EAF7 /* PreloadOverlayAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD192E9F9B750029EAF7 /* PreloadOverlayAddView.swift */; };
+		D525BD1C2E9F9B990029EAF7 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD1B2E9F9B990029EAF7 /* AddListView.swift */; };
+		D525BD1E2E9F9BAD0029EAF7 /* AFPlayerControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD1D2E9F9BAD0029EAF7 /* AFPlayerControllerView.swift */; };
+		D525BD202E9F9C010029EAF7 /* GridAddsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD1F2E9F9C010029EAF7 /* GridAddsView.swift */; };
+		D525BD6E2E9F9CFE0029EAF7 /* SwiftUiInlineAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD6D2E9F9CFE0029EAF7 /* SwiftUiInlineAddController.swift */; };
+		D525BD702E9FA09B0029EAF7 /* SwiftUiOverlayAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD6F2E9FA09B0029EAF7 /* SwiftUiOverlayAddController.swift */; };
+		D525BD722E9FA1610029EAF7 /* SwiftuiGridAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD712E9FA1610029EAF7 /* SwiftuiGridAddController.swift */; };
+		D525BD742E9FA6140029EAF7 /* SwiftUiPageAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD732E9FA6140029EAF7 /* SwiftUiPageAddController.swift */; };
+		D525BD762E9FA6730029EAF7 /* SwiftUiListAddsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD752E9FA6730029EAF7 /* SwiftUiListAddsController.swift */; };
+		D525BD782E9FA67E0029EAF7 /* SwiftUiPlayerAddsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D525BD772E9FA67E0029EAF7 /* SwiftUiPlayerAddsController.swift */; };
+		D558CC122844B8F3003A984A /* InstreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D558CC112844B8F3003A984A /* InstreamViewController.swift */; };
+		D558CC142844C474003A984A /* VideoAddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D558CC132844C474003A984A /* VideoAddsViewController.swift */; };
+		D81AC20525E7D43F003BEFC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC20425E7D43F003BEFC6 /* AppDelegate.swift */; };
+		D81AC20925E7D43F003BEFC6 /* PlacementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC20825E7D43F003BEFC6 /* PlacementsViewController.swift */; };
+		D81AC20E25E7D443003BEFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81AC20D25E7D443003BEFC6 /* Assets.xcassets */; };
+		D81AC21125E7D443003BEFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81AC20F25E7D443003BEFC6 /* LaunchScreen.storyboard */; };
+		D81AC21C25E7D443003BEFC6 /* sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC21B25E7D443003BEFC6 /* sampleTests.swift */; };
+		D81AC22725E7D443003BEFC6 /* sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC22625E7D443003BEFC6 /* sampleUITests.swift */; };
+		D81AC25825E7D83B003BEFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81AC25725E7D83B003BEFC6 /* Main.storyboard */; };
+		D81AC27025E7DB35003BEFC6 /* AdInlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC26F25E7DB35003BEFC6 /* AdInlineViewController.swift */; };
+		D81AC27825E7DE57003BEFC6 /* AdInlineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC27725E7DE57003BEFC6 /* AdInlineTableViewController.swift */; };
+		D81AC27D25E8D8A0003BEFC6 /* AdInlineResponsiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC27C25E8D8A0003BEFC6 /* AdInlineResponsiveViewController.swift */; };
+		D81AC28225E8E385003BEFC6 /* AdOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC28125E8E385003BEFC6 /* AdOverlayViewController.swift */; };
+		D81AC28725E8E4C4003BEFC6 /* AdOverlayPreloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC28625E8E4C4003BEFC6 /* AdOverlayPreloadViewController.swift */; };
+		D81AC28C25E8EAEF003BEFC6 /* AdhesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC28B25E8EAEF003BEFC6 /* AdhesionViewController.swift */; };
+		D81AC29125E8F363003BEFC6 /* CollectionPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC29025E8F363003BEFC6 /* CollectionPagerViewController.swift */; };
+		D81AC29725E91388003BEFC6 /* AFPageViewControllerMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC29625E91388003BEFC6 /* AFPageViewControllerMediator.swift */; };
+		D81AC29C25E91616003BEFC6 /* AFCollectionViewMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC29B25E91615003BEFC6 /* AFCollectionViewMediator.swift */; };
+		D81AC2A125E92707003BEFC6 /* AFCollectionViewMediatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC2A025E92707003BEFC6 /* AFCollectionViewMediatorDelegate.swift */; };
+		D81AC2A625E9286C003BEFC6 /* AFAdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC2A525E9286C003BEFC6 /* AFAdCollectionViewCell.swift */; };
+		D81AC2AB25E92A80003BEFC6 /* AFAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AC2AA25E92A80003BEFC6 /* AFAdViewController.swift */; };
+		D84599F02631945A00061DFC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84599EF2631945A00061DFC /* RootViewController.swift */; };
+		D84599F8263198AD00061DFC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84599F7263198AD00061DFC /* DataViewController.swift */; };
+		D84599FD2631996D00061DFC /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84599FC2631996D00061DFC /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D1DD71F61AF767E100FF2B86 /* PBXContainerItemProxy */ = {
+		D81AC21825E7D443003BEFC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D1DD71D41AF767E000FF2B86 /* Project object */;
+			containerPortal = D81AC1F925E7D43F003BEFC6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D1DD71DB1AF767E100FF2B86;
+			remoteGlobalIDString = D81AC20025E7D43F003BEFC6;
+			remoteInfo = sample;
+		};
+		D81AC22325E7D443003BEFC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D81AC1F925E7D43F003BEFC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81AC20025E7D43F003BEFC6;
 			remoteInfo = sample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A351EF1A8D36CC1143806B5 /* Pods_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E0A9E2D2E33649A00AB67E5 /* NativeAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdsViewController.swift; sourceTree = "<group>"; };
-		0E0A9E2F2E33650C00AB67E5 /* GADTSmallTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADTSmallTemplateView.h; sourceTree = "<group>"; };
-		0E0A9E302E33650C00AB67E5 /* GADTSmallTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADTSmallTemplateView.m; sourceTree = "<group>"; };
-		0E0A9E312E33650C00AB67E5 /* GADTSmallTemplateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GADTSmallTemplateView.xib; sourceTree = "<group>"; };
-		0E0A9E322E33650C00AB67E5 /* GADTTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADTTemplateView.h; sourceTree = "<group>"; };
-		0E0A9E332E33650C00AB67E5 /* GADTTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADTTemplateView.m; sourceTree = "<group>"; };
-		D11019751CEC464400421E13 /* InstreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstreamViewController.h; sourceTree = "<group>"; };
-		D11019761CEC464400421E13 /* InstreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstreamViewController.m; sourceTree = "<group>"; };
-		D18DD25C1FBF1B3C00028FA1 /* AFCollectionViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCollectionViewMediator.h; sourceTree = "<group>"; };
-		D18DD25D1FBF1B3C00028FA1 /* AFCollectionViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFCollectionViewMediator.m; sourceTree = "<group>"; };
-		D18DD25E1FBF1B3C00028FA1 /* AFPageViewControllerMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPageViewControllerMediator.h; sourceTree = "<group>"; };
-		D18DD25F1FBF1B3C00028FA1 /* AFPageViewControllerMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPageViewControllerMediator.m; sourceTree = "<group>"; };
-		D18DD2621FBF1C9A00028FA1 /* sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample-Bridging-Header.h"; sourceTree = "<group>"; };
-		D18DD2631FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAdsCollectionViewController.swift; sourceTree = "<group>"; };
-		D1DD71DC1AF767E100FF2B86 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1DD71E01AF767E100FF2B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1DD71E11AF767E100FF2B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D1DD71E31AF767E100FF2B86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D1DD71E41AF767E100FF2B86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D1DD71EA1AF767E100FF2B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D1DD71EC1AF767E100FF2B86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D1DD71EF1AF767E100FF2B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D1DD71F51AF767E100FF2B86 /* sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1DD71FA1AF767E100FF2B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1DD71FB1AF767E100FF2B86 /* sampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sampleTests.m; sourceTree = "<group>"; };
-		D1DD72051AF7684300FF2B86 /* PlacementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacementsViewController.h; sourceTree = "<group>"; };
-		D1DD72061AF7684300FF2B86 /* PlacementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacementsViewController.m; sourceTree = "<group>"; };
-		D1DD720C1AF76DAD00FF2B86 /* AdInlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdInlineViewController.h; sourceTree = "<group>"; };
-		D1DD720D1AF76DAD00FF2B86 /* AdInlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdInlineViewController.m; sourceTree = "<group>"; };
-		D1DD721F1AF7797C00FF2B86 /* AdOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdOverlayViewController.h; sourceTree = "<group>"; };
-		D1DD72201AF7797C00FF2B86 /* AdOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdOverlayViewController.m; sourceTree = "<group>"; };
-		D1DD72221AF77DB300FF2B86 /* AdInlineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdInlineTableViewController.h; sourceTree = "<group>"; };
-		D1DD72231AF77DB300FF2B86 /* AdInlineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdInlineTableViewController.m; sourceTree = "<group>"; };
-		D1DD72251AF796BC00FF2B86 /* AdInlineResponsiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdInlineResponsiveViewController.h; sourceTree = "<group>"; };
-		D1DD72261AF796BC00FF2B86 /* AdInlineResponsiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdInlineResponsiveViewController.m; sourceTree = "<group>"; };
-		D1DD72281AF7AADB00FF2B86 /* AdOverlayPreloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdOverlayPreloadViewController.h; sourceTree = "<group>"; };
-		D1DD72291AF7AADB00FF2B86 /* AdOverlayPreloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdOverlayPreloadViewController.m; sourceTree = "<group>"; };
-		D1DD722B1AF7AFCE00FF2B86 /* AdhesionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdhesionViewController.h; sourceTree = "<group>"; };
-		D1DD722C1AF7AFCE00FF2B86 /* AdhesionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdhesionViewController.m; sourceTree = "<group>"; };
-		D1DD72311AF7B25A00FF2B86 /* CollectionPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionPagerViewController.h; sourceTree = "<group>"; };
-		D1DD72321AF7B25A00FF2B86 /* CollectionPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionPagerViewController.m; sourceTree = "<group>"; };
-		D1DD72461AF7BC5C00FF2B86 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		D1DD72471AF7BC5C00FF2B86 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		D1DD72481AF7BC5C00FF2B86 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		D1DD72491AF7BC5C00FF2B86 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		D1DD724A1AF7BC5C00FF2B86 /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
-		D1DD724B1AF7BC5C00FF2B86 /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
-		D1E6C4521B56333C004C5289 /* VideoAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAdsViewController.h; sourceTree = "<group>"; };
-		D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAdsViewController.m; sourceTree = "<group>"; };
-		D1E6C4551B56357D004C5289 /* vast_adform.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vast_adform.xml; sourceTree = "<group>"; };
-		D78AED9E7ECC3253F3A77B71 /* Pods-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sample/Pods-sample.debug.xcconfig"; sourceTree = "<group>"; };
-		D8CCCFC912A84259DAFF568C /* Pods-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample/Pods-sample.release.xcconfig"; sourceTree = "<group>"; };
+		0E4BFFDA2EE7061000D718BF /* AdformAdvertising.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AdformAdvertising.xcframework; sourceTree = "<group>"; };
+		D525BCEC2E9E5A840029EAF7 /* GADTSmallTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADTSmallTemplateView.h; sourceTree = "<group>"; };
+		D525BCED2E9E5A840029EAF7 /* GADTSmallTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADTSmallTemplateView.m; sourceTree = "<group>"; };
+		D525BCEE2E9E5A840029EAF7 /* GADTSmallTemplateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GADTSmallTemplateView.xib; sourceTree = "<group>"; };
+		D525BCEF2E9E5A840029EAF7 /* GADTTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADTTemplateView.h; sourceTree = "<group>"; };
+		D525BCF02E9E5A840029EAF7 /* GADTTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADTTemplateView.m; sourceTree = "<group>"; };
+		D525BCF22E9E5A840029EAF7 /* NativeAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdViewController.swift; sourceTree = "<group>"; };
+		D525BCFD2E9E61860029EAF7 /* sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		D525BD112E9F9AAC0029EAF7 /* InlineAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAddView.swift; sourceTree = "<group>"; };
+		D525BD132E9F9B010029EAF7 /* InterstitialAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAddView.swift; sourceTree = "<group>"; };
+		D525BD152E9F9B360029EAF7 /* AddsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddsPageController.swift; sourceTree = "<group>"; };
+		D525BD172E9F9B530029EAF7 /* AddOverlayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOverlayScreen.swift; sourceTree = "<group>"; };
+		D525BD192E9F9B750029EAF7 /* PreloadOverlayAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadOverlayAddView.swift; sourceTree = "<group>"; };
+		D525BD1B2E9F9B990029EAF7 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
+		D525BD1D2E9F9BAD0029EAF7 /* AFPlayerControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFPlayerControllerView.swift; sourceTree = "<group>"; };
+		D525BD1F2E9F9C010029EAF7 /* GridAddsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAddsView.swift; sourceTree = "<group>"; };
+		D525BD6D2E9F9CFE0029EAF7 /* SwiftUiInlineAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiInlineAddController.swift; sourceTree = "<group>"; };
+		D525BD6F2E9FA09B0029EAF7 /* SwiftUiOverlayAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiOverlayAddController.swift; sourceTree = "<group>"; };
+		D525BD712E9FA1610029EAF7 /* SwiftuiGridAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiGridAddController.swift; sourceTree = "<group>"; };
+		D525BD732E9FA6140029EAF7 /* SwiftUiPageAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiPageAddController.swift; sourceTree = "<group>"; };
+		D525BD752E9FA6730029EAF7 /* SwiftUiListAddsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiListAddsController.swift; sourceTree = "<group>"; };
+		D525BD772E9FA67E0029EAF7 /* SwiftUiPlayerAddsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiPlayerAddsController.swift; sourceTree = "<group>"; };
+		D558CC112844B8F3003A984A /* InstreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstreamViewController.swift; sourceTree = "<group>"; };
+		D558CC132844C474003A984A /* VideoAddsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAddsViewController.swift; sourceTree = "<group>"; };
+		D81AC20125E7D43F003BEFC6 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81AC20425E7D43F003BEFC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D81AC20825E7D43F003BEFC6 /* PlacementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementsViewController.swift; sourceTree = "<group>"; };
+		D81AC20D25E7D443003BEFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D81AC21025E7D443003BEFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D81AC21225E7D443003BEFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D81AC21725E7D443003BEFC6 /* sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81AC21B25E7D443003BEFC6 /* sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTests.swift; sourceTree = "<group>"; };
+		D81AC21D25E7D443003BEFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D81AC22225E7D443003BEFC6 /* sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81AC22625E7D443003BEFC6 /* sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleUITests.swift; sourceTree = "<group>"; };
+		D81AC22825E7D443003BEFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D81AC25725E7D83B003BEFC6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D81AC26F25E7DB35003BEFC6 /* AdInlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInlineViewController.swift; sourceTree = "<group>"; };
+		D81AC27725E7DE57003BEFC6 /* AdInlineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInlineTableViewController.swift; sourceTree = "<group>"; };
+		D81AC27C25E8D8A0003BEFC6 /* AdInlineResponsiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInlineResponsiveViewController.swift; sourceTree = "<group>"; };
+		D81AC28125E8E385003BEFC6 /* AdOverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdOverlayViewController.swift; sourceTree = "<group>"; };
+		D81AC28625E8E4C4003BEFC6 /* AdOverlayPreloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdOverlayPreloadViewController.swift; sourceTree = "<group>"; };
+		D81AC28B25E8EAEF003BEFC6 /* AdhesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdhesionViewController.swift; sourceTree = "<group>"; };
+		D81AC29025E8F363003BEFC6 /* CollectionPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPagerViewController.swift; sourceTree = "<group>"; };
+		D81AC29625E91388003BEFC6 /* AFPageViewControllerMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFPageViewControllerMediator.swift; sourceTree = "<group>"; };
+		D81AC29B25E91615003BEFC6 /* AFCollectionViewMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFCollectionViewMediator.swift; sourceTree = "<group>"; };
+		D81AC2A025E92707003BEFC6 /* AFCollectionViewMediatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFCollectionViewMediatorDelegate.swift; sourceTree = "<group>"; };
+		D81AC2A525E9286C003BEFC6 /* AFAdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFAdCollectionViewCell.swift; sourceTree = "<group>"; };
+		D81AC2AA25E92A80003BEFC6 /* AFAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFAdViewController.swift; sourceTree = "<group>"; };
+		D84599EF2631945A00061DFC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		D84599F7263198AD00061DFC /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		D84599FC2631996D00061DFC /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D1DD71D91AF767E100FF2B86 /* Frameworks */ = {
+		D81AC1FE25E7D43F003BEFC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0A9E2C2E3363E200AB67E5 /* AdformAdvertising in Frameworks */,
-				8297ECA48962013C6BF7FBE9 /* Pods_sample.framework in Frameworks */,
-				0E0A9E392E3367F800AB67E5 /* AdformAdmobMediation in Frameworks */,
+				D525BCFA2E9E5C2F0029EAF7 /* GoogleMobileAds in Frameworks */,
+				0E4BFFDB2EE7061000D718BF /* AdformAdvertising.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1DD71F21AF767E100FF2B86 /* Frameworks */ = {
+		D81AC21425E7D443003BEFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81AC21F25E7D443003BEFC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -126,251 +152,284 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E0A9E342E33650C00AB67E5 /* NativeAdTemplate */ = {
+		D525BCF12E9E5A840029EAF7 /* NativeAdTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				0E0A9E2F2E33650C00AB67E5 /* GADTSmallTemplateView.h */,
-				0E0A9E302E33650C00AB67E5 /* GADTSmallTemplateView.m */,
-				0E0A9E312E33650C00AB67E5 /* GADTSmallTemplateView.xib */,
-				0E0A9E322E33650C00AB67E5 /* GADTTemplateView.h */,
-				0E0A9E332E33650C00AB67E5 /* GADTTemplateView.m */,
+				D525BCEC2E9E5A840029EAF7 /* GADTSmallTemplateView.h */,
+				D525BCED2E9E5A840029EAF7 /* GADTSmallTemplateView.m */,
+				D525BCEE2E9E5A840029EAF7 /* GADTSmallTemplateView.xib */,
+				D525BCEF2E9E5A840029EAF7 /* GADTTemplateView.h */,
+				D525BCF02E9E5A840029EAF7 /* GADTTemplateView.m */,
 			);
 			path = NativeAdTemplate;
 			sourceTree = "<group>";
 		};
-		45CB2B0D551597B2D00A5201 /* Frameworks */ = {
+		D525BCF32E9E5A840029EAF7 /* NativeAd */ = {
 			isa = PBXGroup;
 			children = (
-				0A351EF1A8D36CC1143806B5 /* Pods_sample.framework */,
+				D525BCF12E9E5A840029EAF7 /* NativeAdTemplate */,
+				D525BCF22E9E5A840029EAF7 /* NativeAdViewController.swift */,
 			);
-			name = Frameworks;
+			path = NativeAd;
 			sourceTree = "<group>";
 		};
-		D18DD25B1FBF1B3C00028FA1 /* helpers */ = {
+		D525BD0C2E9F95A60029EAF7 /* SwiftUi Examples */ = {
 			isa = PBXGroup;
 			children = (
-				D18DD25C1FBF1B3C00028FA1 /* AFCollectionViewMediator.h */,
-				D18DD25D1FBF1B3C00028FA1 /* AFCollectionViewMediator.m */,
-				D18DD25E1FBF1B3C00028FA1 /* AFPageViewControllerMediator.h */,
-				D18DD25F1FBF1B3C00028FA1 /* AFPageViewControllerMediator.m */,
+				D525BD6C2E9F9C9F0029EAF7 /* Controllers */,
+				D525BD0D2E9F9A790029EAF7 /* Views */,
 			);
-			name = helpers;
-			path = ../../helpers;
+			path = "SwiftUi Examples";
 			sourceTree = "<group>";
 		};
-		D1DD71D31AF767E000FF2B86 = {
+		D525BD0D2E9F9A790029EAF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D1DD71DE1AF767E100FF2B86 /* sample */,
-				D1DD71F81AF767E100FF2B86 /* sampleTests */,
-				D1DD71DD1AF767E100FF2B86 /* Products */,
-				DA61DA62260B998F76FE0284 /* Pods */,
-				45CB2B0D551597B2D00A5201 /* Frameworks */,
+				D525BD112E9F9AAC0029EAF7 /* InlineAddView.swift */,
+				D525BD132E9F9B010029EAF7 /* InterstitialAddView.swift */,
+				D525BD152E9F9B360029EAF7 /* AddsPageController.swift */,
+				D525BD172E9F9B530029EAF7 /* AddOverlayScreen.swift */,
+				D525BD192E9F9B750029EAF7 /* PreloadOverlayAddView.swift */,
+				D525BD1B2E9F9B990029EAF7 /* AddListView.swift */,
+				D525BD1D2E9F9BAD0029EAF7 /* AFPlayerControllerView.swift */,
+				D525BD1F2E9F9C010029EAF7 /* GridAddsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D525BD6C2E9F9C9F0029EAF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D525BD6D2E9F9CFE0029EAF7 /* SwiftUiInlineAddController.swift */,
+				D525BD6F2E9FA09B0029EAF7 /* SwiftUiOverlayAddController.swift */,
+				D525BD712E9FA1610029EAF7 /* SwiftuiGridAddController.swift */,
+				D525BD732E9FA6140029EAF7 /* SwiftUiPageAddController.swift */,
+				D525BD752E9FA6730029EAF7 /* SwiftUiListAddsController.swift */,
+				D525BD772E9FA67E0029EAF7 /* SwiftUiPlayerAddsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D81AC1F825E7D43F003BEFC6 = {
+			isa = PBXGroup;
+			children = (
+				D81AC20325E7D43F003BEFC6 /* sample */,
+				D81AC21A25E7D443003BEFC6 /* sampleTests */,
+				D81AC22525E7D443003BEFC6 /* sampleUITests */,
+				D81AC20225E7D43F003BEFC6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D1DD71DD1AF767E100FF2B86 /* Products */ = {
+		D81AC20225E7D43F003BEFC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1DD71DC1AF767E100FF2B86 /* sample.app */,
-				D1DD71F51AF767E100FF2B86 /* sampleTests.xctest */,
+				D81AC20125E7D43F003BEFC6 /* sample.app */,
+				D81AC21725E7D443003BEFC6 /* sampleTests.xctest */,
+				D81AC22225E7D443003BEFC6 /* sampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D1DD71DE1AF767E100FF2B86 /* sample */ = {
+		D81AC20325E7D43F003BEFC6 /* sample */ = {
 			isa = PBXGroup;
 			children = (
-				D18DD25B1FBF1B3C00028FA1 /* helpers */,
-				D1DD71E31AF767E100FF2B86 /* AppDelegate.h */,
-				D1DD71E41AF767E100FF2B86 /* AppDelegate.m */,
-				D1DD72051AF7684300FF2B86 /* PlacementsViewController.h */,
-				D1DD72061AF7684300FF2B86 /* PlacementsViewController.m */,
-				D1DD72081AF76D6A00FF2B86 /* Placements */,
-				D1DD71E91AF767E100FF2B86 /* Main.storyboard */,
-				D1DD71EC1AF767E100FF2B86 /* Images.xcassets */,
-				0E0A9E342E33650C00AB67E5 /* NativeAdTemplate */,
-				D1DD71EE1AF767E100FF2B86 /* LaunchScreen.xib */,
-				D1DD71DF1AF767E100FF2B86 /* Supporting Files */,
+				D81AC29525E91370003BEFC6 /* Helpers */,
+				D81AC20425E7D43F003BEFC6 /* AppDelegate.swift */,
+				D81AC20825E7D43F003BEFC6 /* PlacementsViewController.swift */,
+				D525BD0C2E9F95A60029EAF7 /* SwiftUi Examples */,
+				D81AC26E25E7DB19003BEFC6 /* Placements */,
+				D81AC20D25E7D443003BEFC6 /* Assets.xcassets */,
+				D81AC25725E7D83B003BEFC6 /* Main.storyboard */,
+				D81AC20F25E7D443003BEFC6 /* LaunchScreen.storyboard */,
+				D81AC21225E7D443003BEFC6 /* Info.plist */,
+				0E4BFFDA2EE7061000D718BF /* AdformAdvertising.xcframework */,
+				D525BCFD2E9E61860029EAF7 /* sample-Bridging-Header.h */,
 			);
 			path = sample;
 			sourceTree = "<group>";
 		};
-		D1DD71DF1AF767E100FF2B86 /* Supporting Files */ = {
+		D81AC21A25E7D443003BEFC6 /* sampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1E6C4551B56357D004C5289 /* vast_adform.xml */,
-				D1DD71E01AF767E100FF2B86 /* Info.plist */,
-				D1DD71E11AF767E100FF2B86 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D1DD71F81AF767E100FF2B86 /* sampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				D1DD71FB1AF767E100FF2B86 /* sampleTests.m */,
-				D1DD71F91AF767E100FF2B86 /* Supporting Files */,
+				D81AC21B25E7D443003BEFC6 /* sampleTests.swift */,
+				D81AC21D25E7D443003BEFC6 /* Info.plist */,
 			);
 			path = sampleTests;
 			sourceTree = "<group>";
 		};
-		D1DD71F91AF767E100FF2B86 /* Supporting Files */ = {
+		D81AC22525E7D443003BEFC6 /* sampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D1DD71FA1AF767E100FF2B86 /* Info.plist */,
+				D81AC22625E7D443003BEFC6 /* sampleUITests.swift */,
+				D81AC22825E7D443003BEFC6 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = sampleUITests;
 			sourceTree = "<group>";
 		};
-		D1DD72081AF76D6A00FF2B86 /* Placements */ = {
+		D81AC26E25E7DB19003BEFC6 /* Placements */ = {
 			isa = PBXGroup;
 			children = (
-				D1DD720C1AF76DAD00FF2B86 /* AdInlineViewController.h */,
-				D1DD720D1AF76DAD00FF2B86 /* AdInlineViewController.m */,
-				D1DD72221AF77DB300FF2B86 /* AdInlineTableViewController.h */,
-				D1DD72231AF77DB300FF2B86 /* AdInlineTableViewController.m */,
-				D1DD72251AF796BC00FF2B86 /* AdInlineResponsiveViewController.h */,
-				D1DD72261AF796BC00FF2B86 /* AdInlineResponsiveViewController.m */,
-				D1DD721F1AF7797C00FF2B86 /* AdOverlayViewController.h */,
-				D1DD72201AF7797C00FF2B86 /* AdOverlayViewController.m */,
-				D1DD72281AF7AADB00FF2B86 /* AdOverlayPreloadViewController.h */,
-				D1DD72291AF7AADB00FF2B86 /* AdOverlayPreloadViewController.m */,
-				D1DD722B1AF7AFCE00FF2B86 /* AdhesionViewController.h */,
-				D1DD722C1AF7AFCE00FF2B86 /* AdhesionViewController.m */,
-				D1DD72311AF7B25A00FF2B86 /* CollectionPagerViewController.h */,
-				D1DD72321AF7B25A00FF2B86 /* CollectionPagerViewController.m */,
-				D1DD72451AF7BC0400FF2B86 /* Page view controller */,
-				D1E6C4521B56333C004C5289 /* VideoAdsViewController.h */,
-				D1E6C4531B56333C004C5289 /* VideoAdsViewController.m */,
-				D11019751CEC464400421E13 /* InstreamViewController.h */,
-				D11019761CEC464400421E13 /* InstreamViewController.m */,
-				D18DD2631FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift */,
-				0E0A9E2D2E33649A00AB67E5 /* NativeAdsViewController.swift */,
-				D18DD2621FBF1C9A00028FA1 /* sample-Bridging-Header.h */,
+				D525BCF32E9E5A840029EAF7 /* NativeAd */,
+				D84599EE2631943F00061DFC /* Page view controller */,
+				D81AC26F25E7DB35003BEFC6 /* AdInlineViewController.swift */,
+				D81AC27725E7DE57003BEFC6 /* AdInlineTableViewController.swift */,
+				D81AC27C25E8D8A0003BEFC6 /* AdInlineResponsiveViewController.swift */,
+				D81AC28125E8E385003BEFC6 /* AdOverlayViewController.swift */,
+				D81AC28625E8E4C4003BEFC6 /* AdOverlayPreloadViewController.swift */,
+				D81AC28B25E8EAEF003BEFC6 /* AdhesionViewController.swift */,
+				D81AC29025E8F363003BEFC6 /* CollectionPagerViewController.swift */,
+				D558CC112844B8F3003A984A /* InstreamViewController.swift */,
+				D558CC132844C474003A984A /* VideoAddsViewController.swift */,
 			);
-			name = Placements;
+			path = Placements;
 			sourceTree = "<group>";
 		};
-		D1DD72451AF7BC0400FF2B86 /* Page view controller */ = {
+		D81AC29525E91370003BEFC6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D1DD72461AF7BC5C00FF2B86 /* RootViewController.h */,
-				D1DD72471AF7BC5C00FF2B86 /* RootViewController.m */,
-				D1DD72481AF7BC5C00FF2B86 /* DataViewController.h */,
-				D1DD72491AF7BC5C00FF2B86 /* DataViewController.m */,
-				D1DD724A1AF7BC5C00FF2B86 /* ModelController.h */,
-				D1DD724B1AF7BC5C00FF2B86 /* ModelController.m */,
+				D81AC29625E91388003BEFC6 /* AFPageViewControllerMediator.swift */,
+				D81AC29B25E91615003BEFC6 /* AFCollectionViewMediator.swift */,
+				D81AC2A025E92707003BEFC6 /* AFCollectionViewMediatorDelegate.swift */,
+				D81AC2A525E9286C003BEFC6 /* AFAdCollectionViewCell.swift */,
+				D81AC2AA25E92A80003BEFC6 /* AFAdViewController.swift */,
 			);
-			name = "Page view controller";
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		DA61DA62260B998F76FE0284 /* Pods */ = {
+		D84599EE2631943F00061DFC /* Page view controller */ = {
 			isa = PBXGroup;
 			children = (
-				D78AED9E7ECC3253F3A77B71 /* Pods-sample.debug.xcconfig */,
-				D8CCCFC912A84259DAFF568C /* Pods-sample.release.xcconfig */,
+				D84599EF2631945A00061DFC /* RootViewController.swift */,
+				D84599F7263198AD00061DFC /* DataViewController.swift */,
+				D84599FC2631996D00061DFC /* DataSource.swift */,
 			);
-			name = Pods;
+			path = "Page view controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D1DD71DB1AF767E100FF2B86 /* sample */ = {
+		D81AC20025E7D43F003BEFC6 /* sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1DD71FF1AF767E100FF2B86 /* Build configuration list for PBXNativeTarget "sample" */;
+			buildConfigurationList = D81AC22B25E7D443003BEFC6 /* Build configuration list for PBXNativeTarget "sample" */;
 			buildPhases = (
-				31BC61F5728B5543D91D88B4 /* [CP] Check Pods Manifest.lock */,
-				D1DD71D81AF767E100FF2B86 /* Sources */,
-				D1DD71D91AF767E100FF2B86 /* Frameworks */,
-				D1DD71DA1AF767E100FF2B86 /* Resources */,
+				D81AC1FD25E7D43F003BEFC6 /* Sources */,
+				D81AC1FE25E7D43F003BEFC6 /* Frameworks */,
+				D81AC1FF25E7D43F003BEFC6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = sample;
+			packageProductDependencies = (
+				D525BCF92E9E5C2F0029EAF7 /* GoogleMobileAds */,
+			);
 			productName = sample;
-			productReference = D1DD71DC1AF767E100FF2B86 /* sample.app */;
+			productReference = D81AC20125E7D43F003BEFC6 /* sample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D1DD71F41AF767E100FF2B86 /* sampleTests */ = {
+		D81AC21625E7D443003BEFC6 /* sampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1DD72021AF767E100FF2B86 /* Build configuration list for PBXNativeTarget "sampleTests" */;
+			buildConfigurationList = D81AC22E25E7D443003BEFC6 /* Build configuration list for PBXNativeTarget "sampleTests" */;
 			buildPhases = (
-				D1DD71F11AF767E100FF2B86 /* Sources */,
-				D1DD71F21AF767E100FF2B86 /* Frameworks */,
-				D1DD71F31AF767E100FF2B86 /* Resources */,
+				D81AC21325E7D443003BEFC6 /* Sources */,
+				D81AC21425E7D443003BEFC6 /* Frameworks */,
+				D81AC21525E7D443003BEFC6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D1DD71F71AF767E100FF2B86 /* PBXTargetDependency */,
+				D81AC21925E7D443003BEFC6 /* PBXTargetDependency */,
 			);
 			name = sampleTests;
 			productName = sampleTests;
-			productReference = D1DD71F51AF767E100FF2B86 /* sampleTests.xctest */;
+			productReference = D81AC21725E7D443003BEFC6 /* sampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D81AC22125E7D443003BEFC6 /* sampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D81AC23125E7D443003BEFC6 /* Build configuration list for PBXNativeTarget "sampleUITests" */;
+			buildPhases = (
+				D81AC21E25E7D443003BEFC6 /* Sources */,
+				D81AC21F25E7D443003BEFC6 /* Frameworks */,
+				D81AC22025E7D443003BEFC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D81AC22425E7D443003BEFC6 /* PBXTargetDependency */,
+			);
+			name = sampleUITests;
+			productName = sampleUITests;
+			productReference = D81AC22225E7D443003BEFC6 /* sampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D1DD71D41AF767E000FF2B86 /* Project object */ = {
+		D81AC1F925E7D43F003BEFC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = adform;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					D1DD71DB1AF767E100FF2B86 = {
-						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = A698N77NM4;
-						LastSwiftMigration = 0910;
+					D81AC20025E7D43F003BEFC6 = {
+						CreatedOnToolsVersion = 12.4;
 					};
-					D1DD71F41AF767E100FF2B86 = {
-						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = A698N77NM4;
-						TestTargetID = D1DD71DB1AF767E100FF2B86;
+					D81AC21625E7D443003BEFC6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D81AC20025E7D43F003BEFC6;
+					};
+					D81AC22125E7D443003BEFC6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D81AC20025E7D43F003BEFC6;
 					};
 				};
 			};
-			buildConfigurationList = D1DD71D71AF767E000FF2B86 /* Build configuration list for PBXProject "sample" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = D81AC1FC25E7D43F003BEFC6 /* Build configuration list for PBXProject "sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
-			mainGroup = D1DD71D31AF767E000FF2B86;
+			mainGroup = D81AC1F825E7D43F003BEFC6;
 			packageReferences = (
-				0E0A9E282E3363E200AB67E5 /* XCLocalSwiftPackageReference "../../adform-ios-sdk" */,
+				D525BCF82E9E5C2F0029EAF7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
-			productRefGroup = D1DD71DD1AF767E100FF2B86 /* Products */;
+			productRefGroup = D81AC20225E7D43F003BEFC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1DD71DB1AF767E100FF2B86 /* sample */,
-				D1DD71F41AF767E100FF2B86 /* sampleTests */,
+				D81AC20025E7D43F003BEFC6 /* sample */,
+				D81AC21625E7D443003BEFC6 /* sampleTests */,
+				D81AC22125E7D443003BEFC6 /* sampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D1DD71DA1AF767E100FF2B86 /* Resources */ = {
+		D81AC1FF25E7D43F003BEFC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0A9E372E33650C00AB67E5 /* GADTSmallTemplateView.xib in Resources */,
-				D1E6C4561B56357D004C5289 /* vast_adform.xml in Resources */,
-				D1DD71EB1AF767E100FF2B86 /* Main.storyboard in Resources */,
-				D1DD71F01AF767E100FF2B86 /* LaunchScreen.xib in Resources */,
-				D1DD71ED1AF767E100FF2B86 /* Images.xcassets in Resources */,
+				D81AC25825E7D83B003BEFC6 /* Main.storyboard in Resources */,
+				D81AC21125E7D443003BEFC6 /* LaunchScreen.storyboard in Resources */,
+				D525BCF72E9E5A840029EAF7 /* GADTSmallTemplateView.xib in Resources */,
+				D81AC20E25E7D443003BEFC6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1DD71F31AF767E100FF2B86 /* Resources */ = {
+		D81AC21525E7D443003BEFC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81AC22025E7D443003BEFC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,109 +438,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		31BC61F5728B5543D91D88B4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-sample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		D1DD71D81AF767E100FF2B86 /* Sources */ = {
+		D81AC1FD25E7D43F003BEFC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DD722A1AF7AADB00FF2B86 /* AdOverlayPreloadViewController.m in Sources */,
-				D1E6C4541B56333C004C5289 /* VideoAdsViewController.m in Sources */,
-				D1DD72211AF7797C00FF2B86 /* AdOverlayViewController.m in Sources */,
-				D1DD71E51AF767E100FF2B86 /* AppDelegate.m in Sources */,
-				D1DD722D1AF7AFCE00FF2B86 /* AdhesionViewController.m in Sources */,
-				D18DD2611FBF1B3C00028FA1 /* AFPageViewControllerMediator.m in Sources */,
-				D1DD71E21AF767E100FF2B86 /* main.m in Sources */,
-				D1DD720E1AF76DAD00FF2B86 /* AdInlineViewController.m in Sources */,
-				D1DD72331AF7B25A00FF2B86 /* CollectionPagerViewController.m in Sources */,
-				D18DD2601FBF1B3C00028FA1 /* AFCollectionViewMediator.m in Sources */,
-				D18DD2641FBF1C9A00028FA1 /* InlineAdsCollectionViewController.swift in Sources */,
-				D11019771CEC464400421E13 /* InstreamViewController.m in Sources */,
-				0E0A9E2E2E33649A00AB67E5 /* NativeAdsViewController.swift in Sources */,
-				D1DD72071AF7684300FF2B86 /* PlacementsViewController.m in Sources */,
-				D1DD724D1AF7BC5C00FF2B86 /* DataViewController.m in Sources */,
-				D1DD724C1AF7BC5C00FF2B86 /* RootViewController.m in Sources */,
-				D1DD724E1AF7BC5C00FF2B86 /* ModelController.m in Sources */,
-				D1DD72271AF796BC00FF2B86 /* AdInlineResponsiveViewController.m in Sources */,
-				0E0A9E352E33650C00AB67E5 /* GADTSmallTemplateView.m in Sources */,
-				0E0A9E362E33650C00AB67E5 /* GADTTemplateView.m in Sources */,
-				D1DD72241AF77DB300FF2B86 /* AdInlineTableViewController.m in Sources */,
+				D525BD782E9FA67E0029EAF7 /* SwiftUiPlayerAddsController.swift in Sources */,
+				D81AC20925E7D43F003BEFC6 /* PlacementsViewController.swift in Sources */,
+				D81AC28C25E8EAEF003BEFC6 /* AdhesionViewController.swift in Sources */,
+				D525BD762E9FA6730029EAF7 /* SwiftUiListAddsController.swift in Sources */,
+				D525BD702E9FA09B0029EAF7 /* SwiftUiOverlayAddController.swift in Sources */,
+				D525BD1A2E9F9B750029EAF7 /* PreloadOverlayAddView.swift in Sources */,
+				D81AC28725E8E4C4003BEFC6 /* AdOverlayPreloadViewController.swift in Sources */,
+				D525BD722E9FA1610029EAF7 /* SwiftuiGridAddController.swift in Sources */,
+				D525BD1E2E9F9BAD0029EAF7 /* AFPlayerControllerView.swift in Sources */,
+				D81AC27825E7DE57003BEFC6 /* AdInlineTableViewController.swift in Sources */,
+				D525BCF42E9E5A840029EAF7 /* GADTTemplateView.m in Sources */,
+				D525BCF52E9E5A840029EAF7 /* NativeAdViewController.swift in Sources */,
+				D525BCF62E9E5A840029EAF7 /* GADTSmallTemplateView.m in Sources */,
+				D81AC28225E8E385003BEFC6 /* AdOverlayViewController.swift in Sources */,
+				D84599F02631945A00061DFC /* RootViewController.swift in Sources */,
+				D525BD6E2E9F9CFE0029EAF7 /* SwiftUiInlineAddController.swift in Sources */,
+				D525BD742E9FA6140029EAF7 /* SwiftUiPageAddController.swift in Sources */,
+				D81AC27D25E8D8A0003BEFC6 /* AdInlineResponsiveViewController.swift in Sources */,
+				D525BD182E9F9B530029EAF7 /* AddOverlayScreen.swift in Sources */,
+				D81AC2AB25E92A80003BEFC6 /* AFAdViewController.swift in Sources */,
+				D84599FD2631996D00061DFC /* DataSource.swift in Sources */,
+				D525BD142E9F9B010029EAF7 /* InterstitialAddView.swift in Sources */,
+				D81AC20525E7D43F003BEFC6 /* AppDelegate.swift in Sources */,
+				D81AC2A125E92707003BEFC6 /* AFCollectionViewMediatorDelegate.swift in Sources */,
+				D525BD122E9F9AAC0029EAF7 /* InlineAddView.swift in Sources */,
+				D81AC2A625E9286C003BEFC6 /* AFAdCollectionViewCell.swift in Sources */,
+				D81AC29C25E91616003BEFC6 /* AFCollectionViewMediator.swift in Sources */,
+				D525BD1C2E9F9B990029EAF7 /* AddListView.swift in Sources */,
+				D84599F8263198AD00061DFC /* DataViewController.swift in Sources */,
+				D81AC29125E8F363003BEFC6 /* CollectionPagerViewController.swift in Sources */,
+				D558CC122844B8F3003A984A /* InstreamViewController.swift in Sources */,
+				D525BD162E9F9B360029EAF7 /* AddsPageController.swift in Sources */,
+				D81AC27025E7DB35003BEFC6 /* AdInlineViewController.swift in Sources */,
+				D558CC142844C474003A984A /* VideoAddsViewController.swift in Sources */,
+				D525BD202E9F9C010029EAF7 /* GridAddsView.swift in Sources */,
+				D81AC29725E91388003BEFC6 /* AFPageViewControllerMediator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1DD71F11AF767E100FF2B86 /* Sources */ = {
+		D81AC21325E7D443003BEFC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DD71FC1AF767E100FF2B86 /* sampleTests.m in Sources */,
+				D81AC21C25E7D443003BEFC6 /* sampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81AC21E25E7D443003BEFC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81AC22725E7D443003BEFC6 /* sampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D1DD71F71AF767E100FF2B86 /* PBXTargetDependency */ = {
+		D81AC21925E7D443003BEFC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D1DD71DB1AF767E100FF2B86 /* sample */;
-			targetProxy = D1DD71F61AF767E100FF2B86 /* PBXContainerItemProxy */;
+			target = D81AC20025E7D43F003BEFC6 /* sample */;
+			targetProxy = D81AC21825E7D443003BEFC6 /* PBXContainerItemProxy */;
+		};
+		D81AC22425E7D443003BEFC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D81AC20025E7D43F003BEFC6 /* sample */;
+			targetProxy = D81AC22325E7D443003BEFC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D1DD71E91AF767E100FF2B86 /* Main.storyboard */ = {
+		D81AC20F25E7D443003BEFC6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D1DD71EA1AF767E100FF2B86 /* Base */,
+				D81AC21025E7D443003BEFC6 /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D1DD71EE1AF767E100FF2B86 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1DD71EF1AF767E100FF2B86 /* Base */,
-			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D1DD71FD1AF767E100FF2B86 /* Debug */ = {
+		D81AC22925E7D443003BEFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -494,14 +555,14 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -509,36 +570,40 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		D1DD71FE1AF767E100FF2B86 /* Release */ = {
+		D81AC22A25E7D443003BEFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -551,14 +616,14 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -566,82 +631,79 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D1DD72001AF767E100FF2B86 /* Debug */ = {
+		D81AC22C25E7D443003BEFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D78AED9E7ECC3253F3A77B71 /* Pods-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = A698N77NM4;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/sample",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = sample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sample;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sample.asdfsadf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Debug;
 		};
-		D1DD72011AF767E100FF2B86 /* Release */ = {
+		D81AC22D25E7D443003BEFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8CCCFC912A84259DAFF568C /* Pods-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = A698N77NM4;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/sample",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = sample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sample;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sample.asdfsadf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "sample/sample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Release;
 		};
-		D1DD72031AF767E100FF2B86 /* Debug */ = {
+		D81AC22F25E7D443003BEFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = A698N77NM4;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
 				INFOPLIST_FILE = sampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,22 +711,21 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample.app/sample";
 			};
 			name = Debug;
 		};
-		D1DD72041AF767E100FF2B86 /* Release */ = {
+		D81AC23025E7D443003BEFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = A698N77NM4;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
 				INFOPLIST_FILE = sampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -672,60 +733,111 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample.app/sample";
+			};
+			name = Release;
+		};
+		D81AC23225E7D443003BEFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
+				INFOPLIST_FILE = sampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sample;
+			};
+			name = Debug;
+		};
+		D81AC23325E7D443003BEFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
+				INFOPLIST_FILE = sampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adform.sampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sample;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1DD71D71AF767E000FF2B86 /* Build configuration list for PBXProject "sample" */ = {
+		D81AC1FC25E7D43F003BEFC6 /* Build configuration list for PBXProject "sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1DD71FD1AF767E100FF2B86 /* Debug */,
-				D1DD71FE1AF767E100FF2B86 /* Release */,
+				D81AC22925E7D443003BEFC6 /* Debug */,
+				D81AC22A25E7D443003BEFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1DD71FF1AF767E100FF2B86 /* Build configuration list for PBXNativeTarget "sample" */ = {
+		D81AC22B25E7D443003BEFC6 /* Build configuration list for PBXNativeTarget "sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1DD72001AF767E100FF2B86 /* Debug */,
-				D1DD72011AF767E100FF2B86 /* Release */,
+				D81AC22C25E7D443003BEFC6 /* Debug */,
+				D81AC22D25E7D443003BEFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1DD72021AF767E100FF2B86 /* Build configuration list for PBXNativeTarget "sampleTests" */ = {
+		D81AC22E25E7D443003BEFC6 /* Build configuration list for PBXNativeTarget "sampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1DD72031AF767E100FF2B86 /* Debug */,
-				D1DD72041AF767E100FF2B86 /* Release */,
+				D81AC22F25E7D443003BEFC6 /* Debug */,
+				D81AC23025E7D443003BEFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D81AC23125E7D443003BEFC6 /* Build configuration list for PBXNativeTarget "sampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81AC23225E7D443003BEFC6 /* Debug */,
+				D81AC23325E7D443003BEFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		0E0A9E282E3363E200AB67E5 /* XCLocalSwiftPackageReference "../../adform-ios-sdk" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../adform-ios-sdk";
+/* Begin XCRemoteSwiftPackageReference section */
+		D525BCF82E9E5C2F0029EAF7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.12.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E0A9E2B2E3363E200AB67E5 /* AdformAdvertising */ = {
+		D525BCF92E9E5C2F0029EAF7 /* GoogleMobileAds */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = AdformAdvertising;
-		};
-		0E0A9E382E3367F800AB67E5 /* AdformAdmobMediation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E0A9E282E3363E200AB67E5 /* XCLocalSwiftPackageReference "../../adform-ios-sdk" */;
-			productName = AdformAdmobMediation;
+			package = D525BCF82E9E5C2F0029EAF7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = D1DD71D41AF767E000FF2B86 /* Project object */;
+	rootObject = D81AC1F925E7D43F003BEFC6 /* Project object */;
 }
