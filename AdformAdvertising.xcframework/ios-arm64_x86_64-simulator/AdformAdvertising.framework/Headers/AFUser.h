@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class AFUserExt;
 @class AFExtendedIdentifiers;
+@class AFUserData;
 
 @interface AFUser : NSObject <JSONConvertable>
 
@@ -19,9 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) NSString *keywords;
 @property (nonatomic, copy, nullable) NSArray<AFExtendedIdentifiers *> *extendedIds;
 @property (nonatomic, strong, nullable) AFUserExt *ext;
+@property (nonatomic, strong, nullable) NSArray<AFUserData *> *data;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 - (NSDictionary *)toDictionary;
+- (BOOL)isValidUserData:(NSError **)error;
 
 @end
 

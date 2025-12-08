@@ -6,6 +6,9 @@
 #import <AdformAdvertising/AFBrandVersion.h>
 #import <AdformAdvertising/AFDevice.h>
 #import <AdformAdvertising/AFExtendedIdentifier.h>
+#import <AdformAdvertising/AFUserData.h>
+#import <AdformAdvertising/AFUserDataExt.h>
+#import <AdformAdvertising/AFUserDataSegment.h>
 #import <AdformAdvertising/AFExtendedIdentifiers.h>
 #import <AdformAdvertising/AFGeo.h>
 #import <AdformAdvertising/AFImpExt.h>

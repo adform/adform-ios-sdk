@@ -48,6 +48,12 @@ Adform brings brand advertising to the programmatic era at scale, making display
 
 This part lists release notes from all versions of Adform Mobile Advertising iOS SDK.
 
+# 2.22.0
+
+### New Features
+
+* Add OpenRTB Taxonomy and Multibid support
+
 # 2.21.0
 
 ### New Features

@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/AFHBConstants.h</key>
 		<data>
-		5BWMpeBWmDucLG+zyPKNhXi80JU=
+		/Zd7v24z9B8wNSxTOCl4/xpmQhw=
 		</data>
 		<key>Headers/AFImp.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Headers/AFOpenRTB.h</key>
 		<data>
-		TZ2batXXpMfIhgNwtBSpsnDIlBc=
+		NCRyO6jmV8com7rgju7PHfscqII=
 		</data>
 		<key>Headers/AFOpenRTBBidLoader.h</key>
 		<data>
@@ -266,7 +266,19 @@
 		</data>
 		<key>Headers/AFUser.h</key>
 		<data>
-		971LAXkM5fXIFU/yYMzmytYq0r8=
+		wU8NRjP+pUmq6kO0iThcQtnRtYk=
+		</data>
+		<key>Headers/AFUserData.h</key>
+		<data>
+		g4nHOIXB85FGXlADDVnQu8vXK1M=
+		</data>
+		<key>Headers/AFUserDataExt.h</key>
+		<data>
+		JFUL5WZzkz2xXc6j0WSSnDVB+qY=
+		</data>
+		<key>Headers/AFUserDataSegment.h</key>
+		<data>
+		E9v4IQ/Kr8co90DSURYugpC3mLM=
 		</data>
 		<key>Headers/AFUserExt.h</key>
 		<data>
@@ -298,7 +310,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oDrs4rsP/Uvztsp8If8Jnuo+C5c=
+		9zpFuODG+HwIfxaPjm3qSeAuTaQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -313,10 +325,6 @@
 	<dict>
 		<key>Headers/AFAVPlayerViewControllerPlayback.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/fuydNEr+chKH6G5Baf3yaTLq7s=
-			</data>
 			<key>hash2</key>
 			<data>
 			ez4JDar/CQPwn+0vY92KzB5tsdgVbu9YMCd8XA4RKmQ=
@@ -324,10 +332,6 @@
 		</dict>
 		<key>Headers/AFAdHesion.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aYc6I8kFWhr9jtsR66I+YQNUnBw=
-			</data>
 			<key>hash2</key>
 			<data>
 			haWEa6LfoZBlXTf6ys+vc6WaH/88q3QVzZQC7+AIAeM=
@@ -335,10 +339,6 @@
 		</dict>
 		<key>Headers/AFAdInline.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iVDPXSnAGweEY2ALHWD6k7fcEqg=
-			</data>
 			<key>hash2</key>
 			<data>
 			hglpEeTgtHyektwJVvbUzQjIUXfiyx00GmFTXxtlyuQ=
@@ -346,10 +346,6 @@
 		</dict>
 		<key>Headers/AFAdInterstitial.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kMMPblaEkfJygTCnsoTGNLaLU3Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			VOISxjcUT81VYUC3hwoa0g0cO28xKS4i0DbXdxwFAuY=
@@ -357,10 +353,6 @@
 		</dict>
 		<key>Headers/AFAdLink.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aWhXCrMqFkwjvh7TdHAdt3P1CM8=
-			</data>
 			<key>hash2</key>
 			<data>
 			PG2ha9HNE01kw65lrza5ilcq4Hf6R8T+ZUt5WzTjvvE=
@@ -368,10 +360,6 @@
 		</dict>
 		<key>Headers/AFAdOverlay.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3Vy+gO0/lykDHCkHZtpsFfaoVSA=
-			</data>
 			<key>hash2</key>
 			<data>
 			cb/BkkPeRyE9VzooCp2e5y/oRDt+EEnQJOin1tb+Q70=
@@ -379,10 +367,6 @@
 		</dict>
 		<key>Headers/AFApp.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ySm3F8FKTjK2RUq0WsXNhmQOyIc=
-			</data>
 			<key>hash2</key>
 			<data>
 			il1R+YznlOQVvICNQU810R0K3yB+vC/h7XWIc4TT4ak=
@@ -390,10 +374,6 @@
 		</dict>
 		<key>Headers/AFAppExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9kah+cfjcdwC6pigzTuh402yVZA=
-			</data>
 			<key>hash2</key>
 			<data>
 			sERmFh/nxsUnXAKAu2hETIZyCT2MN7qcqr57/Orcqio=
@@ -401,10 +381,6 @@
 		</dict>
 		<key>Headers/AFBanner.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TUddyU6maghqIFRxVYdB9MFUI2s=
-			</data>
 			<key>hash2</key>
 			<data>
 			fiBFI42BCf/jJPFEDVLSeTgn1RNLtzOdksTuSamUT9I=
@@ -412,10 +388,6 @@
 		</dict>
 		<key>Headers/AFBannerFormat.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0oL2SOIRQulOr9vYeE1hxnGGkPU=
-			</data>
 			<key>hash2</key>
 			<data>
 			XL9mmkFUZvmYJnS92XB9WfsXMiAIFiabFs7d2hzku7Q=
@@ -423,10 +395,6 @@
 		</dict>
 		<key>Headers/AFBid.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qLNrDEqUSQ+8bh8+ZvvqG6EKGOg=
-			</data>
 			<key>hash2</key>
 			<data>
 			MoQyoPkR4jPscxLkh/Bco0A5j+hHZ7eWWgFVxtmN/4Q=
@@ -434,10 +402,6 @@
 		</dict>
 		<key>Headers/AFBidExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BIiyCCfq83rz8Zikn9BJdvEtS2c=
-			</data>
 			<key>hash2</key>
 			<data>
 			ujaLgSDsEEB2ZMAtfLuDGVXiVRDj+2sibxF2Vo3aAzs=
@@ -445,10 +409,6 @@
 		</dict>
 		<key>Headers/AFBidLoader.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6hA2nvp4RF3y9C/Up15ciFJGjw4=
-			</data>
 			<key>hash2</key>
 			<data>
 			+kaBA4sgrtJy8ol07lau1SECASamqgavo2C9wQVWQO4=
@@ -456,10 +416,6 @@
 		</dict>
 		<key>Headers/AFBidRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BZatd39EDEi9CvUTSPSXbzkVjeo=
-			</data>
 			<key>hash2</key>
 			<data>
 			F2hICl3wgwjKVuAsOgtTFRHyO53MWDiUV6d/PWu1Rks=
@@ -467,10 +423,6 @@
 		</dict>
 		<key>Headers/AFBidResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+/nkvzvq6mtwWHIPbt7Y3JXZzcQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			iLvHYE7AJjQLAOSGC97BV7Y5dSSTaOIO8T9tCqieepE=
@@ -478,10 +430,6 @@
 		</dict>
 		<key>Headers/AFBidder.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tQbnDDNx7lLEf4fqfi0C7gY8gGU=
-			</data>
 			<key>hash2</key>
 			<data>
 			cuxc49Z+Nkfd3VYlR99TqfWnZOUYnKW5q4ueI1pdFp0=
@@ -489,10 +437,6 @@
 		</dict>
 		<key>Headers/AFBrandVersion.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tFu39SQgZNSPbu5cmABUV2I9TK4=
-			</data>
 			<key>hash2</key>
 			<data>
 			aJs8tN0PAG8nGkzy5sZiVUA/GaDtBqxrXIGSyvwJtpU=
@@ -500,10 +444,6 @@
 		</dict>
 		<key>Headers/AFBrowserViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AGH+al6Ma0Bj7BxtJBn7V/83qgM=
-			</data>
 			<key>hash2</key>
 			<data>
 			ncI820k9lcvqAZamUggE5J7N7KXbAA1BIPIywlQNEUk=
@@ -511,10 +451,6 @@
 		</dict>
 		<key>Headers/AFConstants.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7DoIQko3V14YvjUX12T08Z5mdqo=
-			</data>
 			<key>hash2</key>
 			<data>
 			dribiRmBJ1yshbSYJvXgV8B72VDS9h0M/itOnceMVtI=
@@ -522,10 +458,6 @@
 		</dict>
 		<key>Headers/AFContentPlayback.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QegH6oto8vNUWL5t2HgVxn7VPno=
-			</data>
 			<key>hash2</key>
 			<data>
 			iLUpvPsuxN3kAhDh5Jx6ogDvuXAjPUAzVMRuZfuVIhI=
@@ -533,10 +465,6 @@
 		</dict>
 		<key>Headers/AFCuePoint.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			We2kQxsuRNXQpS/SPfTJvAfM80w=
-			</data>
 			<key>hash2</key>
 			<data>
 			vxw2yxuyd79wTtVRoBAwJR9LdrMJ+HkyNYj7HXr9jEo=
@@ -544,10 +472,6 @@
 		</dict>
 		<key>Headers/AFDevice.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9S9rJSNfmozaIYsAVUsyjxsUaQA=
-			</data>
 			<key>hash2</key>
 			<data>
 			4xvMarF9OOQ13DsAhevsCZM6GzfLk+GVLWuhYOp5HiI=
@@ -555,10 +479,6 @@
 		</dict>
 		<key>Headers/AFExtendedIdentifier.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+G5qZF5eBmBTuD/8x6O9SUcj0yQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			YUacsKxIuoXoiHmfk9WDgFrPnXbjMZN3AcndbZEvI0I=
@@ -566,10 +486,6 @@
 		</dict>
 		<key>Headers/AFExtendedIdentifiers.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rBs5Py3VE96D/JJp205EomjEl7g=
-			</data>
 			<key>hash2</key>
 			<data>
 			OdzPK8COuFwcgAXL1hkKZtGIJWPMvjLpyVQkN8z+N2o=
@@ -577,10 +493,6 @@
 		</dict>
 		<key>Headers/AFGeo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bPsh6Dl7kq+gOuZ9v60wzTEpxtc=
-			</data>
 			<key>hash2</key>
 			<data>
 			VB7akey3cqHidUcper2EOLWZcjyCM5TXngrqBfDXVjA=
@@ -588,21 +500,13 @@
 		</dict>
 		<key>Headers/AFHBConstants.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5BWMpeBWmDucLG+zyPKNhXi80JU=
-			</data>
 			<key>hash2</key>
 			<data>
-			txDoDOWyhCs/apCM3yDjNb7BqMBgdUp7XSHnKZWWET0=
+			BTB59wONzbMlxYo/Chp8849HHvGpINNZ71nVSncwT3w=
 			</data>
 		</dict>
 		<key>Headers/AFImp.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			p2u0lojAXBZQmtwg7DZMCTPiyBs=
-			</data>
 			<key>hash2</key>
 			<data>
 			tN5qMWUhhoCpqk95naUI0CVF4YptdsUHTzF2KkfkQnk=
@@ -610,10 +514,6 @@
 		</dict>
 		<key>Headers/AFImpExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EdNEqzgmCDeWZKwFGS8DKEJqPuQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			svryr1DJ+3khEFgXt309bzLJTYsVrBmcThiJ8HM4TuU=
@@ -621,10 +521,6 @@
 		</dict>
 		<key>Headers/AFKeyValue.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0FO8bzt5oSx+wN5VqhnYvikGPts=
-			</data>
 			<key>hash2</key>
 			<data>
 			J4KdddWqxCjAOo2E0kfGEC9gBBY5wbAgZOYZvbOtOXU=
@@ -632,10 +528,6 @@
 		</dict>
 		<key>Headers/AFNative.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			33KQWXGu5vI2ATWtNp/2Z2O3HkY=
-			</data>
 			<key>hash2</key>
 			<data>
 			51jBHYQdGjQRwU9uNNmiRMKpHLrs+RzZ8qC4zEaOGOA=
@@ -643,10 +535,6 @@
 		</dict>
 		<key>Headers/AFNativeAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DCklpiuK7wlfgh7Q7iCCllTCBGI=
-			</data>
 			<key>hash2</key>
 			<data>
 			M8+CkSQIzMC5FycZOFxUXaRseKj5iTGaeDw8rFMu/GE=
@@ -654,10 +542,6 @@
 		</dict>
 		<key>Headers/AFNativeAdAssetIds.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/Esa/3F6VEwnkhB7TsSU0PWayTA=
-			</data>
 			<key>hash2</key>
 			<data>
 			nfRpM/gegad3WcsLW/q8Z5SbLeApdWHsDHoLotqZ82M=
@@ -665,10 +549,6 @@
 		</dict>
 		<key>Headers/AFNativeRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9INFUST1ylWuhnfmQD6ZVbvvIpM=
-			</data>
 			<key>hash2</key>
 			<data>
 			Nu3Pu5ce1NRI7oqA73ZyCeVTLqrGQtSMm4q0Fm+OXPg=
@@ -676,10 +556,6 @@
 		</dict>
 		<key>Headers/AFNativeRequestAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1stNmg2DWG1tOrlTOpFSDjOCmYU=
-			</data>
 			<key>hash2</key>
 			<data>
 			CzCJd5RgiixSTyL2lx60IPWYX/2Z5J5KAJd/KRb15ec=
@@ -687,10 +563,6 @@
 		</dict>
 		<key>Headers/AFNativeResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			B8pyNmg7BHSlhK0L//7l+jq6UD0=
-			</data>
 			<key>hash2</key>
 			<data>
 			mwyFnGU5EN+mOB56bb1fpnpC/PwKWnRty2kE1LniXug=
@@ -698,10 +570,6 @@
 		</dict>
 		<key>Headers/AFNativeResponseAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bdKlLfP4lkCQV5fFLK9AOwpnCEQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			KIUmDUM+w3MXTO6a4M5U/SyH/CxDJbnj2sqXyljmhPY=
@@ -709,21 +577,13 @@
 		</dict>
 		<key>Headers/AFOpenRTB.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TZ2batXXpMfIhgNwtBSpsnDIlBc=
-			</data>
 			<key>hash2</key>
 			<data>
-			+9OydYPyMDiU2l+DhD6ms5gRNLGiJ8fFVhpumELGW4M=
+			axRZ5QA8iIwGZyZMssZCenMZ+K1nQw56EwaW/eytGBs=
 			</data>
 		</dict>
 		<key>Headers/AFOpenRTBBidLoader.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uqRCswMJon0sQjkLi2sPKBgtohI=
-			</data>
 			<key>hash2</key>
 			<data>
 			Y20MQrvcfIQtGDTunN9Sy9g9cHFoZQUZx3L3AxUeaFA=
@@ -731,10 +591,6 @@
 		</dict>
 		<key>Headers/AFOpenRTBRequestBuilder.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BErJdM/AeC3T2ey+cvti5r9nXRM=
-			</data>
 			<key>hash2</key>
 			<data>
 			JznZQxX2Ffi775GRZuDBx5M4sLH2VCv3FsMSEwerSUY=
@@ -742,10 +598,6 @@
 		</dict>
 		<key>Headers/AFOpenRtbRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7RUhpShOhoAHK/gf3G+L8OkKTWs=
-			</data>
 			<key>hash2</key>
 			<data>
 			2zBS7ZsAbEMJrN1wIiZnpp4DQi/NRmEQj9xTC/1XiwY=
@@ -753,10 +605,6 @@
 		</dict>
 		<key>Headers/AFOpenRtbResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Wq7G/08ZiBHI9xSfjc9TiSuJ5Uk=
-			</data>
 			<key>hash2</key>
 			<data>
 			djRR8GUqQ8H2Z9venLJMQVSeyBC+YUI2avlNhWSl/3o=
@@ -764,10 +612,6 @@
 		</dict>
 		<key>Headers/AFPublisher.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gYYXS7oSIuz607aLFid2ex2B0gI=
-			</data>
 			<key>hash2</key>
 			<data>
 			QP9OZSI4lKHsqwaeY2j4MjxtXeX221NqPdaj1qunNcI=
@@ -775,10 +619,6 @@
 		</dict>
 		<key>Headers/AFRegs.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tjUkKzBrx2moP4UreZC4jPF3ZRw=
-			</data>
 			<key>hash2</key>
 			<data>
 			o/MPjvvaesGLM+aiecy7D+TM+nnCdErwgDDj/t3eA24=
@@ -786,10 +626,6 @@
 		</dict>
 		<key>Headers/AFRegsExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DgrQwRYJP8UZB0lQNsQJv6IZQtM=
-			</data>
 			<key>hash2</key>
 			<data>
 			HH5C0kFaRyn6eRDuUIxQX5jn/pGiG9CjHy46DteQtc0=
@@ -797,10 +633,6 @@
 		</dict>
 		<key>Headers/AFRequestDataAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6rtG+Rr2aCucJrEsQap2WHwhQro=
-			</data>
 			<key>hash2</key>
 			<data>
 			pq+46hqd+SbM6taKJBqFfPSthbBdyhJhvBYVlv4rNWI=
@@ -808,10 +640,6 @@
 		</dict>
 		<key>Headers/AFRequestExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			22smSrdSCyXxM9EupWPp56BzdF8=
-			</data>
 			<key>hash2</key>
 			<data>
 			ET4oVCK0C2WwCWv+dARTwPD5BVN4aHKxmc2ePnz+uzo=
@@ -819,10 +647,6 @@
 		</dict>
 		<key>Headers/AFRequestImgAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AuJMEBppfTm1y0o1d6JG2hLTGLI=
-			</data>
 			<key>hash2</key>
 			<data>
 			YZSHNk0ZTomSI2+KbmW6tPanv06g7qFl5IW6opboB9U=
@@ -830,10 +654,6 @@
 		</dict>
 		<key>Headers/AFRequestPrebid.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yTEF9Y8MQV2kw92E3qcCPdkNNkA=
-			</data>
 			<key>hash2</key>
 			<data>
 			jEJW8UkAoIxyBB51kFYCI7TtOdZLNHp5rOkk9sHoeQ0=
@@ -841,10 +661,6 @@
 		</dict>
 		<key>Headers/AFRequestTitleAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MZt2GOlnSOF375IOgXF944Yqgos=
-			</data>
 			<key>hash2</key>
 			<data>
 			occGcFfalvpLb9SgjmogoEbYyRDSXA3v8xDMvpYHkog=
@@ -852,10 +668,6 @@
 		</dict>
 		<key>Headers/AFRequestVideoAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HaKpzx1Yl7mvPTY3uzSS1f6Vq6g=
-			</data>
 			<key>hash2</key>
 			<data>
 			MQZDHKfO6+cdXWT4+ruJrFximIylidASn5NMiRB25Cs=
@@ -863,10 +675,6 @@
 		</dict>
 		<key>Headers/AFResponseDataAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ldTWz0ahiwCOdfEbyqg2VbSWa/w=
-			</data>
 			<key>hash2</key>
 			<data>
 			D18/3o3wAGidzTarzySCzj+sPQVRNqjKSx5eKQaEJkk=
@@ -874,10 +682,6 @@
 		</dict>
 		<key>Headers/AFResponseDsaExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Kkxv//nPqKWdoPR+kh1uD6QzDRk=
-			</data>
 			<key>hash2</key>
 			<data>
 			lgJ1G8B+zBEbYtmdzJZpkPtx8PygQGTGLSZfabi6X+o=
@@ -885,10 +689,6 @@
 		</dict>
 		<key>Headers/AFResponseImgAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KJwcLbcCiAjdGatHqXR3arpRgx8=
-			</data>
 			<key>hash2</key>
 			<data>
 			cIw1LDjxZZmMe+sQvPVHMmYJq8s4pVnX2XLZudZOxe8=
@@ -896,10 +696,6 @@
 		</dict>
 		<key>Headers/AFResponsePrebid.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HOxdszJ6YTF6ejMGkjCVvpoD9Hs=
-			</data>
 			<key>hash2</key>
 			<data>
 			jzMOcax6WBkW26nzBUX7cMXI+UaJsUb1AvyQVn4BxVQ=
@@ -907,10 +703,6 @@
 		</dict>
 		<key>Headers/AFResponseTitleAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			E6ukA2KF1HZcQYIPx2Bp5PakIX4=
-			</data>
 			<key>hash2</key>
 			<data>
 			g2JKMOYNEZ0x/l5IBlTSuSyeBo2pVlhjqxBUkPJrdKo=
@@ -918,10 +710,6 @@
 		</dict>
 		<key>Headers/AFResponseVideoAsset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WaQU7DUNXNCzDAafVpMzK0iVCf8=
-			</data>
 			<key>hash2</key>
 			<data>
 			2oVrNsmVXYwIyyOzIqSNl/WE7Q+1NLN4t0aKKMhRboo=
@@ -929,10 +717,6 @@
 		</dict>
 		<key>Headers/AFSeatBid.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5q3tXk7BDLobOEB5f0PFg84lC6U=
-			</data>
 			<key>hash2</key>
 			<data>
 			JvMEM6GHMIQhc68+lIdu+EuRFqleKrB9hw4lAM5Ywq4=
@@ -940,10 +724,6 @@
 		</dict>
 		<key>Headers/AFSite.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VpyzblpdkacZ/20YT8TRL11fOR8=
-			</data>
 			<key>hash2</key>
 			<data>
 			+ppnjpHp2BQaUNPUAm0VhLDHImzD0/IkJT1WDP/ElsY=
@@ -951,10 +731,6 @@
 		</dict>
 		<key>Headers/AFSiteExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jRaAKqdUyeL89It/GyiE2yN9hyQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			uyuASmXNSvnNESkxNDm6PAVDQSU0erzAA/GKyi/tHZo=
@@ -962,10 +738,6 @@
 		</dict>
 		<key>Headers/AFSource.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			phH6kz62rQ9P7q+dX8s2sTD4FG0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Rueh8tkO7xxnMjWAtkwup4RMVY8uX4ObzJ9xLRbB1c4=
@@ -973,10 +745,6 @@
 		</dict>
 		<key>Headers/AFSourceExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			t47L0T2lXGERk8oWiW1+qBkUsXY=
-			</data>
 			<key>hash2</key>
 			<data>
 			nAWZFgw7msjDsA+qRD3tch4OmC2bRFB0NqmH/IxzLrY=
@@ -984,10 +752,6 @@
 		</dict>
 		<key>Headers/AFStructuredUserAgent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			REE+6UnCS1EO1wH/Oi/rm3/UbWA=
-			</data>
 			<key>hash2</key>
 			<data>
 			6DBIiASWmLJQvi+UVWxeEiYhc/h57rOumH2jfxdfiwk=
@@ -995,10 +759,6 @@
 		</dict>
 		<key>Headers/AFSupplyChain.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UpPFDhIsK3/+q9n/YDLXgDIcRS0=
-			</data>
 			<key>hash2</key>
 			<data>
 			QlooWUFAUi8KljSiCIvRgiSjSejMT2zMQTTmrcdR2fE=
@@ -1006,10 +766,6 @@
 		</dict>
 		<key>Headers/AFSupplyChainNode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oP7+TQNKdk/P0CFshgSkL1VCWUU=
-			</data>
 			<key>hash2</key>
 			<data>
 			B9tdLsTYzLWOMHI323JB0IRr+juY9kR3EuniRuTnV0U=
@@ -1017,10 +773,6 @@
 		</dict>
 		<key>Headers/AFTrackingEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OgxhPT8BWkO4nz7HJj8aAR7yN1w=
-			</data>
 			<key>hash2</key>
 			<data>
 			llobUvwQTKMFr1H4LYq1eQxY8kVDZWpOwoiYsaJDHsw=
@@ -1028,21 +780,34 @@
 		</dict>
 		<key>Headers/AFUser.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			971LAXkM5fXIFU/yYMzmytYq0r8=
-			</data>
 			<key>hash2</key>
 			<data>
-			kMuav9yk7X6A9v8UOdVMmksElfAJan2zTnGubXjyCHI=
+			LUuxLQWTgf7gSlDK0c8VNt1XFN/mUoVBhX2kRfphcRI=
+			</data>
+		</dict>
+		<key>Headers/AFUserData.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			djATfJ6doz1MUVQDcjRo0ZjEmruHhzLvS+JkNHZlZEE=
+			</data>
+		</dict>
+		<key>Headers/AFUserDataExt.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FYtbpMu6BSrcxiswEAdkS+mH5fH9Xk8I1aCHtmGud2I=
+			</data>
+		</dict>
+		<key>Headers/AFUserDataSegment.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UfcpwgyLZGIh9ecKwy0nYGFEJqzFOOitnM45xg7y/N8=
 			</data>
 		</dict>
 		<key>Headers/AFUserExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sN6UR6AzvxCVKAhbwdtR3Sn37Pg=
-			</data>
 			<key>hash2</key>
 			<data>
 			OO/4yTc0HU6R0szUARyY92WriOpfWz9r09VMR8uRiOQ=
@@ -1050,10 +815,6 @@
 		</dict>
 		<key>Headers/AFVideo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4baPIJUdIMZ/X5fh26tYMU3OdeA=
-			</data>
 			<key>hash2</key>
 			<data>
 			YMRTCqGssNS3YSJrR7eNGMmv84HN2xueuvy9ur0cmUI=
@@ -1061,10 +822,6 @@
 		</dict>
 		<key>Headers/AFVideoPlayerController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3Lnoj1zFOOWCvKAUabNMobkvoiU=
-			</data>
 			<key>hash2</key>
 			<data>
 			oNFhsscgfBHhtVTIva02N7DTYienYF/7zvt9M591bMI=
@@ -1072,10 +829,6 @@
 		</dict>
 		<key>Headers/AFVideoSettings.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jBFC+JYSVT95OabG4ZA0ExQ6Uk0=
-			</data>
 			<key>hash2</key>
 			<data>
 			miQMjRSWFyBpbOmTej7FbxWahv5gLtC9b83sU9MU3cg=
@@ -1083,10 +836,6 @@
 		</dict>
 		<key>Headers/AdformAdvertising.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YFrI0rNUknaHMbFgO0KobtSpTGQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			8WdhTyhOT7JtF1hcZ3atQ9D1Yn0/AZcaRunxuGdMN+Y=
@@ -1094,10 +843,6 @@
 		</dict>
 		<key>Headers/AdformSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Y8/QyQiguaP/p4cnx82EBZb35FQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			4JTSAmDtBj8cv5zQGAprlo+6DkaXXuCypYD63oEismI=
@@ -1105,10 +850,6 @@
 		</dict>
 		<key>Headers/JSONConvertable.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PkW7SEC301Uf2jhV0DlujvTWAnY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Hpt1IpDqzcvj3lHlrJa9N6D+mM2XzpI8AWVg7lf7iME=
@@ -1116,10 +857,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			f4PesQXrYqUvfQi2IoYetuX5zR4=
-			</data>
 			<key>hash2</key>
 			<data>
 			2aqcKYU7VbT4H7SJhJu1+X0gQcVF3d+PmEDRcKIfUco=
@@ -1127,10 +864,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/4P73C2mUEEVnzoHZXKbpHKa0h0=
-			</data>
 			<key>hash2</key>
 			<data>
 			V0vaspYH5dsnESXBKeANoWW3dTkx/2TO+zsrAQGm2KU=

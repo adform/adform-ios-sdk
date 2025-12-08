@@ -34,7 +34,10 @@ typedef NS_ENUM(NSInteger, AFHBErrorCode) {
     AFHBInvalidBidRequestError = 5,
     
     /// Native ad mediation configuration is invalid.
-    AFHBInvalidNativeAdConfigurationError = 6
+    AFHBInvalidNativeAdConfigurationError = 6,
+    
+    /// User data taxonomy parameters configuration is invalid.
+    AFHBInvalidTaxonomyConfigurationError = 7
 };
 
 
