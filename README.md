@@ -37,6 +37,7 @@ Adform brings brand advertising to the programmatic era at scale, making display
 * [GDPR](https://github.com/adform/adform-ios-sdk/wiki/GDPR)
 * [Localization](https://github.com/adform/adform-ios-sdk/wiki/Localization)
 * [Open RTB Bid loader](https://github.com/adform/adform-ios-sdk/wiki/Open-RTB-Bid-loader)
+* [OpenRTB Taxonomy parameters and Multibid](OpenRTB-Taxonomy-parameters-and-Multibid)
  
 **Mediation adapters**
 * [AdMob Native](https://github.com/adform/adform-ios-sdk/wiki/Adform-Native-Mediation-Adapter-Integration-Guide)
